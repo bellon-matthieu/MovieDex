@@ -35,12 +35,15 @@ app.get("/", function (req, res, next) {
 });
 
 app.get("/home", async function (req, res, next) {
-  const test_film = await client.db("data-film").collection("films").find({thumbnail :{$ne:null}, year:2020}).limit(10).toArray();
-  const photo_array = [];
-
-  for (let i = 0; i<test_film.length;i++) {
-    photo_array.push(test_film[i]["thumbnail"])
-  };
+  //{thumbnail :{$ne:null}, year:2020} .limit(10).toArray()
+  const test_film = await client.db("data-film").collection("films").aggregate([{$match:{}}, { $sample: { size: 10 }}]).toArray();
+  for (let i =  0;i<test_film.length;i++) {
+    if (test_film[i]["thumbnail"] == null) {
+      test_film[i]["thumbnail"] = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Solid_red.svg/768px-Solid_red.svg.png"
+    }
+  }
+  const photo_array = test_film.map(f => f.thumbnail);
+  console.log(photo_array);
 
   res.render("./template/template.ejs", {
     path: "home.ejs",
