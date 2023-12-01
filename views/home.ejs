@@ -3,15 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <title>MovieDex</title>
-    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
   </head>
 
   <body>
     <section class="trends">
-      trends
+      <div class="trends-container">
+        <button class="move" onclick="back()">Précédent</button>
+        <a href="film"><img src="<%= photo[i+0] %>" alt="film" class="thumbnail"></a>
+        <a href="film"><img src="<%= photo[i+1] %>" alt="film" class="thumbnail"></a>
+        <a href="film"><img src="<%= photo[i+2] %>" alt="film" class="thumbnail"></a>
+        <a href="film"><img src="<%= photo[i+3] %>" alt="film" class="thumbnail"></a>
+        <a href="film"><img src="<%= photo[i+4] %>" alt="film" class="thumbnail"></a>
+        <button class="move" onclick="forward()" >Suivant</button>
+      </div>
     </section>
     <section class="all-films">
       films
     </section>
   </body>
+
+  <script>
+    function back() {
+      i++;
+    }
+
+    function forward() {
+    }
+    
+  </script>
 </html>

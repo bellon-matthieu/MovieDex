@@ -31,8 +31,21 @@ app.use(
 );
 
 app.get("/", function (req, res, next) {
+  res.redirect("home");
+});
+
+app.get("/home", async function (req, res, next) {
+  const test_film = await client.db("data-film").collection("films").find({thumbnail :{$ne:null}, year:2020}).limit(10).toArray();
+  const photo_array = [];
+
+  for (let i = 0; i<test_film.length;i++) {
+    photo_array.push(test_film[i]["thumbnail"])
+  };
+
   res.render("./template/template.ejs", {
     path: "home.ejs",
+    photo:photo_array,
+    i: 0,
   });
 });
 
@@ -57,6 +70,12 @@ app.get("/my-dexes", function (req, res, next) {
 app.get("/results", function (req, res, next) {
   res.render("./template/template.ejs", {
     path: "results.ejs",
+  });
+});
+
+app.get("/film", function (req, res, next) {
+  res.render("./template/template.ejs", {
+    path: "film.ejs",
   });
 });
 
