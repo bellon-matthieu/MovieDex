@@ -1,4 +1,16 @@
-.all-films {
-    background-color: red;
-    color: red;
+.trends {
+    user-select: none;
+}
+
+.move {
+    position:relative;
+}
+
+
+.thumbnail {
+    /* ratio-initial = 104:69 */
+    height: 260px;
+    width: 173px;
+
+    margin: 3px;
 }
