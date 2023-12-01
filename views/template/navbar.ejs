@@ -1,0 +1,18 @@
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h3 class="masthead-brand">MovieDex</h3>
+    <nav class="nav nav-masthead justify-content-center">
+      <a class="nav-link" href="home">Home</a>
+      <a class="nav-link" href="results">Mes dexs</a>
+      <a class="nav-link" href="settings">Settings</a>
+      <a class="nav-link" href="profile">Profil</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.querySelectorAll(".nav-link").forEach(nI => {
+    if (window.location.href == nI.href || (window.location.pathname == "/" && nI.href.endsWith("home")))
+      nI.classList.add("active");
+  })
+</script>
