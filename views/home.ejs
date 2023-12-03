@@ -4,32 +4,37 @@
     <meta charset="utf-8" />
     <title>MovieDex</title>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+    <!-- Inclure jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclure le JavaScript de Slick -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
   </head>
 
   <body>
     <section class="trends">
-      <div class="trends-container">
-        <button class="move" onclick="back()">Précédent</button>
-        <a href="film"><img src="<%= photo[i+0] %>" alt="film" class="thumbnail"></a>
-        <a href="film"><img src="<%= photo[i+1] %>" alt="film" class="thumbnail"></a>
-        <a href="film"><img src="<%= photo[i+2] %>" alt="film" class="thumbnail"></a>
-        <a href="film"><img src="<%= photo[i+3] %>" alt="film" class="thumbnail"></a>
-        <a href="film"><img src="<%= photo[i+4] %>" alt="film" class="thumbnail"></a>
-        <button class="move" onclick="forward()" >Suivant</button>
+      <div class="carousel-items">
+        <% for (let index = 0; index < photo.length; index++) { %>
+          
+          <a href="film"><img src="<%= photo[index] %>" alt="film" class="thumbnail"></a>
+        <%
+          }
+        %>
       </div>
     </section>
+
     <section class="all-films">
       films
     </section>
   </body>
-
   <script>
-    function back() {
-      i++;
-    }
-
-    function forward() {
-    }
-    
-  </script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000, // délai entre les diapositives en millisecondes
+        });
+    });
+</script>
 </html>
