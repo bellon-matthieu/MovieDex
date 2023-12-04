@@ -1,0 +1,16 @@
+.thumbnail {
+    /* ratio-initial = 104:69 */
+    height: 260px;
+    width: 173px;
+
+    margin: 3px;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+

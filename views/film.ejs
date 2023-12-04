@@ -2,15 +2,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/film.css">
     <title>Document</title>
 </head>
 <body>
-    <%= title %><br>
-    <%= year %><br>
-    <%= cast %><br>
-    <%= genres %><br>
-    <%= extract %><br>
-    <img src="<%= thumbnail %>" alt="thumbnail">
-
+    <div class="movie-container">
+        <img class="thumbnail" src="<%= thumbnail %>" alt="thumbnail">
+        <div class="info-container">
+            <table>
+                <tr>
+                    <th>Titre</th>
+                    <td><%= title %></td>
+                </tr>
+                <tr>
+                    <th>Année</th>
+                    <td><%= year %></td>
+                </tr>
+                <tr>
+                    <th>Casting</th>
+                    <td>
+                    <%= cast %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                    <td><%= genres %></td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+    <br>
+    <%= extract %>
 </body>
 </html>

@@ -111,12 +111,12 @@ app.get("/my-dexes", async function (req, res, next) {
 });
 
 // ###############
-// RESULTS
+// RESEARCH
 // ###############
 
-app.get("/results", function (req, res, next) {
+app.get("/research", function (req, res, next) {
   res.render("./template/template.ejs", {
-    path: "results.ejs",
+    path: "research.ejs",
   });
 });
 
@@ -150,6 +150,14 @@ app.get("/film", async function (req, res, next) {
 app.post("/film", function (req,res,next) {
   const id_film = req.body.id;
   res.redirect("film?id="+id_film)
+})
+
+app.get("/random-movie", async function (req, res, next) {
+  const random_movie = await client.db("MovieDex").collection("films").aggregate([{ $match: {year:{$gte:2015}} },  { $sample: { size: 1 }}]).toArray();
+
+  const random_movie_id = random_movie[0]['_id'];
+
+  res.redirect("film?id="+random_movie_id);
 })
 
 // ###############
