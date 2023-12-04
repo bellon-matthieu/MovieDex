@@ -75,6 +75,10 @@ app.get("/home", async function (req, res, next) {
 // ###############
 
 app.get("/profile", function (req, res, next) { 
+if (! req.session.id_user) {
+  res.redirect("log-in");
+}
+
   res.render("./template/template.ejs", {
     path: "profile.ejs",
   });
@@ -94,10 +98,16 @@ app.get("/settings", function (req, res, next) {
 // MY-DEXES
 // ###############
 
-app.get("/my-dexes", function (req, res, next) {
-  res.render("./template/template.ejs", {
-    path: "my-dexes.ejs",
-  });
+app.get("/my-dexes", async function (req, res, next) {
+  if (! req.session.id_user) {
+    res.redirect("log-in");
+  } else {
+    const my_dexes = await client.db("MovieDex").collection("dex").find({id_user : req.session.id_user}).toArray();
+    res.render("./template/template.ejs", {
+      path: "my-dexes.ejs",
+      my_dexes : my_dexes,
+      });
+  };
 });
 
 // ###############
@@ -142,10 +152,75 @@ app.post("/film", function (req,res,next) {
   res.redirect("film?id="+id_film)
 })
 
+// ###############
+// REGISTER
+// ###############
+
+app.get("/register", async function (req, res, next) {;
+  res.render("./template/template.ejs", {
+    path: "register.ejs",
+  });
+});
+
+app.post("/register", async function (req,res,next) {
+  const username = req.body.username;
+  const email = req.body.email;
+  const password = req.body.password;
+  if (await client.db("MovieDex").collection("user").findOne({username:username})) {
+    res.redirect("register");
+  } else {
+    client.db("MovieDex").collection("user").insertOne({
+      username:username,
+      email:email,
+      password:password,
+    })
+    const user = await client.db("MovieDex").collection("user").findOne({username:username});
+    const id_user = user["_id"];
+
+    req.session.id_user = id_user;
+    res.redirect("profile");
+  }
+})
+
+// ###############
+// LOG IN
+// ###############
+
+app.get("/log-in", async function (req, res, next) {
+  res.render("./template/template.ejs", {
+    path: "log-in.ejs",
+  });
+});
+
+app.post("/log-in", async function (req,res,next) {
+
+  const username_or_email = req.body.username;
+  const password = req.body.password;
+
+  if (await client.db("MovieDex").collection("user").findOne({$or : [{username:username_or_email},{email:username_or_email}]})) {
+    
+    const user = await client.db("MovieDex").collection("user").findOne({$or : [{username:username_or_email},{email:username_or_email}]});
+
+    if (password == user['password']) {
+
+      req.session.id_user = user['_id'];
+      res.redirect("profile");
+
+    } else {
+
+      res.redirect("log-in")};
+
+  } else {
+    
+    res.redirect("log-in");
+
+    };
+})
+
 app.get("*", (req, res) => {
   res.redirect("/");
 });
 
 app.use(express.static("MovieDex"));
 app.listen(8080);
-console.log("Express server started in port 8080");
+console.log("MovieDex is now online - please have fun (port 8080)");
