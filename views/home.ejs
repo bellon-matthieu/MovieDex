@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>MovieDex</title>
     <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
-    <!-- Inclure jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Inclure le JavaScript de Slick -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
   </head>
 
   <body>
     <section class="trends">
-      <div class="carousel-items">
         <% for (let index = 0; index < photo.length; index++) { %>
-          
-          <a href="film"><img src="<%= photo[index] %>" alt="film" class="thumbnail"></a>
+          <form action="film" method="post">
+            <input type="text" hidden name="id" value="<%= photo[index][0] %>">
+            <input class="thumbnail" type="image" src="<%= photo[index][1] %>" alt="film">
+          </form>
         <%
           }
         %>
-      </div>
     </section>
 
     <section class="all-films">
       films
     </section>
   </body>
-  <script>
-    $(document).ready(function(){
-        $('.carousel').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000, // délai entre les diapositives en millisecondes
-        });
-    });
-</script>
 </html>
