@@ -46,7 +46,7 @@ app.get("/", function (req, res, next) {
 
 app.get("/home", async function (req, res, next) { 
   //{thumbnail :{$ne:null}, year:2020} .limit(10).toArray()
-  const test_film = await client.db("MovieDex").collection("films").aggregate([{ $match: {} },  { $sample: { size: 5 }}]).toArray();
+  const test_film = await client.db("MovieDex").collection("films").aggregate([{ $match: {year:{$gte:2000}} },  { $sample: { size: 5 }}]).toArray();
   for (let i =  0;i<test_film.length;i++) {
     if (test_film[i]["thumbnail"] == null) {
       test_film[i]["thumbnail"] = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Solid_red.svg/768px-Solid_red.svg.png"
