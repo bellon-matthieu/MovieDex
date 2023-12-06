@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="stylesheet" href="/css/createDex.css">
+  </head>
+
+  <body>
+      <form action="create_dex" method="post">
+		<input type="text" value="Nom de la dex" onfocus="this.value=''" name="dexName">
+
+		<select name="film">
+			<% for (let i = 0;i < films.length;i++) {%>
+				<option value="<%= films[i]['_id'] %>"><%= films[i]['title'] %></option>
+			<%}%>
+		</select>
+	  </form>
+  </body>
+</html>
