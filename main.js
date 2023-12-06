@@ -111,6 +111,7 @@ app.get("/create_dex", async function (req, res, next) {
     res.redirect("log-in");
   } else {
     const films = await dbFilms.aggregate([{$match:{}},{$sample:{size:10}}]).toArray();
+
     console.log(films);
     res.render("./template/template.ejs", {
       path: "create_dex.ejs",
@@ -118,8 +119,6 @@ app.get("/create_dex", async function (req, res, next) {
       });
   };
 });
-
-
 
 // ###############
 // RESEARCH
@@ -154,6 +153,31 @@ app.get("/random-movie", async function (req, res, next) {
   const random_movie = await dbFilms.aggregate([{ $match: {year:{$gte:2015}} },  { $sample: { size: 1 }}]).toArray();
 
   const random_movie_id = random_movie[0]['_id'];
+
+  res.redirect("film?id="+random_movie_id);
+})
+
+app.get("/daily-movie", async function (req, res, next) {
+
+  const random_movie = await dbFilms.find().toArray();
+
+  const date = new Date();
+
+  const day = date.getDay();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+
+  let index = day + month + year;
+  console.log(index);
+  index = index*index*index;
+  console.log(index);
+
+  index = index % (random_movie.length+1);
+  console.log(index);
+  
+
+
+  const random_movie_id = random_movie[index]['_id'];
 
   res.redirect("film?id="+random_movie_id);
 })
@@ -218,8 +242,6 @@ app.post("/log-in", async function (req,res,next) {
 
     };
 })
-
-
 
 
 
