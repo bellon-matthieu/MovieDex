@@ -8,32 +8,32 @@
 </head>
 <body>
     <div class="movie-container">
-        <img class="thumbnail" src="<%= thumbnail %>" alt="thumbnail">
+        <img class="thumbnail" src="<%= data_film['thumbnail'] %>" alt="thumbnail">
         <div class="info-container">
             <table>
                 <tr>
                     <th>Titre</th>
-                    <td><%= title %></td>
+                    <td><%= data_film['title'] %></td>
                 </tr>
                 <tr>
                     <th>Année</th>
-                    <td><%= year %></td>
+                    <td><%= data_film['year'] %></td>
                 </tr>
                 <tr>
                     <th>Casting</th>
                     <td>
-                    <%= cast %>
+                    <%= data_film['cast'] %>
                     </td>
                 </tr>
                 <tr>
                     <th>Genre</th>
-                    <td><%= genres %></td>
+                    <td><%= data_film['genres'] %></td>
                 </tr>
             </table>
         </div>
     
     </div>
     <br>
-    <%= extract %>
+    <%= data_film['extract'] %>
 </body>
 </html>

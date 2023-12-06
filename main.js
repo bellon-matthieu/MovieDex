@@ -46,7 +46,7 @@ app.get("/", function (req, res, next) {
 
 app.get("/home", async function (req, res, next) { 
   //{thumbnail :{$ne:null}, year:2020} .limit(10).toArray()
-  const test_film = await client.db("MovieDex").collection("films").aggregate([{ $match: {year:{$gte:2000}} },  { $sample: { size: 5 }}]).toArray();
+  const test_film = await client.db("MovieDex").collection("films").aggregate([{ $match: {year:{$gte:2000}} },  { $sample: { size: 15 }}]).toArray();
   for (let i =  0;i<test_film.length;i++) {
     if (test_film[i]["thumbnail"] == null) {
       test_film[i]["thumbnail"] = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Solid_red.svg/768px-Solid_red.svg.png"
@@ -127,23 +127,10 @@ app.get("/research", function (req, res, next) {
 app.get("/film", async function (req, res, next) {
 
   const data_film = await client.db("MovieDex").collection("films").findOne({ _id: new ObjectId(req.query.id)});
-  let title = data_film["title"];
-  let year = data_film["year"];
-  let cast = data_film["cast"];
-  let genres = data_film["genres"];
-  let extract = data_film["extract"];
-  let thumbnail = data_film["thumbnail"];
-
-
 
   res.render("./template/template.ejs", {
     path: "film.ejs",
-    title: title,
-    year: year,
-    cast:cast,
-    genres:genres,
-    extract:extract,
-    thumbnail:thumbnail,
+    data_film:data_film,
   });
 });
 
