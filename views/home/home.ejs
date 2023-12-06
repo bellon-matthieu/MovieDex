@@ -14,8 +14,8 @@
 
         <% for (let index = 0; index < 5; index++) { %>
           <form action="film" method="post">
-            <input type="text" hidden name="id" value="<%= films[index]['_id'] %>">
-            <input class="thumbnail" type="image" src="<%= films[index]['thumbnail'] %>" alt="film">
+            <input type="text" hidden name="id" value="<%= trendsMovies[index]['_id'] %>">
+            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
           </form>
         <%}%>
 
@@ -30,8 +30,8 @@
 
         <% for (let index = 5; index < 10; index++) { %>
           <form action="film" method="post">
-            <input type="text" hidden name="id" value="<%= films[index]['_id'] %>">
-            <input class="thumbnail" type="image" src="<%= films[index]['thumbnail'] %>" alt="film">
+            <input type="text" hidden name="id" value="<%= trendsMovies[index]['_id'] %>">
+            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
           </form>
         <%}%>
 
@@ -46,14 +46,17 @@
 
         <% for (let index = 10; index < 15; index++) { %>
           <form action="film" method="post">
-            <input type="text" hidden name="id" value="<%= films[index]['_id'] %>">
-            <input class="thumbnail" type="image" src="<%= films[index]['thumbnail'] %>" alt="film">
+            <input type="text" hidden name="id" value="<%= trendsMovies[index]['_id'] %>">
+            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
           </form>
         <%}%>
 
         <a href="#section1" class="display_button">›</a>
 
       </section>
+
+
+      
     </div>
   </body>
 </html>
