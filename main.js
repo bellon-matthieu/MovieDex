@@ -152,7 +152,7 @@ app.post("/movie", function (req,res,next) {
 })
 
 app.get("/random-movie", async function (req, res, next) {
-  const randomMovie = await dbMovie.aggregate([{ $match: {year:{$gte:2015}} },  { $sample: { size: 1 }}]).toArray();
+  const randomMovie = await dbMovie.aggregate([{ $match: {year:{$gte:2010}} },  { $sample: { size: 1 }}]).toArray();
 
   const idRandomMovie = randomMovie[0]['_id'];
 
