@@ -13,6 +13,10 @@ const match = require("nodemon/lib/monitor/match");
 const uri = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(uri);
 
+const dbUser = client.db("MovieDex").collection("user");
+const dbDex = client.db("MovieDex").collection("dex");
+const dbMovie = client.db("MovieDex").collection("movie");
+
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.static(__dirname + "/static"));
@@ -45,33 +49,27 @@ app.get("/", function (req, res, next) {
 // ###############
 
 app.get("/home", async function (req, res, next) { 
-  //{thumbnail :{$ne:null}, year:2020} .limit(10).toArray()
-  const test_film = await client.db("MovieDex").collection("films").aggregate([{ $match: {} },  { $sample: { size: 5 }}]).toArray();
-  for (let i =  0;i<test_film.length;i++) {
-    if (test_film[i]["thumbnail"] == null) {
-      test_film[i]["thumbnail"] = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Solid_red.svg/768px-Solid_red.svg.png"
+
+  const trendsMoviesSize = 3;
+
+  // DB ---> 15 films aléatoires avec (year >= 2000)
+  const trendsMovies = await dbMovie.aggregate([{ $match: {year:{$gte:2002}} },  { $sample: { size: trendsMoviesSize*5 }}]).toArray();
+
+  // Ajout d'une image rouge pour les films qui n'ont pas de thumbnail
+  for (let i=0; i<trendsMovies.length; i++) {
+    if (trendsMovies[i]["thumbnail"] == null) {
+      trendsMovies[i]["thumbnail"] = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Solid_red.svg/768px-Solid_red.svg.png"
     }
   }
 
-  let photo_array = [];
-
-  for (let i = 0; i<test_film.length; i++) {
-    let temp_array = [];
-    temp_array.push(test_film[i]['_id']);
-    temp_array.push(test_film[i]['thumbnail']);
-    photo_array.push(temp_array);
-  }
-
-  // const photo_array = test_film.map(f => f.thumbnail);
-
   res.render("./template/template.ejs", {
-    path: "home.ejs",
-    photo:photo_array,
+    path: "home/home.ejs",
+    trendsMovies:trendsMovies,
   });
 });
 
 // ###############
-// Profile
+// PROFILE
 // ###############
 
 app.get("/profile", function (req, res, next) { 
@@ -80,7 +78,7 @@ if (! req.session.id_user) {
 }
 
   res.render("./template/template.ejs", {
-    path: "profile.ejs",
+    path: "profile/profile.ejs",
   });
 });
 
@@ -90,22 +88,36 @@ if (! req.session.id_user) {
 
 app.get("/settings", function (req, res, next) {
   res.render("./template/template.ejs", {
-    path: "settings.ejs",
+    path: "settings/settings.ejs",
   });
 });
 
 // ###############
-// MY-DEXES
+// DEXES
 // ###############
 
 app.get("/my-dexes", async function (req, res, next) {
   if (! req.session.id_user) {
     res.redirect("log-in");
   } else {
-    const my_dexes = await client.db("MovieDex").collection("dex").find({id_user : req.session.id_user}).toArray();
+    const my_dexes = await dbDex.find({id_user : req.session.id_user}).toArray();
     res.render("./template/template.ejs", {
-      path: "my-dexes.ejs",
+      path: "dex/my-dexes.ejs",
       my_dexes : my_dexes,
+      });
+  };
+});
+
+app.get("/create-dex", async function (req, res, next) {
+  if (! req.session.id_user) {
+    res.redirect("log-in");
+  } else {
+    const movies = await dbMovie.aggregate([{$match:{}},{$sample:{size:10}}]).toArray();
+
+    console.log(movies);
+    res.render("./template/template.ejs", {
+      path: "dex/create-dex.ejs",
+      movies: movies,
       });
   };
 });
@@ -116,7 +128,7 @@ app.get("/my-dexes", async function (req, res, next) {
 
 app.get("/research", function (req, res, next) {
   res.render("./template/template.ejs", {
-    path: "research.ejs",
+    path: "research/research.ejs",
   });
 });
 
@@ -124,40 +136,48 @@ app.get("/research", function (req, res, next) {
 // FILM
 // ###############
 
-app.get("/film", async function (req, res, next) {
+app.get("/movie", async function (req, res, next) {
 
-  const data_film = await client.db("MovieDex").collection("films").findOne({ _id: new ObjectId(req.query.id)});
-  let title = data_film["title"];
-  let year = data_film["year"];
-  let cast = data_film["cast"];
-  let genres = data_film["genres"];
-  let extract = data_film["extract"];
-  let thumbnail = data_film["thumbnail"];
-
-
+  const dataMovie = await dbMovie.findOne({ _id: new ObjectId(req.query.id)});
 
   res.render("./template/template.ejs", {
-    path: "film.ejs",
-    title: title,
-    year: year,
-    cast:cast,
-    genres:genres,
-    extract:extract,
-    thumbnail:thumbnail,
+    path: "movie/movie.ejs",
+    dataMovie:dataMovie,
   });
 });
 
-app.post("/film", function (req,res,next) {
-  const id_film = req.body.id;
-  res.redirect("film?id="+id_film)
+app.post("/movie", function (req,res,next) {
+  const idMovie = req.body.id;
+  res.redirect("movie?id="+idMovie)
 })
 
 app.get("/random-movie", async function (req, res, next) {
-  const random_movie = await client.db("MovieDex").collection("films").aggregate([{ $match: {year:{$gte:2015}} },  { $sample: { size: 1 }}]).toArray();
+  const randomMovie = await dbMovie.aggregate([{ $match: {year:{$gte:2010}} },  { $sample: { size: 1 }}]).toArray();
 
-  const random_movie_id = random_movie[0]['_id'];
+  const idRandomMovie = randomMovie[0]['_id'];
 
-  res.redirect("film?id="+random_movie_id);
+  res.redirect("movie?id="+idRandomMovie);
+})
+
+app.get("/daily-movie", async function (req, res, next) {
+
+  const allMovies = await dbMovie.find().toArray();
+
+  const date = new Date();
+
+  const day = date.getDay();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+
+  let index = day + month + year;
+  index = index*index*index;
+  index = index % (allMovies.length+1);
+  
+
+
+  const idDailyMovie = allMovies[index]['_id'];
+
+  res.redirect("movie?id="+idDailyMovie);
 })
 
 // ###############
@@ -166,7 +186,7 @@ app.get("/random-movie", async function (req, res, next) {
 
 app.get("/register", async function (req, res, next) {;
   res.render("./template/template.ejs", {
-    path: "register.ejs",
+    path: "register/register.ejs",
   });
 });
 
@@ -174,7 +194,7 @@ app.post("/register", async function (req,res,next) {
   const username = req.body.username;
   const email = req.body.email;
   const password = req.body.password;
-  if (await client.db("MovieDex").collection("user").findOne({username:username})) {
+  if (await dbUser.findOne({username:username})) {
     res.redirect("register");
   } else {
     client.db("MovieDex").collection("user").insertOne({
@@ -182,7 +202,7 @@ app.post("/register", async function (req,res,next) {
       email:email,
       password:password,
     })
-    const user = await client.db("MovieDex").collection("user").findOne({username:username});
+    const user = await dbUser.findOne({username:username});
     const id_user = user["_id"];
 
     req.session.id_user = id_user;
@@ -190,13 +210,9 @@ app.post("/register", async function (req,res,next) {
   }
 })
 
-// ###############
-// LOG IN
-// ###############
-
 app.get("/log-in", async function (req, res, next) {
   res.render("./template/template.ejs", {
-    path: "log-in.ejs",
+    path: "register/log-in.ejs",
   });
 });
 
@@ -205,9 +221,9 @@ app.post("/log-in", async function (req,res,next) {
   const username_or_email = req.body.username;
   const password = req.body.password;
 
-  if (await client.db("MovieDex").collection("user").findOne({$or : [{username:username_or_email},{email:username_or_email}]})) {
+  if (await dbUser.findOne({$or : [{username:username_or_email},{email:username_or_email}]})) {
     
-    const user = await client.db("MovieDex").collection("user").findOne({$or : [{username:username_or_email},{email:username_or_email}]});
+    const user = await dbUser.findOne({$or : [{username:username_or_email},{email:username_or_email}]});
 
     if (password == user['password']) {
 
@@ -224,6 +240,8 @@ app.post("/log-in", async function (req,res,next) {
 
     };
 })
+
+
 
 app.get("*", (req, res) => {
   res.redirect("/");

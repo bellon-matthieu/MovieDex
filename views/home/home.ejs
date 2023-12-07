@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <section id="section1" class="carousel_line">
+
+        <a href="#section3" class="display_button">‹</a>
+
+        <% for (let index = 0; index < 5; index++) { %>
+          <form action="film" method="post">
+            <input type="text" hidden name="id" value="<%= trendsMovies[index]['_id'] %>">
+            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
+          </form>
+        <%}%>
+
+        <a href="#section2" class="display_button">›</a>
+
+      </section>
+
+
+      <section id="section2" class="carousel_line">
+
+        <a href="#section1" class="display_button">‹</a>
+
+        <% for (let index = 5; index < 10; index++) { %>
+          <form action="film" method="post">
+            <input type="text" hidden name="id" value="<%= trendsMovies[index]['_id'] %>">
+            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
+          </form>
+        <%}%>
+
+        <a href="#section3" class="display_button">›</a>
+
+      </section>
+
+
+      <section id="section3" class="carousel_line">
+
+        <a href="#section2" class="display_button">‹</a>
+
+        <% for (let index = 10; index < 15; index++) { %>
+          <form action="film" method="post">
+            <input type="text" hidden name="id" value="<%= trendsMovies[index]['_id'] %>">
+            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
+          </form>
+        <%}%>
+
+        <a href="#section1" class="display_button">›</a>
+
+      </section>
+
+
+      
+    </div>
+  </body>
+</html>

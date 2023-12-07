@@ -3,37 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/css/film.css">
+    <link rel="stylesheet" href="/css/movie.css">
     <title>Document</title>
 </head>
 <body>
     <div class="movie-container">
-        <img class="thumbnail" src="<%= thumbnail %>" alt="thumbnail">
+        <img class="thumbnail" src="<%= dataMovie['thumbnail'] %>" alt="thumbnail">
         <div class="info-container">
             <table>
                 <tr>
                     <th>Titre</th>
-                    <td><%= title %></td>
+                    <td><%= dataMovie['title'] %></td>
                 </tr>
                 <tr>
                     <th>Année</th>
-                    <td><%= year %></td>
+                    <td><%= dataMovie['year'] %></td>
                 </tr>
                 <tr>
                     <th>Casting</th>
                     <td>
-                    <%= cast %>
+                    <%= dataMovie['cast'] %>
                     </td>
                 </tr>
                 <tr>
                     <th>Genre</th>
-                    <td><%= genres %></td>
+                    <td><%= dataMovie['genres'] %></td>
                 </tr>
             </table>
         </div>
     
     </div>
     <br>
-    <%= extract %>
+    <%= dataMovie['extract'] %>
 </body>
 </html>
