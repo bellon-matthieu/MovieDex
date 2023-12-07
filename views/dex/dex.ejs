@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/dex.css">
+</head>
+<body>
+    <div class="dex-container">
+            <table>
+                <tr>
+                    <th>Nom de la dex</th>
+                    <td><%= dataDex['name'] %></td>
+                </tr>
+                <tr>
+                    <th>Genres</th>
+                    <td><%= dataDex['genres'] %></td>
+                </tr>
+                <tr>
+                    <th>Films</th>
+                    <td>
+                    <%= dataDex['movies'] %>
+                    </td>
+                </tr>
+            </table>
+		<% if (dataDex['user'] == idUser) { %>
+			<form action="delete-dex" method="post">
+				<input type="text" hidden name="idDex" value="<%= dataDex["_id"] %>">
+				<input type="submit" value="Supprimer la dex">
+			</form>
+		<% } %>
+    </div>
+</body>
+</html>

@@ -4,3 +4,9 @@ form {
 
 	justify-content: space-between;
 }
+
+.genres_container {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}

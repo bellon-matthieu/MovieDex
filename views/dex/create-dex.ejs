@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<link rel="stylesheet" href="/css/createDex.css">
+	<link rel="stylesheet" href="/css/create-dex.css">
   </head>
 
   <body>
       <form action="create-dex" method="post">
-		<input type="text" value="Nom de la dex" onfocus="this.value=''" name="dexName">
+		<input type="text" value="Nom de la dex" onfocus="this.value=''" name="nameDex">
 
-		<select name="film">
-			<% for (let i = 0;i < movies.length;i++) {%>
-				<option value="<%= movies[i]['_id'] %>"><%= movies[i]['title'] %></option>
-			<%}%>
-		</select>
+		<div class="genres_container">
+			
+		<% for (let i = 0; i < genres.length; i++) {%>
+			<input type="checkbox" name="genresDex" value="<%= genres[i] %>">
+			<label for="<%= genres[i] %>"><%= genres[i] %></label>
+			<br>
+        <% } %>
+
+		</div>
+			
+		<input type="submit" value="Créer une dex">
+        
 	  </form>
+
   </body>
 </html>

@@ -21,6 +21,49 @@ app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.static(__dirname + "/static"));
 
+const genres = [
+        "Action",
+        "Adventure",
+        "Animated",
+        "Biography",
+        "Comedy",
+        "Crime",
+        "Dance",
+        "Disaster",
+        "Documentary",
+        "Drama",
+        "Erotic",
+        "Family",
+        "Fantasy",
+        "Found Footage",
+        "Historical",
+        "Horror",
+        "Independent",
+        "Legal",
+        "Live Action",
+        "Martial Arts",
+        "Musical",
+        "Mystery",
+        "Noir",
+        "Performance",
+        "Political",
+        "Romance",
+        "Satire",
+        "Science Fiction",
+        "Short",
+        "Silent",
+        "Slasher",
+        "Sports",
+        "Spy",
+        "Superhero",
+        "Supernatural",
+        "Suspense",
+        "Teen",
+        "Thriller",
+        "War",
+        "Western"
+]
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   session({
@@ -96,14 +139,37 @@ app.get("/settings", function (req, res, next) {
 // DEXES
 // ###############
 
+app.get("/dex", async function (req, res, next) {
+
+  const dataDex = await dbDex.findOne({ _id: new ObjectId(req.query.id)});
+  const idUser = req.session.id_user;
+
+  res.render("./template/template.ejs", {
+    path: "dex/dex.ejs",
+    dataDex:dataDex,
+    idUser:idUser,
+  });
+});
+
+app.post("/dex", function (req,res,next) {
+  const idDex = req.body.id;
+  res.redirect("dex?id="+idDex)
+})
+
+app.post("/delete-dex", async function (req,res,next){
+  const idDex = new ObjectId(req.body.idDex);
+  await dbDex.deleteOne({_id : idDex});
+  res.redirect("my-dexes");
+})
+
 app.get("/my-dexes", async function (req, res, next) {
   if (! req.session.id_user) {
     res.redirect("log-in");
   } else {
-    const my_dexes = await dbDex.find({id_user : req.session.id_user}).toArray();
+    const dexes = await dbDex.find({user : req.session.id_user}).toArray();
     res.render("./template/template.ejs", {
       path: "dex/my-dexes.ejs",
-      my_dexes : my_dexes,
+      dexes : dexes,
       });
   };
 });
@@ -112,15 +178,26 @@ app.get("/create-dex", async function (req, res, next) {
   if (! req.session.id_user) {
     res.redirect("log-in");
   } else {
-    const movies = await dbMovie.aggregate([{$match:{}},{$sample:{size:10}}]).toArray();
-
-    console.log(movies);
     res.render("./template/template.ejs", {
       path: "dex/create-dex.ejs",
-      movies: movies,
+      genres:genres,
+      
       });
   };
 });
+
+app.post("/create-dex", async function (req,res, next) {
+  idUser = req.session.id_user;
+  nameDex = req.body.nameDex;
+  genresDex = req.body.genresDex;
+
+  dbDex.insertOne({"user":idUser,
+                  "name":nameDex,
+                  "genres":genresDex,
+                  "movies":[]})
+  
+  res.redirect("home");
+})
 
 // ###############
 // RESEARCH
@@ -138,7 +215,7 @@ app.get("/research", function (req, res, next) {
 
 app.get("/movie", async function (req, res, next) {
 
-  const dataMovie = await dbMovie.findOne({ _id: new ObjectId(req.query.id)});
+  const dataMovie = await dbMovie.findOne({ _id: new ObjectId(req.query.idMovie)});
 
   res.render("./template/template.ejs", {
     path: "movie/movie.ejs",
@@ -147,7 +224,7 @@ app.get("/movie", async function (req, res, next) {
 });
 
 app.post("/movie", function (req,res,next) {
-  const idMovie = req.body.id;
+  const idMovie = req.body.idMovie;
   res.redirect("movie?id="+idMovie)
 })
 
