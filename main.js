@@ -214,8 +214,8 @@ app.get("/research", function (req, res, next) {
 // ###############
 
 app.get("/movie", async function (req, res, next) {
-
-  const dataMovie = await dbMovie.findOne({ _id: new ObjectId(req.query.idMovie)});
+  const idDailyMovie = req.query.id;
+  const dataMovie = await dbMovie.findOne({ _id: new ObjectId(idDailyMovie)});
 
   res.render("./template/template.ejs", {
     path: "movie/movie.ejs",
