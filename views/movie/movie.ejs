@@ -29,7 +29,17 @@
                 </tr>
             </table>
         </div>
-    
+    <% if (idUser) {%>
+        <form action="add-movie" method="post">
+            <input type="text" hidden name="idMovie" value="<%= dataMovie["_id"] %>">
+            <select name="selectedDex">
+                <% for (let i = 0;i < dexesUser.length; i++) {%>
+                    <option value="<%= dexesUser[i]["_id"]%>"> <%= dexesUser[i]["name"] %> </option>
+                <% } %>
+            </select>
+            <input type="submit" value="Ajouter à la liste">
+        </form>
+    <% } %>
     </div>
     <br>
     <%= dataMovie['extract'] %>

@@ -3,21 +3,50 @@
   <head>
     <meta charset="utf-8" />
     <title>Mes Dex</title>
+    <link rel="stylesheet" href="/css/my-dexes.css">
+    <link rel="stylesheet" href="/css/dex-display.css">
   </head>
 
   <body>
       <a href="create-dex">Créer une dex</a>
-      <br>
+      <div class="dex-container">
         <% for (let i = 0; i < dexes.length; i++) {%>
-          <form action="dex" method="post">
-            <input type="text" hidden name="id" value="<%= dexes[i]['_id'] %>">
-              <%= dexes[i]["name"] %>
-              <%= dexes[i]["genres"] %>
-              <%= dexes[i]["movies"] %>
-            <input type="submit">
-          </form>
+          <div class="dex-display">
+              <a href="dex?id=<%= dexes[i]['_id'] %>">
+                <%= dexes[i]["name"] %>
+              </a><br>
+
+              <div class="movies">
+
+                <section>
+                  <% if (dexes[i]["movies"][0]) {%>
+                    <a class="movie" href="dex?id=<%= dexes[i]['_id'] %>">
+                      <img src="<%= dexes[i]["movies"][0]["thumbnail"]%>" alt="">
+                    </a>
+                  <% } %>
+                </section>
+
+
+                <section>
+                  <% if (dexes[i]["movies"][1]) {%>
+                    <a class="movie" href="dex?id=<%= dexes[i]['_id'] %>">
+                      <img src="<%= dexes[i]["movies"][1]["thumbnail"]%>" alt="">
+                    </a>
+                  <% } %>
+                </section>
+
+
+                <section>
+                  <% if (dexes[i]["movies"][2]) {%>
+                    <a class="movie" href="dex?id=<%= dexes[i]['_id'] %>">
+                      <img src="<%= dexes[i]["movies"][2]["thumbnail"]%>" alt="">
+                    </a>
+                  <% } %>
+                </section>
+            </div>
+          </div>
         <% } %>
-      </table>
+      </div>
 
 
   </body>

@@ -1,0 +1,13 @@
+.dex {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-between;
+}
+
+.dex-container {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-between;
+}
