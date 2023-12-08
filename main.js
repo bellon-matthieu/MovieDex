@@ -125,6 +125,11 @@ if (! req.session.idUser) {
   });
 });
 
+app.get("/log-out", function (req,res,next) {
+  req.session.idUser = null;
+  res.redirect("log-in");
+});
+
 // ###############
 // SETTINGS
 // ###############

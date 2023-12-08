@@ -11,9 +11,10 @@
 		<div class="genres_container">
 			
 		<% for (let i = 0; i < genres.length; i++) {%>
-			<input type="checkbox" name="genresDex" value="<%= genres[i] %>">
-			<label for="<%= genres[i] %>"><%= genres[i] %></label>
-			<br>
+			<div class="genre">
+				<input type="checkbox" name="genresDex" value="<%= genres[i] %>">
+				<label for="<%= genres[i] %>"><%= genres[i] %></label>
+			</div>
         <% } %>
 
 		</div>

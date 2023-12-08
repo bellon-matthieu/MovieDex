@@ -8,45 +8,35 @@
   </head>
 
   <body>
-      <a href="create-dex">Créer une dex</a>
+      <a class="create-dex-button" href="create-dex">Créer une dex</a>
       <div class="dex-container">
         <% for (let i = 0; i < dexes.length; i++) {%>
           <div class="dex-display">
               <a href="dex?id=<%= dexes[i]['_id'] %>">
                 <%= dexes[i]["name"] %>
-              </a><br>
-
-              <div class="movies">
-
-                <section>
+              </a>
+              <div class="movies-diplay">
                   <% if (dexes[i]["movies"][0]) {%>
-                    <a class="movie" href="dex?id=<%= dexes[i]['_id'] %>">
-                      <img src="<%= dexes[i]["movies"][0]["thumbnail"]%>" alt="">
+                    <a href="dex?id=<%= dexes[i]['_id'] %>">
+                      <img class="movie" src="<%= dexes[i]["movies"][0]["thumbnail"]%>" alt="">
                     </a>
                   <% } %>
-                </section>
-
-
-                <section>
                   <% if (dexes[i]["movies"][1]) {%>
-                    <a class="movie" href="dex?id=<%= dexes[i]['_id'] %>">
-                      <img src="<%= dexes[i]["movies"][1]["thumbnail"]%>" alt="">
+                    <a href="dex?id=<%= dexes[i]['_id'] %>">
+                      <img class="movie" src="<%= dexes[i]["movies"][1]["thumbnail"]%>" alt="">
                     </a>
                   <% } %>
-                </section>
-
-
-                <section>
                   <% if (dexes[i]["movies"][2]) {%>
-                    <a class="movie" href="dex?id=<%= dexes[i]['_id'] %>">
-                      <img src="<%= dexes[i]["movies"][2]["thumbnail"]%>" alt="">
+                    <a href="dex?id=<%= dexes[i]['_id'] %>">
+                      <img class="movie" src="<%= dexes[i]["movies"][2]["thumbnail"]%>" alt="">
                     </a>
                   <% } %>
-                </section>
             </div>
           </div>
         <% } %>
       </div>
+
+      
 
 
   </body>
