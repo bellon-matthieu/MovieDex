@@ -30,7 +30,7 @@ a {
 .dex-display {
     margin: 5px;
     margin-bottom: 10px;
-    flex: 0 0 calc(33.33% - 10px);
+    flex: 0 0 calc(33% - 10px);
     box-sizing: border-box;
 }
 
