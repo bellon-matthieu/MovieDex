@@ -11,3 +11,8 @@
 	
 	justify-content: space-between;
 }
+
+.create-dex-button {
+	border: 1px white solid;
+	border-radius: 16px;
+}

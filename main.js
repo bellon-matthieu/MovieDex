@@ -116,13 +116,9 @@ app.get("/home", async function (req, res, next) {
 // ###############
 
 app.get("/profile", function (req, res, next) { 
-if (! req.session.idUser) {
-  res.redirect("log-in");
-}
-
-  res.render("./template/template.ejs", {
-    path: "profile/profile.ejs",
-  });
+if (! req.session.idUser) {res.redirect("log-in");}
+else {res.render("./template/template.ejs", {
+    path: "profile/profile.ejs",});}
 });
 
 app.get("/log-out", function (req,res,next) {
@@ -167,6 +163,26 @@ app.post("/delete-dex", async function (req,res,next){
   res.redirect("my-dexes");
 })
 
+app.post("/remove-movie-from-dex", async function (req,res,next) {
+  idMovie = req.body.idMovieRemoved;
+  idDex = req.body.idDex;
+
+  const previousDex = await dbDex.findOne({ _id : new ObjectId(idDex)});
+  const moviesDex = previousDex["movies"];
+
+  for (let i = 0; i < moviesDex.length;i++) {
+    if (moviesDex[i]["_id"] == idMovie) {
+      moviesDex.splice(i,1);
+      break;
+    }
+  }
+
+  dbDex.updateOne(
+    {_id : new ObjectId(idDex)},
+    {$set : {"movies":moviesDex}});
+  res.redirect("dex?id="+idDex);
+})
+
 app.get("/my-dexes", async function (req, res, next) {
   if (! req.session.idUser) {
     res.redirect("log-in");
@@ -194,27 +210,40 @@ app.post("/create-dex", async function (req,res, next) {
   idUser = req.session.idUser;
   nameDex = req.body.nameDex;
   genresDex = req.body.genresDex;
+  descriptionDex = req.body.descriptionDex;
 
-  dbDex.insertOne({"user":idUser,
-                  "name":nameDex,
-                  "genres":genresDex,
-                  "movies":[]})
-  
-  res.redirect("home");
+  let newDex = await dbDex.insertOne({"user":idUser,
+                                      "name":nameDex,
+                                      "genres":genresDex,
+                                      "movies":[],
+                                      "description": descriptionDex
+                                    });
+  let idNewDex = newDex.insertedId;
+  res.redirect("dex?id="+idNewDex);
 })
 
 // ###############
 // RESEARCH
 // ###############
 
-app.get("/research", function (req, res, next) {
+app.get("/research", async function (req, res, next) {
+  const query = req.query.query;
+  const resultsMovies = await dbMovie.find({title:query}).toArray();
+  const resultDexes = await dbDex.find({name:query}).toArray();
   res.render("./template/template.ejs", {
     path: "research/research.ejs",
+    query:query,
+    resultsMovies:resultsMovies,
+    resultsDexes:resultDexes,
   });
 });
 
+app.post("/research", function (req, res, next) {
+  res.redirect("research?query="+req.body.search);
+});
+
 // ###############
-// FILM
+// MOVIE
 // ###############
 
 app.get("/movie", async function (req, res, next) {
@@ -240,10 +269,27 @@ app.post("/add-movie", async function (req,res,next) {
   const idDex = req.body.selectedDex;
   const idMovie = req.body.idMovie;
 
-  const newMovie = await dbMovie.findOne({_id : new ObjectId(idMovie)})
+  const newMovie = await dbMovie.findOne({_id : new ObjectId(idMovie)});
+  const dex = await dbDex.findOne({_id : new ObjectId(idDex)});
+  const moviesDex = dex['movies'];
 
-  dbDex.updateOne({_id : new ObjectId(idDex)},{$push : {movies : newMovie}})
-  res.redirect("my-dexes");
+  let isMovieAlreadyIn = false;
+
+  for (let i = 0; i<moviesDex.length; i++) {
+
+    if (newMovie._id.equals(moviesDex[i]._id)) {
+      isMovieAlreadyIn = true;
+      break;
+    }
+  }
+
+  if (! isMovieAlreadyIn) {
+    dbDex.updateOne(
+      { _id : new ObjectId(idDex) },
+      { $push : {movies : newMovie} })
+    res.redirect("my-dexes");
+  } else {
+    res.redirect("my-dexes");}
 })
 
 app.get("/random-movie", async function (req, res, next) {

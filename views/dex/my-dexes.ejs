@@ -8,12 +8,12 @@
   </head>
 
   <body>
-      <a class="create-dex-button" href="create-dex">Créer une dex</a>
+      <a class="create-dex-button" href="create-dex"><h1>Créer une dex</h1></a>
       <div class="dex-container">
         <% for (let i = 0; i < dexes.length; i++) {%>
           <div class="dex-display">
               <a href="dex?id=<%= dexes[i]['_id'] %>">
-                <%= dexes[i]["name"] %>
+                <h2><%= dexes[i]["name"] %></h2>
               </a>
               <div class="movies-diplay">
                   <% if (dexes[i]["movies"][0]) {%>

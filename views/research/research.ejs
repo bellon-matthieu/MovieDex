@@ -5,6 +5,13 @@
 
 
   <body>
-    
+    <h1>Voici les films pour la recherche : <%= query %></h1>
+      <% for (let i = 0; i < resultsMovies.length;i++) {%>
+        <a href="movie?id=<%= resultsMovies[i]['_id'] %>"><%= resultsMovies[i]["title"] %></a>
+        <% } %>
+    <h1>Voici les Dex pour la recherche : <%= query %></h1>
+      <% for (let i = 0; i < resultsDexes.length;i++) {%>
+        <a href="dex?id=<%= resultsDexes[i]['_id'] %>"><%= resultsDexes[i]["name"] %></a>
+        <% } %>
   </body>
 </html>
