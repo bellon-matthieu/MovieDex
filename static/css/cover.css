@@ -81,6 +81,16 @@ body {
   border-bottom-color: #fff;
 }
 
+.dropdown-name:hover {
+  .dropdown-menu{display: block;
+  position: absolute;}
+}
+
+.search-field {
+  border-radius: 16px;
+}
+
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;

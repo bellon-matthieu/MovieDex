@@ -16,3 +16,7 @@
 	border: 1px white solid;
 	border-radius: 16px;
 }
+
+.create-dex-button:hover {
+    background-color: #1f1f1f;
+}

@@ -12,7 +12,7 @@
       <div class="dex-container">
         <% for (let i = 0; i < dexes.length; i++) {%>
           <div class="dex-display">
-              <a href="dex?id=<%= dexes[i]['_id'] %>">
+              <a class="dex-display-name" href="dex?id=<%= dexes[i]['_id'] %>">
                 <h2><%= dexes[i]["name"] %></h2>
               </a>
               <div class="movies-diplay">
