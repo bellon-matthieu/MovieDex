@@ -7,7 +7,9 @@
   <body>
     <h1>Voici les films pour la recherche : <%= query %></h1>
       <% for (let i = 0; i < resultsMovies.length;i++) {%>
-        <a href="movie?id=<%= resultsMovies[i]['_id'] %>"><%= resultsMovies[i]["title"] %></a>
+        <a href="movie?id=<%= resultsMovies[i]['_id'] %>">
+          <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+        </a>
         <% } %>
     <h1>Voici les Dex pour la recherche : <%= query %></h1>
       <% for (let i = 0; i < resultsDexes.length;i++) {%>

@@ -1,0 +1,43 @@
+.dex-thumbnail img {
+	width: 100px;
+}
+
+
+.dex-info{
+	display: flex;
+	margin-bottom: 32px;
+}
+
+.dex-thumbnail{
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+}
+
+.dex-description{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.title{
+	border: 1px solid white;
+}
+
+.genres{
+	border: 1px solid white;
+}
+
+.description{
+	border: 1px solid white;
+}
+
+.dex-movies{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.delete-button{
+	margin: 32px;
+}

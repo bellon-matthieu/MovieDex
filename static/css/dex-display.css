@@ -4,16 +4,16 @@
 }
 
 .dex-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1em;
 }
 
 .movies-display {
     display: flex;
     flex-direction: row;
+    width:100%;
 }
 
 .movie {
@@ -27,8 +27,6 @@ a {
 }
 
 .dex-display {
-    margin: 5px;
-    margin-bottom: 10px;
     flex: 0 0 calc(33% - 10px);
     box-sizing: border-box;
     border: 1px solid white
@@ -40,4 +38,10 @@ a {
 
 .dex-display-name h2{
     margin: 15px;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.single-movie-container {
+    padding: 3px;
 }

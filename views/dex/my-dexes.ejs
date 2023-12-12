@@ -17,17 +17,17 @@
               </a>
               <div class="movies-diplay">
                   <% if (dexes[i]["movies"][0]) {%>
-                    <a href="dex?id=<%= dexes[i]['_id'] %>">
+                    <a class="single-movie-container" href="dex?id=<%= dexes[i]['_id'] %>">
                       <img class="movie" src="<%= dexes[i]["movies"][0]["thumbnail"]%>" alt="">
                     </a>
                   <% } %>
                   <% if (dexes[i]["movies"][1]) {%>
-                    <a href="dex?id=<%= dexes[i]['_id'] %>">
+                    <a class="single-movie-container" href="dex?id=<%= dexes[i]['_id'] %>">
                       <img class="movie" src="<%= dexes[i]["movies"][1]["thumbnail"]%>" alt="">
                     </a>
                   <% } %>
                   <% if (dexes[i]["movies"][2]) {%>
-                    <a href="dex?id=<%= dexes[i]['_id'] %>">
+                    <a class="single-movie-container" href="dex?id=<%= dexes[i]['_id'] %>">
                       <img class="movie" src="<%= dexes[i]["movies"][2]["thumbnail"]%>" alt="">
                     </a>
                   <% } %>
