@@ -5,11 +5,23 @@
   </head>
 
   <body>
+    
+    <div class="advanced-search">
+      <form action="search" post>
+        <input type="text" placeholder="Recherche" name="query">
+        <select name="date" id="name">
+          <option value="1900">1900</option>
+          <option value="2023">2023</option>
+        </select>
+        <input type="submit" value="Rechercher">
+      </form>
+    </div>
+
     <h1>Resultats pour la recherche : <%= query %></h1>
     <div class="movies-container">
       <section id="section1" class="movies-grid">
         <a href="#section3" class="previous-section"><</a >
-        <% for (let i = 0; i < 10;i++) {%>
+        <% for (let i = 0; i < resultsMovies.length && i < 10;i++) {%>
           <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
             <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
             <p><%= resultsMovies[i]['title'] %></p>
@@ -19,7 +31,7 @@
       </section>
       <section id="section2" class="movies-grid">
         <a href="#section1" class="previous-section"><</a >
-        <% for (let i = 10; i < 20;i++) {%>
+        <% for (let i = 10; i < resultsMovies.length && i < 20;i++) {%>
           <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
             <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
             <p><%= resultsMovies[i]['title'] %></p>
@@ -27,16 +39,18 @@
         <% } %>
         <a href="#section3" class="next-section">></a>
       </section>
-      <section id="section3" class="movies-grid">
-        <a href="#section2" class="previous-section"><</a >
-        <% for (let i = 20; i < 30;i++) {%>
-          <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
-            <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
-            <p><%= resultsMovies[i]['title'] %></p>
-          </a>
-        <% } %>
-        <a href="#section1" class="next-section">></a>
-      </section>
+      <% if (resultsMovies.length > 20) {%>
+        <section id="section3" class="movies-grid">
+          <a href="#section2" class="previous-section"><</a >
+          <% for (let i = 20; i < resultsMovies.length && i < 30;i++) {%>
+            <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
+              <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+              <p><%= resultsMovies[i]['title'] %></p>
+            </a>
+          <% } %>
+          <a href="#section1" class="next-section">></a>
+        </section>
+      <% } %>
     </div>
   </body>
 </html>

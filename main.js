@@ -227,17 +227,23 @@ app.post("/create-dex", async function (req,res, next) {
 // ###############
 
 app.get("/search", async function (req, res, next) {
-  const query = req.query.query;
+  let query = req.query.query;
+  query = query.toString();
 
-  const resultsMovies = await dbMovie.aggregate([
-    {$match: {$or : [{title:query},{genres:query}]}},
-    {$limit:30}
-  ]).toArray();
+  const date = req.query.date;
+  console.log(date);
 
-  // const resultsMovies = await dbMovie.find({$or : [
-  //   {title:query},
-  //   {genres:query}]})
-  //   .toArray();
+  if (date) {
+      resultsMovies = await dbMovie.aggregate([
+      {$match: {$and: [{$or : [{title:{$regex:query}},{title:query},{genres:query}]},{date:date}]}},
+      {$limit:30}
+      ]).toArray();
+  } else {
+      resultsMovies = await dbMovie.aggregate([
+      {$match: {$or : [{title:{$regex:query}},{title:query},{genres:query}]}},
+      {$limit:30}
+    ]).toArray();
+    }
 
 
   const resultDexes = await dbDex.find({name:query}).toArray();
@@ -252,7 +258,8 @@ app.get("/search", async function (req, res, next) {
 });
 
 app.post("/search", function (req, res, next) {
-  res.redirect("search?query="+req.body.search);
+  const date = req.body.date;
+  res.redirect("search?query="+req.body.search+"+year="+date);
 });
 
 // ###############
