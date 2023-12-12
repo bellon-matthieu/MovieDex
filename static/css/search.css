@@ -1,10 +1,43 @@
 .movies-container {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+  	grid-template-columns: repeat(3,100%);
+  	overflow:hidden;
+  	scroll-behavior: smooth;
+	gap: 12em;
+}
+
+.movies-grid {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5,173px);
+	grid-template-rows: repeat(2,310px);
+	justify-content: center;
 	gap: 1em;
 }
 
 img {
-	width: 100px;
-	height: 150px;
+	width: 173px;
+	height: 261px;
+}
+
+.movie {
+	text-decoration: none;
+	font-size: 1.03em;
+}
+
+
+.previous-section,
+.next-section {
+	align-self: center;
+	font-size: 10em;
+	text-decoration: none;
+	position: absolute;
+}
+
+.previous-section{
+	left: -2%;
+}
+
+.next-section{
+	right: -2%;
 }

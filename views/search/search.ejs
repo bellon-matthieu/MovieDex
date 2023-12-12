@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="/css/search.css">
   </head>
 
-
   <body>
-    <h1>Voici les films pour la recherche : <%= query %></h1>
+    <h1>Resultats pour la recherche : <%= query %></h1>
     <div class="movies-container">
-      <% for (let i = 0; i < resultsMovies.length;i++) {%>
-        <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
-          <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
-        </a>
+      <section id="section1" class="movies-grid">
+        <a href="#section3" class="previous-section"><</a >
+        <% for (let i = 0; i < 10;i++) {%>
+          <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
+            <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+            <p><%= resultsMovies[i]['title'] %></p>
+          </a>
         <% } %>
+        <a href="#section2" class="next-section">></a>
+      </section>
+      <section id="section2" class="movies-grid">
+        <a href="#section1" class="previous-section"><</a >
+        <% for (let i = 10; i < 20;i++) {%>
+          <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
+            <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+            <p><%= resultsMovies[i]['title'] %></p>
+          </a>
+        <% } %>
+        <a href="#section3" class="next-section">></a>
+      </section>
+      <section id="section3" class="movies-grid">
+        <a href="#section2" class="previous-section"><</a >
+        <% for (let i = 20; i < 30;i++) {%>
+          <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
+            <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+            <p><%= resultsMovies[i]['title'] %></p>
+          </a>
+        <% } %>
+        <a href="#section1" class="next-section">></a>
+      </section>
     </div>
-    <h1>Voici les Dex pour la recherche : <%= query %></h1>
-      <% for (let i = 0; i < resultsDexes.length;i++) {%>
-        <a href="dex?id=<%= resultsDexes[i]['_id'] %>"><%= resultsDexes[i]["name"] %>
-        </a>
-        <% } %>
   </body>
 </html>

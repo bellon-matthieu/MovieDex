@@ -228,11 +228,21 @@ app.post("/create-dex", async function (req,res, next) {
 
 app.get("/search", async function (req, res, next) {
   const query = req.query.query;
-  const resultsMovies = await dbMovie.find({$or : [
-    {title:query},
-    {genres:query}]})
-    .toArray();
+
+  const resultsMovies = await dbMovie.aggregate([
+    {$match: {$or : [{title:query},{genres:query}]}},
+    {$limit:30}
+  ]).toArray();
+
+  // const resultsMovies = await dbMovie.find({$or : [
+  //   {title:query},
+  //   {genres:query}]})
+  //   .toArray();
+
+
   const resultDexes = await dbDex.find({name:query}).toArray();
+
+
   res.render("./template/template.ejs", {
     path: "search/search.ejs",
     query:query,
