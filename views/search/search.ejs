@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="search.css">
   </head>
 
 
   <body>
     <h1>Voici les films pour la recherche : <%= query %></h1>
+    <div class="movies-container">
       <% for (let i = 0; i < resultsMovies.length;i++) {%>
-        <a href="movie?id=<%= resultsMovies[i]['_id'] %>">
+        <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
           <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
         </a>
         <% } %>
+    </div>
     <h1>Voici les Dex pour la recherche : <%= query %></h1>
       <% for (let i = 0; i < resultsDexes.length;i++) {%>
-        <a href="dex?id=<%= resultsDexes[i]['_id'] %>"><%= resultsDexes[i]["name"] %></a>
+        <a href="dex?id=<%= resultsDexes[i]['_id'] %>"><%= resultsDexes[i]["name"] %>
+        </a>
         <% } %>
   </body>
 </html>

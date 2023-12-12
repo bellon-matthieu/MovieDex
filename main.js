@@ -226,20 +226,23 @@ app.post("/create-dex", async function (req,res, next) {
 // RESEARCH
 // ###############
 
-app.get("/research", async function (req, res, next) {
+app.get("/search", async function (req, res, next) {
   const query = req.query.query;
-  const resultsMovies = await dbMovie.find({title:query}).toArray();
+  const resultsMovies = await dbMovie.find({$or : [
+    {title:query},
+    {genres:query}]})
+    .toArray();
   const resultDexes = await dbDex.find({name:query}).toArray();
   res.render("./template/template.ejs", {
-    path: "research/research.ejs",
+    path: "search/search.ejs",
     query:query,
     resultsMovies:resultsMovies,
     resultsDexes:resultDexes,
   });
 });
 
-app.post("/research", function (req, res, next) {
-  res.redirect("research?query="+req.body.search);
+app.post("/search", function (req, res, next) {
+  res.redirect("search?query="+req.body.search);
 });
 
 // ###############

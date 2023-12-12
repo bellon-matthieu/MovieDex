@@ -14,12 +14,14 @@
     display: flex;
     flex-direction: row;
     width:100%;
+    position: relative;
 }
 
 .movie {
     height: 150px;
     width:100px;
     margin-bottom: 15px;
+    /* position: absolute; */
 }
 
 a {
@@ -44,4 +46,5 @@ a {
 
 .single-movie-container {
     padding: 3px;
+    /* position: relative; */
 }
