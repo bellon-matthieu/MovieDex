@@ -259,7 +259,7 @@ app.get("/search", async function (req, res, next) {
 
 app.post("/search", function (req, res, next) {
   const date = req.body.date;
-  res.redirect("search?query="+req.body.search+"+year="+date);
+  res.redirect("search?query="+req.body.search+"&year="+date);
 });
 
 // ###############
