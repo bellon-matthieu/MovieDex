@@ -2,15 +2,34 @@
     /* ratio-initial = 104:69 */
     height: 260px;
     width: 173px;
-
+    border-radius: 2px;
     margin: 3px;
 }
 
 .movie-container {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
     justify-content: space-between;
+
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 3px;
+    border-color: darkgoldenrod;
+    padding: 5px;
+
+    background: linear-gradient(rgb(143, 105, 10),rgb(182, 159, 101));
+    /*
+    background:fixed;
+    background-image: url(/static/img/gold_bckg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:auto;
+    */
+
 }
+
+
 
 

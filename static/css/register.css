@@ -1,6 +1,7 @@
 .register-photo {
-  background:#f1f7fc;
+  background-image: url(/img/gold_bckg.jpg);
   padding:80px 0;
+  border-radius: 10px;
 }
 
 .register-photo .image-holder {
