@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="/css/search.css">
-  </head>
+<head>
+  <link rel="stylesheet" href="/css/search.css">
+</head>
 
-  <body>
-    
-    <div class="advanced-search">
-      <form action="search" post>
-        <input type="text" placeholder="Recherche" name="query">
-        <select name="date" id="name">
-          <option value="1900">1900</option>
-          <option value="2023">2023</option>
-        </select>
-        <input type="submit" value="Rechercher">
-      </form>
-    </div>
+<body>
+  <div class="advanced-search">
+    <form action="search" post>
+      <input type="text" placeholder="Recherche" name="query">
+      <select name="date" id="name">
+        <option value="1900">1900</option>
+        <option value="2023">2023</option>
+      </select>
+      <input type="submit" value="Rechercher">
+    </form>
+  </div>
 
-    <h1>Resultats pour la recherche : <%= query %></h1>
-    <div class="movies-container">
-      <section id="section1" class="movies-grid">
-        <a href="#section3" class="previous-section"><</a >
+  <h1>Resultats pour la recherche : <%= query %></h1>
+  <div class="movies-container">
+    <section id="section1" class="movies-grid">
+      <a href="#section3" class="previous-section"><</a >
         <% for (let i = 0; i < resultsMovies.length && i < 10;i++) {%>
           <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
             <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
@@ -51,6 +48,5 @@
           <a href="#section1" class="next-section">></a>
         </section>
       <% } %>
-    </div>
-  </body>
-</html>
+  </div>
+</body>

@@ -8,7 +8,7 @@ var bodyParser = require("body-parser");
 
 const ObjectId = require("mongodb").ObjectId;
 
-let { MongoClient } = require("mongodb");
+let { MongoClient, BSONType } = require("mongodb");
 const match = require("nodemon/lib/monitor/match");
 const uri = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(uri);
@@ -115,16 +115,29 @@ app.get("/home", async function (req, res, next) {
 // PROFILE
 // ###############
 
-app.get("/profile", function (req, res, next) { 
-if (! req.session.idUser) {res.redirect("log-in");}
-else {res.render("./template/template.ejs", {
-    path: "profile/profile.ejs",});}
+app.get("/profile", async function (req, res, next) { 
+  let idUser = null;
+
+  if (req.query.id) {
+    idUser = req.query.id;
+  } else {
+    if (req.session.idUser) {idUser = req.session.idUser;}
+    else {res.redirect("log-in");}
+  }
+
+  try {
+    const user = await dbUser.findOne({_id:new ObjectId(idUser)});
+    res.render("./template/template.ejs", {
+      path: "profile/profile.ejs",
+      user: user
+    });
+  }
+  catch (BSONType) {
+    console.log("user not found");
+    res.redirect("error");
+  }
 });
 
-app.get("/log-out", function (req,res,next) {
-  req.session.idUser = null;
-  res.redirect("log-in");
-});
 
 // ###############
 // SETTINGS
@@ -259,7 +272,7 @@ app.get("/search", async function (req, res, next) {
 
 app.post("/search", function (req, res, next) {
   const date = req.body.date;
-  res.redirect("search?query="+req.body.search+"+year="+date);
+  res.redirect("search?query="+req.body.search+"&year="+date);
 });
 
 // ###############
@@ -402,10 +415,17 @@ app.post("/log-in", async function (req,res,next) {
     };
 })
 
+app.get("/log-out", function (req,res,next) {
+  req.session.idUser = null;
+  res.redirect("log-in");
+});
+
 
 
 app.get("*", (req, res) => {
-  res.redirect("/");
+  res.render("./template/template.ejs", {
+    path: "error/error.ejs",
+  });
 });
 
 app.use(express.static("MovieDex"));
