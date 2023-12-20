@@ -9,15 +9,15 @@
     <div class="wrapper">
 
       <section id="section1" class="carousel_line">
-
+        
         <a href="#section3" class="display_button">‹</a>
 
         <% for (let index = 0; index < 5; index++) { %>
-          <form action="movie" method="post">
-            <input type="text" hidden name="idMovie" value="<%= trendsMovies[index]['_id'] %>">
-            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
-          </form>
-        <%}%>
+              <form action="movie" method="post">
+                <input type="text" hidden name="idMovie" value="<%= trendsMovies[index]['_id'] %>">
+                <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
+              </form>
+            <% } %>
 
         <a href="#section2" class="display_button">›</a>
 
