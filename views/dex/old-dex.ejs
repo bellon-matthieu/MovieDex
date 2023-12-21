@@ -22,7 +22,7 @@
             <table>
                 <tr class="header-row">
                     <th>Année</th>
-                    <th>Affiche</th>
+                    <th></th>
                     <th>Titre</th>
                     <th>Genres</th>
                     <th>Casting</th>
@@ -30,7 +30,7 @@
                     <th>Options</th>
                 </tr>
                 <% for (let indexMovie = 0; indexMovie < dataDex['movies'].length; indexMovie++) {%>
-                    <tr>
+                    <tr class="entry-row">
                         <td><%= dataDex['movies'][indexMovie]['year'] %></td>
                         <td><img src="<%= dataDex['movies'][indexMovie]['thumbnail'] %>" alt="thumbnail"></td>
                         <td><%= dataDex['movies'][indexMovie]['title'] %></td>
@@ -54,7 +54,10 @@
             <% if (dataDex['user'] == idUser) { %>
                 <form action="delete-dex" method="post">
                     <input type="text" hidden name="idDex" value="<%= dataDex["_id"] %>">
-                    <input type="submit" value="Supprimer la dex">
+                    <button type="submit">
+                        <img src="static/img/trash_icon.png">
+                    </button>
+
                 </form>
 		    <% } %>
         </section>
