@@ -93,10 +93,12 @@ app.get("/", function (req, res, next) {
 
 app.get("/home", async function (req, res, next) { 
 
-  const trendsMoviesSize = 3;
-
-  // DB ---> 15 films aléatoires avec (year >= 2000)
-  const trendsMovies = await dbMovie.aggregate([{ $match: {year:{$gte:2002}} },  { $sample: { size: trendsMoviesSize*5 }}]).toArray();
+  // DB ---> 15 films aléatoires avec (year >= 2002)
+  const trendsMovies = await dbMovie.aggregate([
+                                      { $match: { year: { $gte: 2002 }}},
+                                      { $sort: { score: -1, year:-1 }},
+                                      {$limit:15},
+                                      ]).toArray();
 
   // Ajout d'une image rouge pour les films qui n'ont pas de thumbnail
   for (let i=0; i<trendsMovies.length; i++) {
@@ -135,8 +137,12 @@ app.get("/profile", async function (req, res, next) {
   if (req.query.id) {
     idUser = req.query.id;
   } else {
-    if (req.session.idUser) {idUser = req.session.idUser;}
-    else {res.redirect("log-in");}
+    if (req.session.idUser) {
+      idUser = req.session.idUser;
+    }
+    else {
+      res.redirect("log-in");
+    }
   }
 
   try {
@@ -145,8 +151,7 @@ app.get("/profile", async function (req, res, next) {
       path: "profile/profile.ejs",
       user: user
     });
-  }
-  catch (BSONType) {
+  } catch (BSONType) {
     console.log("user not found");
     res.redirect("error");
   }
@@ -258,16 +263,17 @@ app.get("/search", async function (req, res, next) {
   query = query.toString();
 
   const date = req.query.date;
-  console.log(date);
 
   if (date) {
       resultsMovies = await dbMovie.aggregate([
       {$match: {$and: [{$or : [{title:{$regex:query}},{title:query},{genres:query}]},{date:date}]}},
-      {$limit:30}
+      {$sort: {score:-1}},
+      {$limit:30},
       ]).toArray();
   } else {
       resultsMovies = await dbMovie.aggregate([
       {$match: {$or : [{title:{$regex:query}},{title:query},{genres:query}]}},
+      {$sort: {score:-1}},
       {$limit:30}
     ]).toArray();
     }
@@ -379,16 +385,29 @@ app.get("/register", async function (req, res, next) {;
 });
 
 app.post("/register", async function (req,res,next) {
+
+  function encrypt(rawInput) {
+    let hash = 0, i, chr;
+    if (rawInput === 0) {return hash;}
+    for (i = 0; i < rawInput.length; i++) {
+      chr = rawInput.charCodeAt(i);
+      hash = ((hash << 5) - hash) + chr;
+      hash |= 0; // Convert to 32bit integer
+    }
+    return hash;
+  }
+  
   const username = req.body.username;
   const email = req.body.email;
-  const password = req.body.password;
+  const encryptPassword = encrypt(req.body.password);
+  
   if (await dbUser.findOne({username:username})) {
     res.redirect("register");
   } else {
     client.db("MovieDex").collection("user").insertOne({
       username:username,
       email:email,
-      password:password,
+      password:encryptPassword,
       like:[],
       follow:[],
       grades:[],
@@ -409,8 +428,19 @@ app.get("/log-in", async function (req, res, next) {
 
 app.post("/log-in", async function (req,res,next) {
 
+  function encrypt(rawInput) {
+    let hash = 0, i, chr;
+    if (rawInput === 0) {return hash;}
+    for (i = 0; i < rawInput.length; i++) {
+      chr = rawInput.charCodeAt(i);
+      hash = ((hash << 5) - hash) + chr;
+      hash |= 0; // Convert to 32bit integer
+    }
+    return hash;
+  }
+
   const username_or_email = req.body.username;
-  const password = req.body.password;
+  const password = encrypt(req.body.password);
 
   if (await dbUser.findOne({$or : [{username:username_or_email},{email:username_or_email}]})) {
     

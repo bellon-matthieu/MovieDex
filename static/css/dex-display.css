@@ -31,7 +31,8 @@ a {
 .dex-display {
     flex: 0 0 calc(33% - 10px);
     box-sizing: border-box;
-    border: 1px solid white
+    border: 1px solid white;
+    overflow: auto;
 }
 
 .dex-display:hover {
