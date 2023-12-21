@@ -1,12 +1,12 @@
 .dex {
-	display: flex;
+	display: grid;
 	flex-direction: row;
 
 	justify-content: space-between;
 }
 
 .dex-container {
-	display: flex;
+	display: grid;
 	flex-direction: row;
 	
 	justify-content: space-between;

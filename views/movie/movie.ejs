@@ -14,7 +14,7 @@
                     <td><%= dataMovie['title'] %></td>
                 </tr>
                 <tr>
-                    <th>Année</th>
+                    <th>Année de sortie  </th>
                     <td><%= dataMovie['year'] %></td>
                 </tr>
                 <tr>
@@ -32,6 +32,9 @@
                     <td><%= dataMovie['score'] %></td>
                 </tr>
             </table>
+            <br>
+            <br>
+            <p><%= dataMovie['extract'] %></p>
         </div>
     <% if (idUser) {%>
         <form action="add-movie" method="post">
@@ -44,8 +47,5 @@
             <input type="submit" value="Ajouter à la liste">
         </form>
     <% } %>
-    </div>
-    <br>
-    <%= dataMovie['extract'] %>
 </body>
 </html>
