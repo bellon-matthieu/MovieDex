@@ -93,9 +93,15 @@ app.get("/", function (req, res, next) {
 
 app.get("/home", async function (req, res, next) { 
 
-  // DB ---> 15 films aléatoires avec (year >= 2002)
+  // DB ---> 15 meilleurs films
   const trendsMovies = await dbMovie.aggregate([
                                       { $match: { year: { $gte: 2002 }}},
+                                      { $sort: { score: -1, year:-1 }},
+                                      {$limit:15},
+                                      ]).toArray();
+
+  // DB ---> 15 meilleurs films
+  const trendsDexes = await dbDex.aggregate([
                                       { $sort: { score: -1, year:-1 }},
                                       {$limit:15},
                                       ]).toArray();
@@ -114,12 +120,14 @@ app.get("/home", async function (req, res, next) {
     res.render("./template/template.ejs", {
         path: "home/home.ejs",
         trendsMovies:trendsMovies,
+        trendsDexes:trendsDexes,
         likeUser:likeUser,
     });
   } else {
     res.render("./template/template.ejs", {
       path: "home/home.ejs",
       trendsMovies:trendsMovies,
+      trendsDexes:trendsDexes,
       likeUser:[],
     });
   }
@@ -248,11 +256,27 @@ app.post("/create-dex", async function (req,res, next) {
                                       "name":nameDex,
                                       "genres":genresDex,
                                       "movies":[],
-                                      "description": descriptionDex
+                                      "description": descriptionDex,
+                                      "score": 0,
                                     });
   let idNewDex = newDex.insertedId;
   res.redirect("dex?id="+idNewDex);
 })
+
+// ###############
+// DEXDLE
+// ###############
+
+app.get("/dexdle", async function (req, res, next) {
+  const idDex = req.query.idDex;
+  const dataDex = await dbDex.findOne({_id:new ObjectId(idDex)});
+
+  res.render("./template/template.ejs", {
+    path: "dexdle/dexdle.ejs",
+    dataDex : dataDex,
+  });
+})
+
 
 // ###############
 // SEARCH
@@ -262,24 +286,17 @@ app.get("/search", async function (req, res, next) {
   let query = req.query.query;
   query = query.toString();
 
-  const date = req.query.date;
+  
+  const resultsMovies = await dbMovie.aggregate([
+      {$match: {$text: {$search:query}}},
+      {$sort: {extract: {$meta: "textScore"}}},
+      ]).toArray();
 
-  if (date) {
-      resultsMovies = await dbMovie.aggregate([
-      {$match: {$and: [{$or : [{title:{$regex:query}},{title:query},{genres:query}]},{date:date}]}},
-      {$sort: {score:-1}},
+  const resultDexes = await dbDex.aggregate([
+      {$match: {$text: {$search:query}}},
+      {$sort: {name: {$meta: "textScore"}}},
       {$limit:30},
       ]).toArray();
-  } else {
-      resultsMovies = await dbMovie.aggregate([
-      {$match: {$or : [{title:{$regex:query}},{title:query},{genres:query}]}},
-      {$sort: {score:-1}},
-      {$limit:30}
-    ]).toArray();
-    }
-
-
-  const resultDexes = await dbDex.find({name:query}).toArray();
 
 
   res.render("./template/template.ejs", {

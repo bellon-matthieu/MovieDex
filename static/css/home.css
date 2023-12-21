@@ -19,3 +19,16 @@
 
     margin: 3px;
 }
+
+.trendsMovies {
+    background-color: rgb(47, 47, 47);
+    border: 1px black solid;
+    border-radius: 16px;
+}
+
+h1 {
+    margin: 8px;
+    border: 1px black solid;
+    background-color: rgb(22, 22, 22);
+    border-radius: 16px;    
+}

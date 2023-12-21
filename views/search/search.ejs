@@ -14,18 +14,34 @@
     </form>
   </div>
 
-  <h1>Resultats pour la recherche : <%= query %></h1>
+  <h1>Resultats pour la recherche : <%= query %></h1>(<%= resultsMovies.length %> résulats)
   <div class="movies-container">
+
     <section id="section1" class="movies-grid">
-      <a href="#section3" class="previous-section"><</a >
-        <% for (let i = 0; i < resultsMovies.length && i < 10;i++) {%>
-          <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
-            <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
-            <p><%= resultsMovies[i]['title'] %></p>
-          </a>
-        <% } %>
+
+      <% if (resultsMovies.length > 20) {%>
+        <a href="#section3" class="previous-section"><</a >
+      <% } else if (resultsMovies.length > 10) {%>
+        <a href="#section2" class="previous-section"><</a >
+      <% } %>
+
+
+      <% for (let i = 0; i < resultsMovies.length && i < 10;i++) {%>
+        <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
+          <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+          <p><%= resultsMovies[i]['title'] %></p>
+        </a>
+      <% } %>
+
+      <% if (resultsMovies.length > 10) {%>
         <a href="#section2" class="next-section">></a>
-      </section>
+      <% } %>
+
+
+    </section>
+
+    <% if (resultsMovies.length > 10) {%>
+
       <section id="section2" class="movies-grid">
         <a href="#section1" class="previous-section"><</a >
         <% for (let i = 10; i < resultsMovies.length && i < 20;i++) {%>
@@ -34,8 +50,19 @@
             <p><%= resultsMovies[i]['title'] %></p>
           </a>
         <% } %>
-        <a href="#section3" class="next-section">></a>
+
+        <% if (resultsMovies.length > 20) {%>
+          <a href="#section3" class="next-section">></a >
+        <% } else {%>
+          <a href="#section1" class="next-section">></a >
+        <% } %>
       </section>
+
+
+
+      <% } %>
+
+
       <% if (resultsMovies.length > 20) {%>
         <section id="section3" class="movies-grid">
           <a href="#section2" class="previous-section"><</a >

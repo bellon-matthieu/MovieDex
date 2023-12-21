@@ -25,16 +25,10 @@
 	background-image: url(/img/gold_bckg.jpg);
 }
 
-.title{
-	border: 1px solid rgb(187, 142, 29);
-	fon
-}
-
-.genres{
-	border: 1px solid rgb(187, 142, 29);
-}
-
-.description{
+.title,
+.description,
+.genres,
+.dexdle {
 	border: 1px solid rgb(187, 142, 29);
 }
 
