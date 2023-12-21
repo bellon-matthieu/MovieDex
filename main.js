@@ -105,10 +105,24 @@ app.get("/home", async function (req, res, next) {
     }
   }
 
-  res.render("./template/template.ejs", {
-    path: "home/home.ejs",
-    trendsMovies:trendsMovies,
-  });
+  if (req.session.idUser) {
+    const user = await dbUser.findOne({_id:new ObjectId(req.session.idUser)});
+    likeUser = user['like'];
+
+    res.render("./template/template.ejs", {
+        path: "home/home.ejs",
+        trendsMovies:trendsMovies,
+        likeUser:likeUser,
+    });
+  } else {
+    res.render("./template/template.ejs", {
+      path: "home/home.ejs",
+      trendsMovies:trendsMovies,
+      likeUser:[],
+    });
+  }
+
+  
 });
 
 // ###############
@@ -236,7 +250,7 @@ app.post("/create-dex", async function (req,res, next) {
 })
 
 // ###############
-// RESEARCH
+// SEARCH
 // ###############
 
 app.get("/search", async function (req, res, next) {
@@ -375,6 +389,9 @@ app.post("/register", async function (req,res,next) {
       username:username,
       email:email,
       password:password,
+      like:[],
+      follow:[],
+      grades:[],
     })
     const user = await dbUser.findOne({username:username});
     const idUser = user["_id"];
