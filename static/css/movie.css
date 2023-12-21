@@ -17,8 +17,11 @@
     border-radius: 3px;
     border-color: darkgoldenrod;
     padding: 5px;
-
     background: linear-gradient(rgb(143, 105, 10),rgb(182, 159, 101));
+
+    position:absolute;
+    top: 160px;
+    left:40px;
     /*
     background:fixed;
     background-image: url(/static/img/gold_bckg.jpg);

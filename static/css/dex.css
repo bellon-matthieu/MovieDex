@@ -53,8 +53,16 @@
 	font-size: x-large;
 }
 
-.delete-button{
-	margin: 32px;
+.del-button{
+	border:none;
+	cursor:pointer;
+	appearance: none;
+	background-color: inherit;
+	size: 20px;
+}
+
+.del-button:hover{
+	transform: rotate(15deg);
 }
 
 .entry-row{

@@ -42,7 +42,10 @@
                             <form action="remove-movie-from-dex" method="post">
                                 <input type="text" name="idMovieRemoved" hidden value="<%= dataDex['movies'][indexMovie]['_id'] %>">
                                 <input type="text" name="idDex" hidden value="<%= dataDex['_id'] %>">
-                                <input type="submit" value="Supprimer">
+                                <button type="submit">
+                                    <img src="/img/trash_icon.png" alt="del-button">
+                                </button>
+                            
                             </form>
                         </td>
                         <% } %>
@@ -54,7 +57,7 @@
             <% if (dataDex['user'] == idUser) { %>
                 <form action="delete-dex" method="post">
                     <input type="text" hidden name="idDex" value="<%= dataDex["_id"] %>">
-                    <button type="submit">
+                    <button class="del-button" type="submit">
                         <img src="static/img/trash_icon.png">
                     </button>
 
