@@ -27,6 +27,7 @@
 
 .title{
 	border: 1px solid rgb(187, 142, 29);
+	fon
 }
 
 .genres{
@@ -40,6 +41,14 @@
 .dex-movies{
 	display: flex;
 	flex-wrap: wrap;
+	border: 6px solid rgb(63, 63, 63);
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.header-row{
+	border-bottom:6px solid rgb(63, 63, 63);
+	padding: 6px;
 }
 
 .delete-button{
