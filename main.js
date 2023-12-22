@@ -160,7 +160,7 @@ app.get("/profile", async function (req, res, next) {
     const user = await dbUser.findOne({_id:new ObjectId(idUser)});
     res.render("./template/template.ejs", {
       path: "profile/profile.ejs",
-      user: user
+      user: user,
     });
   } catch (BSONType) {
     console.log("user not found");
@@ -508,7 +508,7 @@ app.post("/add-rate", async function (req,res,next) {
   let isAlreadyRate = false;
 
   const rating = [parseInt(req.body.rate),idUser];
-  const usr_rated = [idMovie,parseInt(req.body.rate)];
+  const usr_rated = [parseInt(req.body.rate),dataMovie];
 
   for (let i = 0; i < rates.length; i++) {
     if (idUser == (rates[i][1])) {
@@ -521,15 +521,13 @@ app.post("/add-rate", async function (req,res,next) {
     dbMovie.updateOne(
       { _id : new ObjectId(idMovie) },
       { $push : {score : rating} });
-  }
-
-  res.redirect("movie?id="+idMovie);
-
-  if (! isAlreadyRate) {
+      
     dbUser.updateOne(
       { _id : new ObjectId(idUser) },
       { $push : {rated : usr_rated} });
   }
+
+  res.redirect("movie?id="+idMovie);
 })
 
 // ###############

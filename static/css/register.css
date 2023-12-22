@@ -7,7 +7,7 @@
 .register-photo .image-holder {
   display:table-cell;
   width:auto;
-  background-image:url(../img/MovieDexLogoBlack.png);
+  background-image:url(../img/MovieDexLogoWhite.png);
   background-size:cover;
   position:sticky;
   padding-bottom: 100px;
