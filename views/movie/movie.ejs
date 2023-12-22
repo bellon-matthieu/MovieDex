@@ -45,8 +45,15 @@
             <input type="submit" value="Ajouter à la liste">
         </form>
         <form action="movie-seen" method="post">
-            <input type="checkbox" name="" id="">
-            <input type="text" hidden>
+            <input type="text" hidden name="href" value="href">
+            <input type="text" hidden name="idMovie" value="<%= dataMovie['_id'] %>">
+            <input type="text" hidden name="idUser" value="<%= idUser %>">
+            <% if (seen) { %>
+                <input type="checkbox" name="seen" onchange="this.form.submit()" checked>
+            <% } else { %>
+                <input type="checkbox" name="seen" onchange="this.form.submit()">
+            <% } %>
+            <label for="seen">Déjà vu</label>
         </form>
     <% } %>
 </body>

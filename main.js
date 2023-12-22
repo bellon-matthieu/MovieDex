@@ -365,12 +365,24 @@ app.get("/movie", async function (req, res, next) {
   const idUser = req.session.idUser;
   const dataMovie = await dbMovie.findOne({ _id: new ObjectId(idDailyMovie)});
   const dexesUser = await dbDex.find({user : idUser}).toArray();
+  let seen = false;
+  if (idUser) {
+    const user = await dbUser.findOne({_id:new ObjectId(idUser)});
+    const moviesSeen = user['seen']
+    for (let i = 0; i < moviesSeen.length; i++) {
+      if (dataMovie._id.equals(moviesSeen[i]._id)) {
+        seen = true;
+        break;
+    }
+  }
+  }
 
   res.render("./template/template.ejs", {
     path: "movie/movie.ejs",
     dataMovie:dataMovie,
     idUser:idUser,
     dexesUser:dexesUser,
+    seen:seen,
   });
 });
 
@@ -433,6 +445,33 @@ app.get("/daily-movie", async function (req, res, next) {
   const idDailyMovie = allMovies[index]['_id'];
 
   res.redirect("movie?id="+idDailyMovie);
+})
+
+app.post("/movie-seen", async function (req,res,next) {
+  const idMovie = req.body.idMovie;
+  const newMovie = await dbMovie.findOne({_id:new ObjectId(idMovie)});
+  const idUser = req.body.idUser;
+
+  const dataUser = await dbUser.findOne({_id:new ObjectId(idUser)});
+  const alreadySeenMovies = dataUser['seen'];
+
+  let isAlreadySeen = false;
+
+  for (let i = 0; i < alreadySeenMovies.length; i++) {
+    if (newMovie._id.equals(alreadySeenMovies[i]._id)) {
+      isAlreadySeen = true;
+      break;
+    }
+  }
+
+  if (! isAlreadySeen) {
+    dbUser.updateOne(
+      { _id : new ObjectId(idUser) },
+      { $push : {seen : newMovie} });
+  }
+
+  res.redirect("movie?id="+idMovie);
+
 })
 
 // ###############
