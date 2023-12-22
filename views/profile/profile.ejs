@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="/css/profile.css">
 </head>
 
+<body>
 <section class="main-container">
     <h1>Mes informations</h1>
     <div class="info-container">
@@ -11,21 +12,35 @@
         <div class="nbr-movie-watched"><h1>Films notés : <%= user['rated'].length %></h1></div>
         <div class="favourite-movie">
             <br>
-            <h1>Films favoris</h1>
+            <br>
+            <br>
+            <h1>Récemment notés:</h1>
 
             <div class="fav-movies">
-                <% for (let index = 0; index < user['rated'].length; index++) {%>
+                <% for (let index = 0; index < user['rated'].length && index<5 ; index++) {%>
                     <a class="movie-cont" href="movie?id=<%= user['rated'][index][1]['_id'] %>">
                         <img class="movie-thumbnail" src="<%= user['rated'][index][1]["thumbnail"] %>" alt="thumbnail">
+                        <div class="star-ratings">
+                            <div class="fill-ratings" id="rating-stars">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                        <script>
+                            let score = <%= user['rated'][index][1]['score']%>
+                            document.getElementById("rating-stars").style.width=movie?id=score;
+                        </script>
                     </a>
                 <% } %>
-                </div> 
+                
+            </div> 
         </div>
-
-    </div>
+        
+    </div>  
    
 </section>
 
 <section class="disconnect">
     <a href="log-out" >Se déconnecter</a>
 </section>
+
+</body>
