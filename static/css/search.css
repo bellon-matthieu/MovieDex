@@ -84,8 +84,10 @@
 	width: 20%;
 
 	
-	left: -10%;
-	top: 10%;
+	left: 0%;
+	top: 50%;
+	
+	transform: translate(0,-50%);
 
 	background-color: rgb(47, 47, 47);
     border: 1px black solid;
@@ -93,10 +95,20 @@
 	padding: 16px;
 }
 
-.research-advanced:hover{
-	transform: translateX(50%);
-	transition: 0.5s;
-}
+@media screen and (max-width: 1908px) {
+
+	.research-advanced {
+	left: -10%;
+	top: 10%;
+	transform: inherit;
+	}
+
+
+	.research-advanced:hover{
+		transform: translateX(50%);
+		transition: 0.5s;
+		}
+	}
 
 .research-advanced-form {
 	display: flex;

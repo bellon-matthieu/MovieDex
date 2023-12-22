@@ -104,7 +104,6 @@ app.get("/home", async function (req, res, next) {
             in: {$arrayElemAt:["$$array",0]}
           }}}}},
 
-
     { $sort: 
       { averageScore: -1, year:-1
       }},
@@ -481,6 +480,35 @@ app.post("/movie-seen", async function (req,res,next) {
     dbUser.updateOne(
       { _id : new ObjectId(idUser) },
       { $push : {seen : newMovie} });
+  }
+
+  res.redirect("movie?id="+idMovie);
+
+})
+
+app.post("/add-rate", async function (req,res,next) {
+  const idMovie = req.body.idMovie;
+  const dataMovie = await dbMovie.findOne({_id:new ObjectId(idMovie)});
+  const idUser = req.body.idUser;
+
+  const rates = dataMovie['score'];
+  console.log()
+
+  let isAlreadyRate = false;
+
+  const rating = [req.body.rate,idUser];
+
+  for (let i = 0; i < rates.length; i++) {
+    if (idUser == (rates[i][1])) {
+      isAlreadyRate = true;
+      break;
+    }
+  }
+
+  if (! isAlreadyRate) {
+    dbMovie.updateOne(
+      { _id : new ObjectId(idMovie) },
+      { $push : {score : rating} });
   }
 
   res.redirect("movie?id="+idMovie);
