@@ -83,14 +83,19 @@
 
 	width: 20%;
 
-	transform: translate(0,-50%);
-	left: 0%;
-	top: 50%;
+	
+	left: -10%;
+	top: 10%;
 
 	background-color: rgb(47, 47, 47);
     border: 1px black solid;
     border-radius: 0 16px 16px 0 ;
 	padding: 16px;
+}
+
+.research-advanced:hover{
+	transform: translateX(50%);
+	transition: 0.5s;
 }
 
 .research-advanced-form {

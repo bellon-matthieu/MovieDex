@@ -104,10 +104,6 @@ app.get("/home", async function (req, res, next) {
             in: {$arrayElemAt:["$$array",0]}
           }}}}},
 
-    { $match: 
-      { year: 
-        { $gte: 2002
-        }}},
 
     { $sort: 
       { averageScore: -1, year:-1
