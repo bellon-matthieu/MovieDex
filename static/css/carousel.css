@@ -56,6 +56,8 @@
   user-select: none;
 
   justify-content: space-between;
+
+  padding: 16px;
 }
 
 .display_button {

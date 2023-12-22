@@ -20,6 +20,11 @@
     margin: 3px;
 }
 
+.thumbnail:hover{
+    transform: scale(1.15);
+    overflow: inherit;
+}
+
 .trendsMovies {
     background-color: rgb(47, 47, 47);
     border: 1px black solid;
