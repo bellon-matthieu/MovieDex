@@ -20,3 +20,22 @@
 .create-dex-button:hover {
     background-color: #1f1f1f;
 }
+
+.my-dexes-container {
+	display: flex;
+	flex-direction: column;
+
+	
+	background-color: rgb(47, 47, 47);
+    border: 1px black solid;
+    border-radius: 16px;
+	padding: 6px 15px;
+}
+
+.title {
+    margin: 8px;
+	padding: 8px;
+    border: 1px black solid;
+    background-color: rgb(22, 22, 22);
+    border-radius: 16px; 
+}

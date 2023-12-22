@@ -41,6 +41,8 @@ a {
 
 .dex-display:hover {
     background-color: #1f1f1f;
+    
+	transform: scale(1.1);
 }
 
 .dex-display-name h2{

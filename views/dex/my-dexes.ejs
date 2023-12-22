@@ -4,7 +4,9 @@
 </head>
 
 <body>
-      <a class="create-dex-button" href="create-dex"><h1>Créer une dex</h1></a>
+  <div class="my-dexes-container">
+    <h1 class="title">Mes dex</h1>
+      <a class="create-dex-button" href="create-dex"><h3>Créer une nouvelle dex</h3></a>
       <div class="dex-container">
         <% for (let i = 0; i < dexes.length; i++) {%>
           <div class="dex-display">
@@ -31,4 +33,5 @@
           </div>
         <% } %>
       </div>
+  </div>
 </body>
