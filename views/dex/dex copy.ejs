@@ -1,0 +1,57 @@
+<head>
+    <link rel="stylesheet" href="/css/dex copy.css">
+    <link rel="stylesheet" href="/css/dex-display.css">
+</head>
+
+<body>
+    <div class="all-data-dex-container">
+        <section class="dex-display">
+              <a class="dex-display-name" href="dex?id=<%= dataDex['_id'] %>">
+                <h2><%= dataDex["name"] %></h2>
+              </a>
+              <div class="movies-diplay">
+                  <% if (dataDex["movies"][0]) {%>
+                    <a class="single-movie-container" href="dex?id=<%= dataDex['_id'] %>">
+                      <img class="movie" src="<%= dataDex["movies"][0]["thumbnail"]%>" alt="">
+                    </a>
+                  <% } %>
+                  <% if (dataDex["movies"][1]) {%>
+                    <a class="single-movie-container" href="dex?id=<%= dataDex['_id'] %>">
+                      <img class="movie" src="<%= dataDex["movies"][1]["thumbnail"]%>" alt="">
+                    </a>
+                  <% } %>
+                  <% if (dataDex["movies"][2]) {%>
+                    <a class="single-movie-container" href="dex?id=<%= dataDex['_id'] %>">
+                      <img class="movie" src="<%= dataDex["movies"][2]["thumbnail"]%>" alt="">
+                    </a>
+                  <% } %>
+            </div>
+        </section>
+
+        <section class="dex-info">
+                <div class="title"><h1><%= dataDex['name'] %></h1></div>
+                <div class="genres"><h2>Genres : <%= dataDex['genres'] %></h2></div>
+                <div class="description"><h3>Description : <%= dataDex['description'] %></h3></div>
+        </section>
+
+        <section class="dex-movies">
+            <% for (let indexMovie = 0; indexMovie < dataDex['movies'].length; indexMovie++) {%>
+                <a class="movie-dex" href="movie?id=<%= dataDex['movies'][indexMovie]['_id'] %>">
+                    <img class="movie-thumbnail" src="<%= dataDex['movies'][indexMovie]["thumbnail"] %>" alt="thumbnail">
+                </a>
+            <% } %>
+        </section> 
+    </div>
+    <div class="user-options"><section class="delete-dex">
+            <% if (dataDex['user'] == idUser) { %>
+                <form action="delete-dex" method="post">
+                    <input type="text" hidden name="idDex" value="<%= dataDex["_id"] %>">
+                    <button class="del-button" type="submit">
+                        <img src="static/img/trash_icon.png">
+                    </button>
+
+                </form>
+		    <% } %>
+        </section></div>
+</body>
+</html>

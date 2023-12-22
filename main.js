@@ -178,7 +178,7 @@ app.get("/dex", async function (req, res, next) {
   const idUser = req.session.idUser;
 
   res.render("./template/template.ejs", {
-    path: "dex/dex.ejs",
+    path: "dex/dex copy.ejs",
     dataDex:dataDex,
     idUser:idUser,
   });
