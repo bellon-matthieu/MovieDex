@@ -27,14 +27,26 @@
                 </tr>
                 <tr>
                     <th>Score</th>
-                    <td><%= dataMovie['score'] %></td>
+                    <td>
+                        <div class="star-ratings">
+                            <div class="fill-ratings" style="width: 50%;">
+                                <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </table>
             <br>
             <br>
             <p><%= dataMovie['extract'] %></p>
         </div>
-    <% if (idUser) {%>
+    
+        
+        <% if (idUser) {%>
+        <div class="user-options">
         <form action="add-movie" method="post">
             <input type="text" hidden name="idMovie" value="<%= dataMovie["_id"] %>">
             <select name="selectedDex">
@@ -55,5 +67,18 @@
             <% } %>
             <label for="seen">Déjà vu</label>
         </form>
+        <form action="rate-movie">
+            <input type="text">
+        </form>
+        </div>
     <% } %>
+    </div>
 </body>
+<script>$(document).ready(function() {
+  // Gets the span width of the filled-ratings span
+  // this will be the same for each rating
+  var star_rating_width = $('.fill-ratings span').width();
+  // Sets the container of the ratings to span width
+  // thus the percentages in mobile will never be wrong
+  $('.star-ratings').width(star_rating_width);
+});</script>

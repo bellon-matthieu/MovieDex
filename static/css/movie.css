@@ -18,10 +18,6 @@
     border-color: darkgoldenrod;
     padding: 5px;
     background: linear-gradient(rgb(143, 105, 10),rgb(182, 159, 101));
-
-    position:absolute;
-    top: 160px;
-    left:40px;
     /*
     background:fixed;
     background-image: url(/static/img/gold_bckg.jpg);
@@ -36,3 +32,28 @@
 
 
 
+.star-ratings {
+  font-size: 64px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  .fill-ratings {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+    span {
+      display: inline-block;
+    }
+  }
+  .empty-ratings {
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+}

@@ -95,15 +95,25 @@ app.get("/home", async function (req, res, next) {
 
   // DB ---> 15 meilleurs films
   const trendsMovies = await dbMovie.aggregate([
-                                      { $match: { year: { $gte: 2002 }}},
-                                      { $sort: { score: -1, year:-1 }},
-                                      {$limit:15},
-                                      ]).toArray();
+    { $addFields :
+      {averageScore :
+        {$avg : {
+          $map : {
+            input: "$score",
+            as: "array",
+            in: {$arrayElemAt:["$$array",0]}
+          }}}}},
 
-  // DB ---> 15 meilleurs films
-  const trendsDexes = await dbDex.aggregate([
-                                      { $sort: { score: -1, year:-1 }},
-                                      {$limit:15},
+    { $match: 
+      { year: 
+        { $gte: 2002
+        }}},
+
+    { $sort: 
+      { averageScore: -1, year:-1
+      }},
+
+    { $limit: 15},
                                       ]).toArray();
 
   // Ajout d'une image rouge pour les films qui n'ont pas de thumbnail
@@ -120,14 +130,12 @@ app.get("/home", async function (req, res, next) {
     res.render("./template/template.ejs", {
         path: "home/home.ejs",
         trendsMovies:trendsMovies,
-        trendsDexes:trendsDexes,
         likeUser:likeUser,
     });
   } else {
     res.render("./template/template.ejs", {
       path: "home/home.ejs",
       trendsMovies:trendsMovies,
-      trendsDexes:trendsDexes,
       likeUser:[],
     });
   }
@@ -365,6 +373,14 @@ app.get("/movie", async function (req, res, next) {
   const idUser = req.session.idUser;
   const dataMovie = await dbMovie.findOne({ _id: new ObjectId(idDailyMovie)});
   const dexesUser = await dbDex.find({user : idUser}).toArray();
+
+  let sum = 0;
+
+  for (let i = 0; i <dataMovie['score'].length;i++) {
+    sum += dataMovie['score'][i][0];
+  }
+  rate = sum / dataMovie['score'].length;
+
   let seen = false;
   if (idUser) {
     const user = await dbUser.findOne({_id:new ObjectId(idUser)});
@@ -383,6 +399,7 @@ app.get("/movie", async function (req, res, next) {
     idUser:idUser,
     dexesUser:dexesUser,
     seen:seen,
+    rate:rate,
   });
 });
 
