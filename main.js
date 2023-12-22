@@ -178,7 +178,7 @@ app.get("/dex", async function (req, res, next) {
   const idUser = req.session.idUser;
 
   res.render("./template/template.ejs", {
-    path: "dex/dex copy.ejs",
+    path: "dex/dex.ejs",
     dataDex:dataDex,
     idUser:idUser,
   });
@@ -564,7 +564,6 @@ app.post("/register", async function (req,res,next) {
       username:username,
       email:email,
       password:encryptPassword,
-      follow:[],
       seen:[],
       rated:[],
     })
