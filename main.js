@@ -370,11 +370,13 @@ app.get("/movie", async function (req, res, next) {
   const dexesUser = await dbDex.find({user : idUser}).toArray();
 
   let sum = 0;
+  let rate = 0;
+  const nbrRate = dataMovie['score'].length
 
   for (let i = 0; i <dataMovie['score'].length;i++) {
     sum += dataMovie['score'][i][0];
   }
-  rate = (sum / dataMovie['score'].length);
+  if (dataMovie['score'].length>0) {rate = (sum / dataMovie['score'].length);}
 
   let seen = false;
   if (idUser) {
@@ -389,12 +391,13 @@ app.get("/movie", async function (req, res, next) {
   }
 
   res.render("./template/template.ejs", {
-    path: "movie/movie.ejs",
+    path: "movie/movie-test.ejs",
     dataMovie:dataMovie,
     idUser:idUser,
     dexesUser:dexesUser,
     seen:seen,
     rate:rate,
+    nbrRate:nbrRate,
   });
 });
 
@@ -492,11 +495,10 @@ app.post("/add-rate", async function (req,res,next) {
   const idUser = req.body.idUser;
 
   const rates = dataMovie['score'];
-  console.log()
 
   let isAlreadyRate = false;
 
-  const rating = [req.body.rate,idUser];
+  const rating = [parseInt(req.body.rate),idUser];
 
   for (let i = 0; i < rates.length; i++) {
     if (idUser == (rates[i][1])) {

@@ -36,7 +36,12 @@
                                 <span>★★★★★</span>
                             </div>
                         </div>
-                        <%= rate %>/10
+                        <%= rate %>/10 
+                        <% if (nbrRate >=1) {%>
+                            (<%= nbrRate %> vote)
+                        <% } else { %>
+                            (<%= nbrRate %> votes)
+                        <% } %>
                     </td>
                 </tr>
             </table>
