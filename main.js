@@ -168,17 +168,6 @@ app.get("/profile", async function (req, res, next) {
   }
 });
 
-
-// ###############
-// SETTINGS
-// ###############
-
-app.get("/settings", function (req, res, next) {
-  res.render("./template/template.ejs", {
-    path: "settings/settings.ejs",
-  });
-});
-
 // ###############
 // DEXES
 // ###############
@@ -266,20 +255,6 @@ app.post("/create-dex", async function (req,res, next) {
   res.redirect("dex?id="+idNewDex);
 })
 
-// ###############
-// DEXDLE
-// ###############
-
-app.get("/dexdle", async function (req, res, next) {
-  const idDex = req.query.idDex;
-  const dataDex = await dbDex.findOne({_id:new ObjectId(idDex)});
-
-  res.render("./template/template.ejs", {
-    path: "dexdle/dexdle.ejs",
-    dataDex : dataDex,
-  });
-})
-
 
 // ###############
 // SEARCH
@@ -287,9 +262,14 @@ app.get("/dexdle", async function (req, res, next) {
 
 app.get("/search", async function (req, res, next) {
   let startTime = performance.now();
+
   let query = req.query.query.toString();
+
   let startDate = parseInt(req.query.startDate);
   let endDate = parseInt(req.query.endDate);
+
+  const actor = req.query.actor;
+
   const queryGenres = req.query.genres;
   let genresInput = [];
   if (queryGenres) {
@@ -303,33 +283,62 @@ app.get("/search", async function (req, res, next) {
   let resultMovies = null;
   
   if (genresInput.length==0) {
-    resultsMovies = await dbMovie.aggregate([
-      {$match: {
-        $text: {$search:query},
-        year: {$gte : startDate, $lte : endDate},
-        }},
-        // Faut-il les trier par score ou par précision de la recherche ???
-      {$sort: {score:-1, extract: {$meta: "textScore"}}},
+    if (actor) {
+      resultsMovies = await dbMovie.aggregate([
+          {$match: {
+            $text: {$search:query},
+            year: {$gte : startDate, $lte : endDate},
+            cast : {$in : [actor]},
+          }},
+          {$sort: {
+            score:-1, 
+            extract: {$meta: "textScore"}
+          }},
       ]).toArray();
+    } else {
+      resultsMovies = await dbMovie.aggregate([
+          {$match: {
+            $text: {$search:query},
+            year: {$gte : startDate, $lte : endDate},
+          }},
+          {$sort: {
+            score:-1, 
+            extract: {$meta: "textScore"}
+          }},
+      ]).toArray();
+    }
+
   } else {
-    resultsMovies = await dbMovie.aggregate([
-      {$match: {
-        $text: {$search:query},
-        year: {$gte : startDate, $lte : endDate},
-        genres: {$all : genresInput},
-        }},
-      {$sort: {extract: {$meta: "textScore"}}},
+    if (actor) {
+      resultsMovies = await dbMovie.aggregate([
+          {$match: {
+            $text: {$search:query},
+            year: {$gte : startDate, $lte : endDate},
+            cast : {$in : [actor]},
+            genres: {$all : genresInput},
+          }},
+          {$sort: {
+            score:-1, 
+            extract: {$meta: "textScore"}
+          }},
       ]).toArray();
+    } else {
+      resultsMovies = await dbMovie.aggregate([
+          {$match: {
+            $text: {$search:query},
+            year: {$gte : startDate, $lte : endDate},
+            genres: {$all : genresInput},
+          }},
+          {$sort: {
+            score:-1, 
+            extract: {$meta: "textScore"}
+          }},
+      ]).toArray();
+    }
   }
-  
-  
 
-  const resultDexes = await dbDex.aggregate([
-      {$match: {$text: {$search:query}}},
-      {$sort: {name: {$meta: "textScore"}}},
-      {$limit:30},
-      ]).toArray();
 
+  
   let endTime = performance.now();
   const time = Math.round((endTime-startTime)*100) / 100;
 
@@ -338,15 +347,15 @@ app.get("/search", async function (req, res, next) {
     query:query,
     genres:genres,
     resultsMovies:resultsMovies,
-    resultsDexes:resultDexes,
     time:time,
   });
 });
 
 app.post("/search", function (req, res, next) {
   let url = "search?query="+req.body.query;
-  if (req.body.startDate) {url += "&startDate="+req.body.startDate} else {url += "&startDate="+1917}
-  if (req.body.endDate) {url += "&endDate="+req.body.endDate} else {url += "&endDate="+2023}
+  if (req.body.startDate) {url += "&startDate="+req.body.startDate} else {url += "&startDate="+1917};
+  if (req.body.endDate) {url += "&endDate="+req.body.endDate} else {url += "&endDate="+2023};
+  if (req.body.actor) {url += "&actor="+req.body.actor};
   if (req.body.genres) {
     if (Array.isArray(req.body.genres)) {
       for (let i = 0; i < req.body.genres.length; i++) {
@@ -391,7 +400,7 @@ app.get("/movie", async function (req, res, next) {
   }
 
   res.render("./template/template.ejs", {
-    path: "movie/movie-test.ejs",
+    path: "movie/movie.ejs",
     dataMovie:dataMovie,
     idUser:idUser,
     dexesUser:dexesUser,
@@ -428,9 +437,9 @@ app.post("/add-movie", async function (req,res,next) {
     dbDex.updateOne(
       { _id : new ObjectId(idDex) },
       { $push : {movies : newMovie} })
-    res.redirect("my-dexes");
+    res.redirect("movie?id="+idMovie);
   } else {
-    res.redirect("my-dexes");}
+    res.redirect("movie?id="+idMovie);}
 })
 
 app.get("/random-movie", async function (req, res, next) {
@@ -535,7 +544,7 @@ app.post("/register", async function (req,res,next) {
     for (i = 0; i < rawInput.length; i++) {
       chr = rawInput.charCodeAt(i);
       hash = ((hash << 5) - hash) + chr;
-      hash |= 0; // Convert to 32bit integer
+      hash |= 0;
     }
     return hash;
   }
@@ -577,7 +586,7 @@ app.post("/log-in", async function (req,res,next) {
     for (i = 0; i < rawInput.length; i++) {
       chr = rawInput.charCodeAt(i);
       hash = ((hash << 5) - hash) + chr;
-      hash |= 0; // Convert to 32bit integer
+      hash |= 0;
     }
     return hash;
   }
