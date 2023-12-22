@@ -29,13 +29,14 @@
                     <th>Score</th>
                     <td>
                         <div class="star-ratings">
-                            <div class="fill-ratings" style="width: 50%;">
+                            <div class="fill-ratings" id="rating-stars">
                                 <span>★★★★★</span>
                             </div>
                             <div class="empty-ratings">
                                 <span>★★★★★</span>
                             </div>
                         </div>
+                        <%= rate %>/10
                     </td>
                 </tr>
             </table>
@@ -73,12 +74,8 @@
         </div>
     <% } %>
     </div>
+<script>
+    var score = <%= rate %> * 10 + "%";
+    document.getElementById("rating-stars").style.width=score;
+</script>
 </body>
-<script>$(document).ready(function() {
-  // Gets the span width of the filled-ratings span
-  // this will be the same for each rating
-  var star_rating_width = $('.fill-ratings span').width();
-  // Sets the container of the ratings to span width
-  // thus the percentages in mobile will never be wrong
-  $('.star-ratings').width(star_rating_width);
-});</script>

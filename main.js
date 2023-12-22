@@ -379,7 +379,7 @@ app.get("/movie", async function (req, res, next) {
   for (let i = 0; i <dataMovie['score'].length;i++) {
     sum += dataMovie['score'][i][0];
   }
-  rate = sum / dataMovie['score'].length;
+  rate = (sum / dataMovie['score'].length);
 
   let seen = false;
   if (idUser) {
