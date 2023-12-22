@@ -469,9 +469,9 @@ app.post("/register", async function (req,res,next) {
       username:username,
       email:email,
       password:encryptPassword,
-      like:[],
       follow:[],
-      grades:[],
+      seen:[],
+      rated:[],
     })
     const user = await dbUser.findOne({username:username});
     const idUser = user["_id"];
