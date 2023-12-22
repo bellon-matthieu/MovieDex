@@ -1,0 +1,3290 @@
+[{
+  "_id": {
+    "$oid": "658478ad347a5781046dae43"
+  },
+  "user": "65841141447a3e96536a441d",
+  "name": "Horreur",
+  "genres": "Horror",
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615197bf"
+      },
+      "title": "Alien",
+      "year": 1979,
+      "cast": [
+        "Sigourney Weaver",
+        "Tom Skerritt",
+        "Harry Dean Stanton",
+        "Veronica Cartwright",
+        "John Hurt",
+        "Ian Holm",
+        "Yaphet Kotto"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "href": "Alien_(film)",
+      "extract": "Alien is a 1979 science fiction horror film directed by Ridley Scott and written by Dan O'Bannon. Based on a story by O'Bannon and Ronald Shusett, it follows the crew of the commercial space tug Nostromo, who, after coming across a mysterious derelict spaceship on an uncharted planetoid, find themselves up against an aggressive and deadly extraterrestrial set loose on the Nostromo. The film stars Tom Skerritt, Sigourney Weaver, Veronica Cartwright, Harry Dean Stanton, John Hurt, Ian Holm, and Yaphet Kotto. It was produced by Gordon Carroll, David Giler, and Walter Hill through their company Brandywine Productions and was distributed by 20th Century Fox. Giler and Hill revised and made additions to the script; Shusett was the executive producer. The Alien and its accompanying artifacts were designed by the Swiss artist H. R. Giger, while concept artists Ron Cobb and Chris Foss designed the more human settings.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 382,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e56151a8fe"
+      },
+      "title": "Alien Resurrection",
+      "year": 1997,
+      "cast": [
+        "Sigourney Weaver",
+        "Winona Ryder",
+        "Ron Perlman",
+        "Dan Hedaya",
+        "J.E. Freeman",
+        "Brad Dourif",
+        "Michael Wincott"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "href": "Alien_Resurrection",
+      "extract": "Alien Resurrection is a 1997 American science fiction horror film, directed by Jean-Pierre Jeunet, written by Joss Whedon, and starring Sigourney Weaver and Winona Ryder. It is the fourth installment of the Alien franchise, and was filmed at the 20th Century Fox studios in Los Angeles, California.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/70/Alien_Resurrection_poster.jpg",
+      "thumbnail_width": 258,
+      "thumbnail_height": 386,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e56151a33f"
+      },
+      "title": "Alien 3",
+      "year": 1992,
+      "cast": [
+        "Sigourney Weaver",
+        "Charles S. Dutton",
+        "Charles Dance"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "href": "Alien_3",
+      "extract": "Alien 3 is a 1992 American science fiction horror film directed by David Fincher and written by David Giler, Walter Hill, and Larry Ferguson, from a story by Vincent Ward. It stars Sigourney Weaver, reprising her role as Ellen Ripley. It is the third installment of the Alien franchise and led to a sequel, Alien Resurrection (1997).",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b9/Alien3_poster.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 372,
+      "score": 0
+    }
+  ],
+  "description": "Les films d'Horreur qu'il faut voir selon moi."
+},
+{
+  "_id": {
+    "$oid": "65744bf3fc1fc79518cf1bd9"
+  },
+  "user": "65744ab8fc1fc79518cf1bd7",
+  "name": "Films favoris",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bcd4"
+      },
+      "title": "Before I Fall",
+      "year": 2017,
+      "cast": [
+        "Zoey Deutch",
+        "Halston Sage",
+        "Logan Miller",
+        "Kian Lawley",
+        "Elena Kampouris",
+        "Cynthy Wu",
+        "Medalion Rahimi",
+        "Diego Boneta",
+        "Jennifer Beals"
+      ],
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Teen"
+      ],
+      "href": "Before_I_Fall_(film)",
+      "extract": "Before I Fall is a 2017 American science fiction teen drama film directed by Ry Russo-Young and written by Maria Maggenti and Gina Prince-Bythewood, based on the 2010 novel of the same name by Lauren Oliver. The film stars Zoey Deutch, Halston Sage, Logan Miller, Kian Lawley, Elena Kampouris, Diego Boneta and Jennifer Beals.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fa/Before_I_Fall_%28film%29.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 312
+    },
+    {
+      "_id": {
+        "$oid": "657084c7307307e561517fca"
+      },
+      "title": "Cinderella",
+      "year": 1950,
+      "cast": [
+        "Ilene Woods"
+      ],
+      "genres": [
+        "Animated",
+        "Fantasy",
+        "Musical"
+      ],
+      "href": "Cinderella_(1950_film)",
+      "extract": "Cinderella is a 1950 American animated musical fantasy film produced by Walt Disney Productions and released by RKO Radio Pictures. Based on Charles Perrault's 1697 fairy tale of the same title, it is the 12th Disney animated feature film. The film was directed by Wilfred Jackson, Hamilton Luske, and Clyde Geronimi. It features the voices of Ilene Woods, Eleanor Audley, Verna Felton, Rhoda Williams, James MacDonald, Luis van Rooten, and Don Barclay.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/13/Cinderella_%28Official_1950_Film_Poster%29.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb48"
+      },
+      "title": "Focus",
+      "year": 2015,
+      "cast": [
+        "Will Smith",
+        "Margot Robbie"
+      ],
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "href": "Focus_(2015_film)",
+      "extract": "Focus is a 2015 American crime comedy-drama film written and directed by Glenn Ficarra and John Requa, starring Will Smith and Margot Robbie. The plot follows a career con artist who takes an aspiring femme fatale under his wing.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/bf/2015_Focus_film_poster.png",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bc49"
+      },
+      "title": "The Shallows",
+      "year": 2016,
+      "cast": [
+        "Blake Lively",
+        "Óscar Jaenada",
+        "Brett Cullen"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "href": "The_Shallows_(film)",
+      "extract": "The Shallows is a 2016 American survival horror film directed by Jaume Collet-Serra, written by Anthony Jaswinski and starring Blake Lively. In the film, a medical student, surfing on vacation, gets stranded 200 yards (180 m) from shore and must use her wits and determination to survive a great white shark attack. Principal photography began in October 2015 in New South Wales and Queensland, Australia.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/78/The_Shallows_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bcf4"
+      },
+      "title": "Gifted",
+      "year": 2017,
+      "cast": [
+        "Chris Evans",
+        "Mckenna Grace",
+        "Jenny Slate",
+        "Lindsay Duncan",
+        "Octavia Spencer"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "href": "Gifted_(2017_film)",
+      "extract": "Gifted is a 2017 American drama film directed by Marc Webb and written by Tom Flynn. It stars Chris Evans, Mckenna Grace, Lindsay Duncan, Jenny Slate and Octavia Spencer. The plot follows an intellectually gifted seven-year-old who becomes the subject of a custody battle between her maternal uncle and maternal grandmother. The film was released on April 7, 2017, by Fox Searchlight Pictures, and grossed $43 million worldwide. At the 23rd Critics' Choice Awards, Mckenna Grace was nominated for Best Young Actor/Actress. The film received mixed-to-positive reviews from critics, who praised the performances of Evans and Grace, but noted its predictability.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/43/Gifted_poster.jpeg",
+      "thumbnail_width": 264,
+      "thumbnail_height": 377
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b918"
+      },
+      "title": "The Impossible",
+      "year": 2012,
+      "cast": [
+        "Naomi Watts",
+        "Ewan McGregor"
+      ],
+      "genres": [
+        "Disaster",
+        "Drama"
+      ],
+      "href": "The_Impossible_(2012_film)",
+      "extract": "The Impossible is a 2012 English-language Spanish disaster drama film directed by J. A. Bayona and written by Sergio G. Sánchez. It is based on the experience of María Belón and her family in the 2004 Indian Ocean tsunami. It features an international cast including Naomi Watts, Ewan McGregor and Tom Holland in his film debut.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fd/The_Impossible.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 314
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bbd6"
+      },
+      "title": "Burnt",
+      "year": 2015,
+      "cast": [
+        "Bradley Cooper",
+        "Sienna Miller",
+        "Omar Sy",
+        "Daniel Brühl",
+        "Riccardo Scamarcio",
+        "Sam Keeley",
+        "Alicia Vikander",
+        "Matthew Rhys",
+        "Lily James",
+        "Uma Thurman",
+        "Emma Thompson"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "href": "Burnt_(film)",
+      "extract": "Burnt is a 2015 American drama film directed by John Wells and written by Steven Knight, from a story by Michael Kalesniko. The film stars an ensemble cast including Bradley Cooper, Sienna Miller, Omar Sy, Daniel Brühl, Matthew Rhys, Riccardo Scamarcio, Alicia Vikander, Uma Thurman and Emma Thompson. The film was released on October 30, 2015, by The Weinstein Company. The film was not well received by critics and grossed $36.6 million.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/2/21/Burnt_Poster_Updated.jpg",
+      "thumbnail_width": 256,
+      "thumbnail_height": 380
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65744bfffc1fc79518cf1bda"
+  },
+  "user": "65744ab8fc1fc79518cf1bd7",
+  "name": "Films à voir",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb27"
+      },
+      "title": "Blackhat",
+      "year": 2015,
+      "cast": [
+        "Chris Hemsworth",
+        "Tang Wei",
+        "Viola Davis",
+        "Ritchie Coster",
+        "Holt McCallany",
+        "Yorick van Wageningen",
+        "Wang Leehom"
+      ],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "href": "Blackhat_(film)",
+      "extract": "Blackhat is a 2015 American action thriller film produced and directed by Michael Mann and starring Chris Hemsworth, Tang Wei, Viola Davis, Holt McCallany and Wang Leehom. The film premiered at the TCL Chinese Theatre in Los Angeles on January 8, 2015, and was released in theaters on January 16. Blackhat was a box-office bomb, earning only $19.7 million at the box office against a budget of $70 million. The film received generally mixed reviews, with criticisms focused on casting and pace, though the film appeared on some critics' year-end lists.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/58/Blackhat_poster.jpg",
+      "thumbnail_width": 251,
+      "thumbnail_height": 396
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c042"
+      },
+      "title": "The Devil All the Time",
+      "year": 2020,
+      "cast": [
+        "Tom Holland",
+        "Bill Skarsgård",
+        "Riley Keough",
+        "Jason Clarke",
+        "Sebastian Stan",
+        "Haley Bennett",
+        "Eliza Scanlen",
+        "Mia Wasikowska",
+        "Robert Pattinson"
+      ],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "href": "The_Devil_All_the_Time_(film)",
+      "extract": "The Devil All the Time is a 2020 American psychological thriller crime drama film directed by Antonio Campos, from a screenplay co-written with his brother Paulo Campos, based on the novel of the same name by Donald Ray Pollock. The film follows several characters whose stories weave together in two Southern Ohio towns during the period from the end of World War II to the 1960s. It features an ensemble cast that includes Tom Holland, Bill Skarsgård, Riley Keough, Jason Clarke, Sebastian Stan, Haley Bennett, Eliza Scanlen, Mia Wasikowska, and Robert Pattinson.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/6c/The_Devil_All_The_Time.jpeg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 385
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb13"
+      },
+      "title": "Wild",
+      "year": 2014,
+      "cast": [
+        "Reese Witherspoon",
+        "Laura Dern"
+      ],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Biography"
+      ],
+      "href": "Wild_(2014_film)",
+      "extract": "Wild is a 2014 American biographical adventure drama film directed by Jean-Marc Vallée and starring Reese Witherspoon, with Laura Dern, Thomas Sadoski, Michiel Huisman, Gaby Hoffmann, Kevin Rankin, and W. Earl Brown appearing in supporting roles. The screenplay was adapted by Nick Hornby from Cheryl Strayed's 2012 memoir Wild: From Lost to Found on the Pacific Crest Trail, which is about a solo backpacking trip Strayed undertook on the trail in 1995 after numerous personal issues had left her life in shambles.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/37/Wild2014Poster.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65744c05fc1fc79518cf1bdb"
+  },
+  "user": "65744ab8fc1fc79518cf1bd7",
+  "name": "Marvel",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b38b"
+      },
+      "title": "Iron Man",
+      "year": 2008,
+      "cast": [
+        "Robert Downey Jr.",
+        "Terrence Howard",
+        "Jeff Bridges",
+        "Shaun Toub",
+        "Gwyneth Paltrow",
+        "Faran Tahir",
+        "Paul Bettany",
+        "Leslie Bibb",
+        "Clark Gregg",
+        "Will Lyman",
+        "Jon Favreau",
+        "Samuel L. Jackson",
+        "Stan Lee",
+        "Peter Billingsley",
+        "Tom Morello",
+        "Jim Cramer"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Iron_Man_(2008_film)",
+      "extract": "Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe (MCU). Directed by Jon Favreau from a screenplay by the writing teams of Mark Fergus and Hawk Ostby, and Art Marcum and Matt Holloway, the film stars Robert Downey Jr. as Tony Stark / Iron Man alongside Terrence Howard, Jeff Bridges, Gwyneth Paltrow, Leslie Bibb, and Shaun Toub. In the film, following his escape from captivity by a terrorist group, world famous industrialist and master engineer Tony Stark builds a mechanized suit of armor and becomes the superhero Iron Man.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/02/Iron_Man_%282008_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b7a0"
+      },
+      "title": "Captain America: The First Avenger",
+      "year": 2011,
+      "cast": [
+        "Chris Evans",
+        "Tommy Lee Jones",
+        "Hugo Weaving",
+        "Hayley Atwell",
+        "Sebastian Stan",
+        "Dominic Cooper",
+        "Neal McDonough",
+        "Derek Luke",
+        "Stanley Tucci",
+        "Richard Armitage",
+        "Samuel L. Jackson",
+        "Toby Jones",
+        "Kenneth Choi",
+        "JJ Feild",
+        "Natalie Dormer",
+        "William Hope",
+        "David Bradley",
+        "Simon Kunz",
+        "Laura Haddock",
+        "Amanda Righetti",
+        "Spencer Garrett",
+        "Stan Lee",
+        "Lex Shrapnel",
+        "Amanda Walker",
+        "Bruno Ricci"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Captain_America:_The_First_Avenger",
+      "extract": "Captain America: The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America. Produced by Marvel Studios and distributed by Paramount Pictures, it is the fifth film in the Marvel Cinematic Universe (MCU). The film was directed by Joe Johnston, written by Christopher Markus and Stephen McFeely, and stars Chris Evans as Steve Rogers / Captain America alongside Tommy Lee Jones, Hugo Weaving, Hayley Atwell, Sebastian Stan, Dominic Cooper, Toby Jones, Neal McDonough, Derek Luke, and Stanley Tucci. During World War II, Steve Rogers, a frail man, is transformed into the super-soldier Captain America and must stop the Red Skull (Weaving) from using the Tesseract as an energy source for world domination.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 343
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bef9"
+      },
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson",
+        "Jeremy Renner",
+        "Don Cheadle",
+        "Paul Rudd",
+        "Brie Larson",
+        "Karen Gillan",
+        "Danai Gurira",
+        "Benedict Wong",
+        "Jon Favreau",
+        "Bradley Cooper",
+        "Gwyneth Paltrow",
+        "Josh Brolin"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Avengers:_Endgame",
+      "extract": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65744c14fc1fc79518cf1bdc"
+  },
+  "user": "65744ab8fc1fc79518cf1bd7",
+  "name": "Films cultes",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b87c"
+      },
+      "title": "Prometheus",
+      "year": 2012,
+      "cast": [
+        "Noomi Rapace",
+        "Michael Fassbender",
+        "Charlize Theron",
+        "Idris Elba",
+        "Guy Pearce",
+        "Logan Marshall-Green",
+        "Sean Harris",
+        "Rafe Spall"
+      ],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "href": "Prometheus_(2012_film)",
+      "extract": "Prometheus is a 2012 science fiction horror film co-produced and directed by Ridley Scott, with the screenplay co-written by Jon Spaihts and Damon Lindelof. The film features an ensemble cast include Noomi Rapace, Michael Fassbender, Guy Pearce, Idris Elba, Logan Marshall-Green, and Charlize Theron. Set in the late 21st century, the film centers on the crew of the spaceship Prometheus as it follows a star map discovered among the artifacts of several ancient Earth cultures. Seeking the origins of humanity, the crew arrives on a distant world and discovers a threat that could cause the extinction of the human species.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a3/Prometheusposterfixed.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6576052417b72917fef08450"
+  },
+  "user": "656de5dfa4bf50289af226b9",
+  "name": "Films du jour",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c8307307e561519624"
+      },
+      "title": "Gable and Lombard",
+      "year": 1976,
+      "cast": [
+        "James Brolin",
+        "Jill Clayburgh",
+        "Allen Garfield"
+      ],
+      "genres": [
+        "Biography"
+      ],
+      "href": "Gable_and_Lombard",
+      "extract": "Gable and Lombard is a 1976 American biographical film directed by Sidney J. Furie. The screenplay by Barry Sandler is based on the romance and consequent marriage of screen stars Clark Gable and Carole Lombard. The original music score was composed by Michel Legrand.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0c/GableAndLombard.JPG",
+      "thumbnail_width": 261,
+      "thumbnail_height": 381
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e56151a29d"
+      },
+      "title": "Father of the Bride",
+      "year": 1991,
+      "cast": [
+        "Steve Martin",
+        "Diane Keaton",
+        "Kimberly Williams",
+        "Martin Short",
+        "George Newbern"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "href": "Father_of_the_Bride_(1991_film)",
+      "extract": "Father of the Bride is a 1991 American romantic comedy film starring Steve Martin, Diane Keaton, Kimberly Williams, George Newbern, Martin Short, BD Wong, and Kieran Culkin. It is a remake of the 1950 film of the same name. Martin portrays George Banks, a businessman and owner of an athletic shoe company, who, when he finds out his daughter is getting married, panics.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a1/Father_of_the_bride_poster.jpg",
+      "thumbnail_width": 248,
+      "thumbnail_height": 372
+    },
+    {
+      "_id": {
+        "$oid": "657084c7307307e56151700a"
+      },
+      "title": "Billy the Kid",
+      "year": 1941,
+      "cast": [
+        "Robert Taylor",
+        "Brian Donlevy",
+        "Ian Hunter"
+      ],
+      "genres": [
+        "Western"
+      ],
+      "href": "Billy_the_Kid_(1941_film)",
+      "extract": "Billy the Kid is a 1941 American Western film, a color remake of the 1930 film of the same name. The film features Robert Taylor as Billy and Brian Donlevy as a fictionalized version of Pat Garrett renamed \"Jim Sherwood\" in the film. Directed by David Miller and based on the book by Walter Noble Burns, the cast also included Gene Lockhart and Lon Chaney Jr. The film was not as well received as the 1930 original, Billy the Kid, which had starred Johnny Mack Brown and Wallace Beery and been shot in an experimental widescreen process.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/07/Billy_the_Kid_1941.jpg",
+      "thumbnail_width": 255,
+      "thumbnail_height": 391
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c269"
+      },
+      "title": "All the Old Knives",
+      "year": 2022,
+      "cast": [
+        "Chris Pine",
+        "Thandiwe Newton",
+        "Laurence Fishburne",
+        "Jonathan Pryce"
+      ],
+      "genres": [
+        "Spy",
+        "Thriller"
+      ],
+      "href": "All_the_Old_Knives",
+      "extract": "All the Old Knives is a 2022 American spy thriller film directed by Janus Metz Pedersen and written by Olen Steinhauer. It is based on Steinhauer's 2015 novel of the same name. The film stars Chris Pine, Thandiwe Newton, Laurence Fishburne, Jonathan Pryce and David Dawson.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/f0/All_the_Old_Knives.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615192c0"
+      },
+      "title": "The Christian Licorice Store",
+      "year": 1971,
+      "cast": [
+        "Beau Bridges",
+        "Maud Adams",
+        "Gilbert Roland"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "href": "The_Christian_Licorice_Store",
+      "extract": "The Christian Licorice Store is a 1971 American drama film directed by James Frawley and starring Beau Bridges and Maud Adams. The title of the film is based on lyrics from the song \"Pleasant Street\" by Tim Buckley who makes a cameo in the film.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/58/TheChristianLicoriceStore.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 382
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615192cf"
+      },
+      "title": "Dracula vs. Frankenstein",
+      "year": 1971,
+      "cast": [
+        "Lon Chaney, Jr.",
+        "J. Carrol Naish",
+        "Regina Carrol"
+      ],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "href": "Dracula_vs._Frankenstein",
+      "extract": "Dracula vs. Frankenstein is a 1971 American science fiction horror film directed and co-produced by Al Adamson. The film stars J. Carrol Naish as Dr. Durea, a descendant of Dr. Frankenstein who is working on a blood serum for his assistant Groton. The serum soon becomes sought after by Count Dracula, who hopes that it will grant him the ability to be exposed to sunlight without harm. Other members of the film's cast include Anthony Eisley, Regina Carrol, and Angelo Rossitto.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/50/Draculavsfrankposter.jpg",
+      "thumbnail_width": 256,
+      "thumbnail_height": 389
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c29c"
+      },
+      "title": "Father of the Bride",
+      "year": 2022,
+      "cast": [
+        "Andy García",
+        "Gloria Estefan",
+        "Adria Arjona",
+        "Isabela Merced",
+        "Diego Boneta",
+        "Chloe Fineman"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "href": "Father_of_the_Bride_(2022_film)",
+      "extract": "Father of the Bride is a 2022 American romantic comedy film directed by Gaz Alazraki and written by Matt Lopez, based on the 1949 novel of the same name by Edward Streeter. The film stars Andy García, Gloria Estefan, Adria Arjona, Isabela Merced, Diego Boneta, and Chloe Fineman. It is the third filmed version of the story, after the original 1950 film and the 1991 remake. Produced by Plan B Entertainment, it was released on June 16, 2022, by Warner Bros. Pictures and HBO Max.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/58/The_Father_of_the_Bride_%282022_film%29_poster.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 385
+    }
+  ],
+  "description": "Tous les films du jour depuis le jeudi 07/12/2023"
+},
+{
+  "_id": {
+    "$oid": "65761df51fb74258647545ec"
+  },
+  "user": null,
+  "name": "rezg",
+  "genres": null,
+  "movies": [],
+  "description": "zefrg"
+},
+{
+  "_id": {
+    "$oid": "657624356e724aecdc9aeef6"
+  },
+  "user": "656de5dfa4bf50289af226b9",
+  "name": "Films à voir",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b90b"
+      },
+      "title": "Deadfall",
+      "year": 2012,
+      "cast": [
+        "Eric Bana",
+        "Olivia Wilde",
+        "Charlie Hunnam",
+        "Sissy Spacek",
+        "Kris Kristofferson"
+      ],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "href": "Deadfall_(2012_film)",
+      "extract": "Deadfall is a 2012 American crime drama film directed by Stefan Ruzowitzky, written by Zach Dean, and starring Eric Bana, Olivia Wilde, and Charlie Hunnam.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fb/Deadfall2012Poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b793"
+      },
+      "title": "Cars 2",
+      "year": 2011,
+      "cast": [
+        "Larry the Cable Guy",
+        "Owen Wilson",
+        "Michael Caine",
+        "Emily Mortimer",
+        "John Turturro",
+        "Eddie Izzard",
+        "Brent Musburger",
+        "Joe Mantegna",
+        "Thomas Kretschmann",
+        "Peter Jacobson",
+        "Bonnie Hunt",
+        "Darrell Waltrip",
+        "Franco Nero",
+        "David Hobbs",
+        "Tony Shalhoub",
+        "Jeff Garlin",
+        "Jason Isaacs",
+        "Lloyd Sherr",
+        "Bruce Campbell",
+        "Teresa Gallagher",
+        "Jenifer Lewis",
+        "Stanley Townsend",
+        "Velibor Topic",
+        "Sig Hansen",
+        "Guido Quaroni",
+        "Vanessa Redgrave",
+        "Brad Lewis",
+        "Cheech Marin",
+        "Jeff Gordon",
+        "Lewis Hamilton",
+        "Paul Dooley",
+        "Edie McClurg",
+        "Richard Kind",
+        "Katherine Helmond",
+        "John Ratzenberger",
+        "Michael Wallis",
+        "John Lasseter",
+        "Daisuke \"Dice\" Tsutsumi",
+        "Patrick Walker",
+        "Michel Michelis",
+        "John Mainieri",
+        "Catherine Bolt",
+        "Gillian Bolt",
+        "Jess Fulton",
+        "Sonoko Konishi"
+      ],
+      "genres": [
+        "Animated",
+        "Comedy",
+        "Spy"
+      ],
+      "href": "Cars_2",
+      "extract": "Cars 2 is a 2011 American computer-animated spy comedy film produced by Pixar Animation Studios for Walt Disney Pictures. It is the sequel to Cars (2006), the second film in the Cars franchise, and the 12th animated film from the studio. The film was directed by John Lasseter, co-directed by Brad Lewis, and produced by Denise Ream, from a screenplay written by Ben Queen, and a story by Lasseter, Lewis, and Dan Fogelman. In the film's ensemble voice cast, Owen Wilson, Larry the Cable Guy, Tony Shalhoub, Guido Quaroni, Bonnie Hunt, and John Ratzenberger reprise their roles from the first film. Paul Newman, who voiced Doc Hudson in the previous film, died in September 2008, so his character was written out of the film; George Carlin, who previously voiced Fillmore, died during the same year, and his role was passed to Lloyd Sherr. The returning cast is joined by Michael Caine, Emily Mortimer, John Turturro, Eddie Izzard, and Thomas Kretschmann, who voice the new characters introduced in this film.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/7f/Cars_2_Poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c1da"
+      },
+      "title": "Dune",
+      "year": 2021,
+      "cast": [
+        "Timothee Chalamet",
+        "Rebecca Ferguson",
+        "Oscar Isaac",
+        "Josh Brolin",
+        "Stellan Skarsgård",
+        "Dave Bautista",
+        "Stephen McKinley Henderson",
+        "Zendaya",
+        "Chang Chen",
+        "Sharon Duncan-Brewster",
+        "Charlotte Rampling",
+        "Jason Momoa",
+        "Javier Bardem"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Dune_(2021_film)",
+      "extract": "Dune is a 2021 American epic science fiction film directed by Denis Villeneuve from a screenplay by Villeneuve, Jon Spaihts, and Eric Roth. It is the first part of a two-part adaptation of the 1965 novel by Frank Herbert. Set in the distant future, the film follows Paul Atreides as his family, the noble House Atreides, is thrust into a war for the deadly and inhospitable desert planet Arrakis. The ensemble cast includes Timothée Chalamet, Rebecca Ferguson, Oscar Isaac, Josh Brolin, Stellan Skarsgård, Dave Bautista, Stephen McKinley Henderson, Zendaya, David Dastmalchian, Chang Chen, Sharon Duncan-Brewster, Charlotte Rampling, Jason Momoa, and Javier Bardem.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb01"
+      },
+      "title": "Interstellar",
+      "year": 2014,
+      "cast": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain",
+        "Bill Irwin",
+        "Ellen Burstyn",
+        "Michael Caine"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Interstellar_(film)",
+      "extract": "Interstellar is a 2014 epic science fiction film co-written, directed, and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for mankind.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c28c"
+      },
+      "title": "Top Gun: Maverick",
+      "year": 2022,
+      "cast": [
+        "Tom Cruise",
+        "Miles Teller",
+        "Jennifer Connelly",
+        "Jon Hamm",
+        "Glen Powell",
+        "Lewis Pullman",
+        "Ed Harris",
+        "Val Kilmer"
+      ],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "href": "Top_Gun:_Maverick",
+      "extract": "Top Gun: Maverick is a 2022 American action drama film directed by Joseph Kosinski and written by Ehren Kruger, Eric Warren Singer and Christopher McQuarrie from stories by Peter Craig and Justin Marks. The film is a sequel to the 1986 film Top Gun. Tom Cruise reprises his starring role as the naval aviator Maverick. It was based on the characters of the original film created by Jim Cash and Jack Epps Jr. The film also stars Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Lewis Pullman, Ed Harris and Val Kilmer, who reprises his role as Iceman. In the film, Maverick confronts his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/13/Top_Gun_Maverick_Poster.jpg",
+      "thumbnail_width": 261,
+      "thumbnail_height": 381
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd61"
+      },
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "cast": [
+        "Harrison Ford",
+        "Ryan Gosling",
+        "Ana de Armas",
+        "Mackenzie Davis",
+        "Sylvia Hoeks",
+        "Lennie James",
+        "Carla Juri",
+        "Robin Wright",
+        "Dave Bautista",
+        "Jared Leto"
+      ],
+      "genres": [
+        "Noir",
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner_2049",
+      "extract": "Blade Runner 2049 is a 2017 American epic neo-noir science fiction film directed by Denis Villeneuve and written by Hampton Fancher and Michael Green. A sequel to the 1982 film Blade Runner, the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, and Jared Leto in supporting roles. Ford and Edward James Olmos reprise their roles from the original film. Gosling plays K, a Nexus-9 replicant \"blade runner\" who uncovers a secret that threatens to destabilize society and the course of civilization.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b818"
+      },
+      "title": "The Grey",
+      "year": 2012,
+      "cast": [
+        "Liam Neeson",
+        "Frank Grillo",
+        "Dermot Mulroney",
+        "Dallas Roberts"
+      ],
+      "genres": [],
+      "href": "The_Grey_(film)",
+      "extract": "The Grey is a 2011 survival film co-written, produced and directed by Joe Carnahan and starring Liam Neeson, Frank Grillo, Dallas Roberts, Joe Anderson, Nonso Anozie, and Dermot Mulroney. It is based on the short story \"Ghost Walker\" by Ian MacKenzie Jeffers, who also co-wrote the screenplay with Carnahan. The story follows a number of oil-men stranded in Alaska after a plane crash, who must wage a war against multiple packs of Canadian grey wolves, stalking them during the mercilessly cold weather.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/2/27/The_Grey_Poster.jpg",
+      "thumbnail_width": 254,
+      "thumbnail_height": 392
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bab4"
+      },
+      "title": "Snowpiercer",
+      "year": 2014,
+      "cast": [
+        "Chris Evans",
+        "Song Kang-ho",
+        "Tilda Swinton",
+        "Jamie Bell",
+        "Octavia Spencer",
+        "Go Ah-sung",
+        "John Hurt",
+        "Ed Harris"
+      ],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "href": "Snowpiercer",
+      "extract": "Snowpiercer is a 2013 post-apocalyptic science fiction action film based on the French climate fiction graphic novel Le Transperceneige by Jacques Lob, Benjamin Legrand and Jean-Marc Rochette. The film was directed by Bong Joon-ho and written by Bong and Kelly Masterson. A South Korean-Czech co-production, the film marks Bong's English-language debut; almost 85% of the film's dialogue is in English.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b4/Snowpiercer_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bc48"
+      },
+      "title": "Independence Day: Resurgence",
+      "year": 2016,
+      "cast": [
+        "Liam Hemsworth",
+        "Jeff Goldblum",
+        "Bill Pullman",
+        "Maika Monroe",
+        "Travis Tope",
+        "William Fichtner",
+        "Charlotte Gainsbourg",
+        "Judd Hirsch"
+      ],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "href": "Independence_Day:_Resurgence",
+      "extract": "Independence Day: Resurgence is a 2016 American science fiction action film co-written and directed by Roland Emmerich, serving as a sequel to the 1996 film Independence Day. It stars an ensemble cast that consists of Liam Hemsworth, Jeff Goldblum, Bill Pullman, Maika Monroe, Travis Tope, William Fichtner, Charlotte Gainsbourg, and Judd Hirsch. The film takes place twenty years after the events of the first film, during which the United Nations has collaborated to form the Earth Space Defense, an international military defense and research organization. Through reverse engineering, the world has fused the power of alien technology with humanity's and laid the groundwork to resist a second invasion.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/f3/Independence_Day_Resurgence_poster.jpg",
+      "thumbnail_width": 258,
+      "thumbnail_height": 387
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba18"
+      },
+      "title": "Ender's Game",
+      "year": 2013,
+      "cast": [
+        "Asa Butterfield",
+        "Ben Kingsley",
+        "Harrison Ford",
+        "Hailee Steinfeld",
+        "Abigail Breslin",
+        "Viola Davis",
+        "Nonso Anozie"
+      ],
+      "genres": [
+        "Action",
+        "War",
+        "Science Fiction"
+      ],
+      "href": "Ender%27s_Game_(film)",
+      "extract": "Ender's Game is a 2013 American military science-fiction action film based on Orson Scott Card's 1985 novel of the same name. Written and directed by Gavin Hood, the film stars Asa Butterfield as Andrew \"Ender\" Wiggin, an unusually gifted child who is sent to an advanced military academy in space to prepare for a future alien invasion. The supporting cast includes Harrison Ford, Hailee Steinfeld, and Viola Davis, with Abigail Breslin and Ben Kingsley.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/8/8c/Ender%27s_Game_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b32a"
+      },
+      "title": "The Water Horse: Legend of the Deep",
+      "year": 2007,
+      "cast": [
+        "Alexander Nathan Etel",
+        "Emily Watson",
+        "Ben Chaplin",
+        "David Morrissey",
+        "Brian Cox",
+        "Priyanka Xi",
+        "Marshall Napier",
+        "Joel Tobeck",
+        "Erroll Shand",
+        "Craig Hall",
+        "Geraldine Brophy"
+      ],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Family"
+      ],
+      "href": "The_Water_Horse:_Legend_of_the_Deep",
+      "extract": "The Water Horse: Legend of the Deep is a 2007 fantasy drama film directed by Jay Russell and written by Robert Nelson Jacobs, based on Dick King-Smith's children's novel The Water Horse. It stars Alex Etel as a young boy who discovers a mysterious egg and cares for what hatches out of it: a \"water horse\" which later becomes the fabled Loch Ness Monster. The film also stars Emily Watson, Ben Chaplin and David Morrissey.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/90/The_Water_Horse_Poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b652"
+      },
+      "title": "OSS 117: Lost in Rio",
+      "year": 2010,
+      "cast": [],
+      "genres": [
+        "Comedy",
+        "Spy"
+      ],
+      "href": "OSS_117:_Lost_in_Rio",
+      "extract": "OSS 117: Lost in Rio released in France as OSS 117: Rio ne répond plus, is a 2009 French spy comedy film directed and co-written by Michel Hazanavicius. It is a sequel to Hazanavicius' OSS 117: Cairo, Nest of Spies, and sees Jean Dujardin reprising his role as French secret agent Hubert Bonisseur de La Bath / OSS 117. Set in 1967, Lost in Rio sees OSS 117 sent to Brazil in order to retrieve a microfilm list of French Nazi sympathizers, only to once again unknowingly set foot into a bigger international intrigue.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/dd/OSS_117Rio.jpg",
+      "thumbnail_width": 270,
+      "thumbnail_height": 368
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b0c0"
+      },
+      "title": "Mulan II",
+      "year": 2005,
+      "cast": [
+        "Ming-Na Wen",
+        "B.D. Wong",
+        "Mark Moseley",
+        "Lucy Liu",
+        "Harvey Fierstein",
+        "Sandra Oh",
+        "Gedde Watanabe",
+        "Lauren Tom",
+        "Jerry Tondo",
+        "Pat Morita",
+        "George Takei",
+        "June Foray",
+        "Freda Foh Shen",
+        "Soon-Tek Oh",
+        "Frank Welker",
+        "Jeff Bennett",
+        "Michelle Kwan",
+        "Lea Salonga",
+        "Judy Kuhn",
+        "Mandy Gonzalez",
+        "Tress MacNeille",
+        "Liliana Mumy",
+        "Rob Paulsen",
+        "Kevin Michael Richardson",
+        "Brian Tochi",
+        "April Winchell",
+        "Keone Young",
+        "Hayley Westenra",
+        "Grace Rolek",
+        "Jillian Henry",
+        "Beth Blankenship",
+        "Randy Crenshaw",
+        "Jessica Rotter"
+      ],
+      "genres": [
+        "Musical",
+        "Adventure",
+        "Animated"
+      ],
+      "href": "Mulan_II",
+      "extract": "Mulan II is a 2004 American direct-to-video animated musical adventure film produced by the Japanese office of Disneytoon Studios. It is directed by Darrell Rooney and Lynne Southerland. It is a sequel to the 1998 theatrically-released Disney animated film Mulan, featuring songs by Jeanine Tesori and Alexa Junge. Much of the cast from the first film returned, excluding Eddie Murphy (Mushu), Miriam Margolyes, James Hong (Chi-Fu), Chris Sanders, and Matthew Wilder. Murphy and Margolyes were replaced by Mark Moseley and April Winchell, respectively; Little Brother was voiced by Frank Welker, and Gedde Watanabe does his own singing for the sequel. Mulan II features Mulan and her new fiancé, General Li Shang on a special mission: escorting the Emperor's three daughters across the country to meet their soon-to-be fiancés. The film deals with arranged marriages, loyalty, relationships, making choices, trust, and finding true love. Unlike its predecessor, which gained critical acclaim, Mulan II was poorly received by critics.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/70/Mulan2DVD.jpg",
+      "thumbnail_width": 266,
+      "thumbnail_height": 373
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c3d0"
+      },
+      "title": "Knights of the Zodiac",
+      "year": 2023,
+      "cast": [
+        "Mackenyu",
+        "Famke Janssen",
+        "Madison Iseman",
+        "Diego Tinoco",
+        "Mark Dacascos",
+        "Nick Stahl",
+        "Sean Bean"
+      ],
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "href": "Knights_of_the_Zodiac_(film)",
+      "extract": "Knights of the Zodiac  is a 2023 action fantasy film directed by Tomasz Bagiński from a screenplay by Josh Campbell, Matt Stuecken, and Kiel Murray, based on the manga Saint Seiya by Masami Kurumada. The film stars Mackenyu, Famke Janssen, Madison Iseman, Diego Tinoco, Mark Dacascos, Nick Stahl, and Sean Bean.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/d8/Knights_of_the_Zodiac_poster.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 350
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151be71"
+      },
+      "title": "Venom",
+      "year": 2018,
+      "cast": [
+        "Tom Hardy",
+        "Michelle Williams",
+        "Riz Ahmed",
+        "Scott Haze",
+        "Reid Scott",
+        "Jenny Slate"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Venom_(2018_film)",
+      "extract": "Venom is a 2018 American superhero film featuring the Marvel Comics character of the same name, produced by Columbia Pictures in association with Marvel Entertainment and Tencent Pictures, and distributed by Sony Pictures Releasing. It is the first film in Sony's Spider-Man Universe (SSU) and is directed by Ruben Fleischer from a screenplay by Jeff Pinkner, Scott Rosenberg and Kelly Marcel. It stars Tom Hardy as Eddie Brock and Venom alongside Michelle Williams, Riz Ahmed, Scott Haze, and Reid Scott. In the film, struggling journalist Brock gains superpowers after becoming the host of an alien symbiote, Venom, whose species plans to invade Earth.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/10/Venom_%282018_film%29_poster.png",
+      "thumbnail_width": 266,
+      "thumbnail_height": 378
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bfa5"
+      },
+      "title": "1917",
+      "year": 2019,
+      "cast": [
+        "George MacKay",
+        "Dean-Charles Chapman",
+        "Mark Strong",
+        "Andrew Scott",
+        "Richard Madden",
+        "Claire Duburcq",
+        "Colin Firth",
+        "Benedict Cumberbatch"
+      ],
+      "genres": [
+        "War"
+      ],
+      "href": "1917_(2019_film)",
+      "extract": "1917 is a 2019 British war film directed and produced by Sam Mendes, who co-wrote the film with Krysty Wilson-Cairns. Partially inspired by stories told to Mendes by his paternal grandfather Alfred about his service during World War I, the film takes place after the German retreat to the Hindenburg Line during Operation Alberich, and follows two British soldiers, Will Schofield and Tom Blake, in their mission to deliver an important message to call off a doomed offensive attack. Mark Strong, Andrew Scott, Richard Madden, Claire Duburcq, Colin Firth, and Benedict Cumberbatch also star in supporting roles.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/1917_%282019%29_Film_Poster.jpeg/320px-1917_%282019%29_Film_Poster.jpeg",
+      "thumbnail_width": 320,
+      "thumbnail_height": 240
+    }
+  ],
+  "description": "Tous les films que j'ai envie de voir."
+},
+{
+  "_id": {
+    "$oid": "657627d26e724aecdc9aeef8"
+  },
+  "user": "656de5dfa4bf50289af226b9",
+  "name": "Films Vus",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b159"
+      },
+      "title": "Zathura",
+      "year": 2005,
+      "cast": [
+        "Josh Hutcherson",
+        "Jonah Bobo",
+        "Dax Shepard",
+        "Kristen Stewart",
+        "Tim Robbins",
+        "Frank Oz",
+        "Derek Mears",
+        "Douglas Tait",
+        "John Alexander",
+        "Jeff Wolfe",
+        "Adam Wills"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Family"
+      ],
+      "href": "Zathura_(film)",
+      "extract": "Zathura: A Space Adventure is a 2005 American science fiction adventure film directed by Jon Favreau. It is an adaptation of the 2002 children's book Zathura by Chris Van Allsburg, author of the 1981 children's book Jumanji. It is a standalone spin-off of the 1995 film Jumanji and the second installment of the Jumanji franchise. The film stars Josh Hutcherson, Jonah Bobo, Dax Shepard, Kristen Stewart, and Tim Robbins.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/64/ZathuraPoster.jpg",
+      "thumbnail_width": 265,
+      "thumbnail_height": 395
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bc78"
+      },
+      "title": "Miss Peregrine's Home for Peculiar Children",
+      "year": 2016,
+      "cast": [
+        "Eva Green",
+        "Asa Butterfield",
+        "Chris O'Dowd",
+        "Allison Janney",
+        "Rupert Everett",
+        "Terence Stamp",
+        "Ella Purnell",
+        "Judi Dench",
+        "Samuel L. Jackson"
+      ],
+      "genres": [
+        "Fantasy"
+      ],
+      "href": "Miss_Peregrine%27s_Home_for_Peculiar_Children_(film)",
+      "extract": "Miss Peregrine's Home for Peculiar Children is a 2016 fantasy film directed by Tim Burton and written by Jane Goldman, based on the 2011 novel of the same name by Ransom Riggs. The film stars Eva Green, Asa Butterfield, Chris O'Dowd, Allison Janney, Rupert Everett, Terence Stamp, Ella Purnell, Judi Dench, and Samuel L. Jackson.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/74/Miss_Peregrine_Film_Poster.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 371
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c19b"
+      },
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "year": 2021,
+      "cast": [
+        "Simu Liu",
+        "Awkwafina",
+        "Meng'er Zhang",
+        "Fala Chen",
+        "Florian Munteanu",
+        "Benedict Wong",
+        "Michelle Yeoh",
+        "Ben Kingsley",
+        "Tony Leung"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Shang-Chi_and_the_Legend_of_the_Ten_Rings",
+      "extract": "Shang-Chi and the Legend of the Ten Rings is a 2021 American superhero film based on Marvel Comics featuring the character Shang-Chi. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 25th film in the Marvel Cinematic Universe (MCU). The film was directed by Destin Daniel Cretton, from a screenplay he wrote with Dave Callaham and Andrew Lanham, and stars Simu Liu as Shang-Chi alongside Awkwafina, Meng'er Zhang, Fala Chen, Florian Munteanu, Benedict Wong, Yuen Wah, Michelle Yeoh, Ben Kingsley, and Tony Leung. In the film, Shang-Chi is forced to confront his past when his father Wenwu (Leung), the leader of the Ten Rings organization, draws Shang-Chi and his sister Xialing (Zhang) into a search for a mythical village.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/74/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba6a"
+      },
+      "title": "300: Rise of an Empire",
+      "year": 2014,
+      "cast": [
+        "Sullivan Stapleton",
+        "Eva Green",
+        "Lena Headey",
+        "Hans Matheson",
+        "Rodrigo Santoro"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300:_Rise_of_an_Empire",
+      "extract": "300: Rise of an Empire is a 2014 American epic historical action film directed by Noam Murro from a screenplay by Zack Snyder and Kurt Johnstad, based on Frank Miller's graphic novel Xerxes. It is a follow-up to the 2006 film 300, taking place before, during, and after the main events of that film, and is loosely based on the Battle of Artemisium and the Battle of Salamis. The cast includes Lena Headey, Peter Mensah, David Wenham, Andrew Tiernan, Andrew Pleavin, and Rodrigo Santoro reprising their roles from the first film, alongside Sullivan Stapleton, Eva Green, Hans Matheson, and Callan Mulvey.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/91/300_Rise_of_an_Empire.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba25"
+      },
+      "title": "Frozen",
+      "year": 2013,
+      "cast": [
+        "Kristen Bell",
+        "Idina Menzel",
+        "Josh Gad",
+        "Jonathan Groff",
+        "Alan Tudyk",
+        "Santino Fontana",
+        "Chris Williams"
+      ],
+      "genres": [
+        "Animated",
+        "Fantasy",
+        "Musical"
+      ],
+      "href": "Frozen_(2013_film)",
+      "extract": "Frozen is a 2013 American computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures. The 53rd Disney animated feature film, it is inspired by Hans Christian Andersen's 1844 fairy tale The Snow Queen. The film was directed by Chris Buck and Jennifer Lee and produced by Peter Del Vecho, from a screenplay written by Lee, and a story by Buck, Lee, and Shane Morris. It stars the voices of Kristen Bell, Idina Menzel, Josh Gad, Jonathan Groff and Santino Fontana. Frozen tells the story of Princess Anna as she teams up with an iceman, his reindeer, and a snowman to find her estranged sister Elsa, whose icy powers have inadvertently trapped their kingdom in eternal winter.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c0b5"
+      },
+      "title": "Soul",
+      "year": 2020,
+      "cast": [
+        "Jamie Foxx",
+        "Tina Fey",
+        "Graham Norton",
+        "Rachel House",
+        "Alice Braga",
+        "Richard Ayoade",
+        "Phylicia Rashad",
+        "Donnell Rawlings",
+        "Questlove",
+        "Angela Bassett",
+        "Daveed Diggs",
+        "Wes Studi",
+        "Fortune Feimster",
+        "Zenobia Shroff"
+      ],
+      "genres": [
+        "Animated",
+        "Comedy",
+        "Drama"
+      ],
+      "href": "Soul_(2020_film)",
+      "extract": "Soul is a 2020 American computer-animated comedy-drama film produced by Pixar Animation Studios for Walt Disney Pictures. It was directed by Pete Docter, co-directed by Kemp Powers, and produced by Dana Murray, from a screenplay by Docter, Powers, and Mike Jones. The film stars the voices of Jamie Foxx, Tina Fey, Graham Norton, Rachel House, Alice Braga, Richard Ayoade, Phylicia Rashad, Donnell Rawlings, Questlove, and Angela Bassett. It follows a pianist, Joe Gardner (Foxx), who is killed in an accident before his big break as a jazz musician and seeks to reunite his separated soul and body.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/39/Soul_%282020_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151babf"
+      },
+      "title": "Lucy",
+      "year": 2014,
+      "cast": [
+        "Scarlett Johansson",
+        "Morgan Freeman",
+        "Choi Min-sik"
+      ],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "href": "Lucy_(2014_film)",
+      "extract": "Lucy is a 2014 English-language French science fiction action film written and directed by Luc Besson for his company EuropaCorp, and produced by his wife, Virginie Besson-Silla. It is an English-language film shot in Taipei, Paris, and New York City. It stars Scarlett Johansson, Morgan Freeman, Choi Min-sik, and Amr Waked. Johansson portrays the titular character, a woman who gains psychokinetic abilities when a nootropic, psychedelic drug is absorbed into her bloodstream.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/14/Lucy_%282014_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 293
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bde6"
+      },
+      "title": "Ready Player One",
+      "year": 2018,
+      "cast": [
+        "Tye Sheridan",
+        "Olivia Cooke",
+        "Ben Mendelsohn",
+        "Lena Waithe",
+        "T.J. Miller",
+        "Simon Pegg",
+        "Mark Rylance",
+        "Win Morisaki",
+        "Philip Zhao",
+        "Hannah John-Kamen"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Ready_Player_One_(film)",
+      "extract": "Ready Player One is a 2018 American science fiction film based on Ernest Cline's novel of the same name. Directed by Steven Spielberg from a screenplay by Zak Penn and Cline, it stars Tye Sheridan, Olivia Cooke, Ben Mendelsohn, Lena Waithe, T.J. Miller, Simon Pegg, and Mark Rylance. The film is set in 2045, where much of humanity uses the OASIS, a virtual reality simulation, to escape the real world. A teenage orphan finds clues to a contest that promises the ownership of the OASIS to the winner, and he and his allies try to complete it before an evil corporation can do so.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/74/Ready_Player_One_%28film%29.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bbfc"
+      },
+      "title": "The 5th Wave",
+      "year": 2016,
+      "cast": [
+        "Chloë Grace Moretz",
+        "Nick Robinson",
+        "Ron Livingston",
+        "Maggie Siff",
+        "Alex Roe",
+        "Maria Bello",
+        "Maika Monroe",
+        "Zackary Arthur",
+        "Liev Schreiber"
+      ],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "href": "The_5th_Wave_(film)",
+      "extract": "The 5th Wave is a 2016 American science fiction action film directed by J Blakeson, with a screenplay by Susannah Grant, Akiva Goldsman, and Jeff Pinkner, based on Rick Yancey’s 2013 novel of the same name. The film stars Chloë Grace Moretz, Nick Robinson, Ron Livingston, Maggie Siff, Alex Roe, Maria Bello, Maika Monroe, and Liev Schreiber.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/55/5th-Wave_poster.jpg",
+      "thumbnail_width": 214,
+      "thumbnail_height": 317
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b911"
+      },
+      "title": "The Hobbit: An Unexpected Journey",
+      "year": 2012,
+      "cast": [
+        "Richard Armitage",
+        "Ian McKellen",
+        "Martin Freeman",
+        "Hugo Weaving",
+        "Cate Blanchett",
+        "Christopher Lee",
+        "Andy Serkis",
+        "Elijah Wood",
+        "Ian Holm",
+        "James Nesbitt",
+        "Ken Stott"
+      ],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "href": "The_Hobbit:_An_Unexpected_Journey",
+      "extract": "The Hobbit: An Unexpected Journey is a 2012 epic high fantasy adventure film directed by Peter Jackson from a screenplay by Fran Walsh, Philippa Boyens, Jackson, and Guillermo del Toro, based on the 1937 novel The Hobbit by J. R. R. Tolkien. It is the first instalment in The Hobbit trilogy, acting as a prequel to Jackson's The Lord of the Rings trilogy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b3/The_Hobbit-_An_Unexpected_Journey.jpeg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b251"
+      },
+      "title": "300",
+      "year": 2007,
+      "cast": [
+        "Gerard Butler",
+        "Lena Headey",
+        "David Wenham",
+        "Dominic West",
+        "Vincent Regan",
+        "Michael Fassbender",
+        "Tom Wisdom",
+        "Andrew Pleavin",
+        "Andrew Tiernan",
+        "Rodrigo Santoro",
+        "Stephen McHattie",
+        "Peter Mensah",
+        "Kelly Craig",
+        "Robert Maillet",
+        "Patrick Sabongui",
+        "Tyrone Benskin",
+        "Tyler Neitzel",
+        "Giovanni Cimmino",
+        "Leon Laderach"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300_(film)",
+      "extract": "300 is a 2006 American epic historical action film loosely based on the 1998 comic series of the same name by Frank Miller and Lynn Varley. Both are fictionalized retellings of the Battle of Thermopylae in the Greco-Persian Wars. The film was co-written and directed by Zack Snyder, while Miller served as executive producer and consultant. It was filmed mostly with a superimposition chroma key technique to replicate the imagery of the original comic book. The plot revolves around King Leonidas, who leads 300 Spartans into battle against the Persian \"God-King\" Xerxes and his invading army of more than 300,000 soldiers. As the battle rages, Queen Gorgo attempts to rally support in Sparta for her husband.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba1c"
+      },
+      "title": "Thor: The Dark World",
+      "year": 2013,
+      "cast": [
+        "Chris Hemsworth",
+        "Natalie Portman",
+        "Tom Hiddleston",
+        "Jaimie Alexander",
+        "Idris Elba",
+        "Zachary Levi",
+        "Stellan Skarsgård",
+        "Anthony Hopkins",
+        "Ray Stevenson",
+        "Tadanobu Asano",
+        "Christopher Eccleston",
+        "Kat Dennings",
+        "Adewale Akinnuoye-Agbaje",
+        "Rene Russo"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Thor:_The_Dark_World",
+      "extract": "Thor: The Dark World is a 2013 American superhero film based on the Marvel Comics character Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Thor (2011) and the eighth film in the Marvel Cinematic Universe (MCU). The film was directed by Alan Taylor from a screenplay by Christopher Yost and the writing team of Christopher Markus and Stephen McFeely. It stars Chris Hemsworth as Thor alongside Natalie Portman, Tom Hiddleston, Stellan Skarsgård, Idris Elba, Christopher Eccleston, Adewale Akinnuoye-Agbaje, Kat Dennings, Ray Stevenson, Zachary Levi, Tadanobu Asano, Jaimie Alexander, Rene Russo, and Anthony Hopkins. In the film, Thor and Loki (Hiddleston) team up to save the Nine Realms from the Dark Elves.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/7f/Thor_The_Dark_World_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b5ca"
+      },
+      "title": "Avatar",
+      "year": 2009,
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldana",
+        "Sigourney Weaver",
+        "Giovanni Ribisi",
+        "Michelle Rodriguez",
+        "Stephen Lang",
+        "CCH Pounder",
+        "Joel David Moore",
+        "Dileep Rao",
+        "Wes Studi",
+        "Laz Alonso",
+        "Matt Gerald",
+        "Peter Mensah",
+        "Debra Wilson Skelton",
+        "James Gaylyn"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Avatar_(2009_film)",
+      "extract": "Avatar is a 2009 epic science fiction film directed, written, co-produced, and co-edited by James Cameron and starring Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, and Sigourney Weaver. It is the first installment in the Avatar film series. It is set in the mid-22nd century, when humans are colonizing Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to mine the valuable mineral unobtanium. The expansion of the mining colony threatens the continued existence of a local tribe of Na'vi, a humanoid species indigenous to Pandora. The title of the film refers to a genetically engineered Na'vi body operated from the brain of a remotely located human that is used to interact with the natives of Pandora.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b834"
+      },
+      "title": "John Carter",
+      "year": 2012,
+      "cast": [
+        "Taylor Kitsch",
+        "Lynn Collins",
+        "Samantha Morton",
+        "Mark Strong",
+        "Ciarán Hinds",
+        "Dominic West",
+        "James Purefoy",
+        "Willem Dafoe"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "href": "John_Carter_(film)",
+      "extract": "John Carter is a 2012 American science fiction action-adventure film directed by Andrew Stanton, written by Stanton, Mark Andrews, and Michael Chabon, and based on A Princess of Mars (1912), the first book in the Barsoom series of novels by Edgar Rice Burroughs. Produced by Jim Morris, Colin Wilson and Lindsey Collins, it stars Taylor Kitsch in the title role, Lynn Collins, Samantha Morton, Mark Strong, Ciarán Hinds, Dominic West, James Purefoy and Willem Dafoe. It chronicles the first interplanetary adventure of John Carter and his attempts to mediate civil unrest amongst the warring kingdoms of Barsoom.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/aa/John_carter_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 385
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b78f"
+      },
+      "title": "Green Lantern",
+      "year": 2011,
+      "cast": [
+        "Ryan Reynolds",
+        "Blake Lively",
+        "Peter Sarsgaard",
+        "Mark Strong",
+        "Tim Robbins",
+        "Geoffrey Rush",
+        "Angela Bassett",
+        "Temuera Morrison",
+        "Michael Clarke Duncan",
+        "Taika Waititi",
+        "Clancy Brown",
+        "Jon Tenney",
+        "Jay O. Sanders",
+        "Mike Doyle",
+        "Nick Jandl"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Green_Lantern_(film)",
+      "extract": "Green Lantern is a 2011 American superhero film based on the DC Comics character of the same name. The film stars Ryan Reynolds, Blake Lively, Peter Sarsgaard, Mark Strong, Angela Bassett, and Tim Robbins, with Martin Campbell directing a script by Greg Berlanti and comic book writers Michael Green and Marc Guggenheim, which was subsequently rewritten by Michael Goldenberg. This was the first DC film since Catwoman (2004) not to be involved with Legendary Pictures. The film tells the story of Hal Jordan, a test pilot who is selected to become the first human member of an intergalactic police force called the Green Lantern Corps; he is given a ring that grants him superpowers, and must confront Parallax, a being who threatens to upset the balance of power in the universe, while a new threat rises back on Earth.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/6b/Green_Lantern_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b200"
+      },
+      "title": "The Prestige",
+      "year": 2006,
+      "cast": [
+        "Hugh Jackman",
+        "Christian Bale",
+        "Michael Caine",
+        "Scarlett Johansson",
+        "Rebecca Hall",
+        "Andy Serkis",
+        "David Bowie"
+      ],
+      "genres": [
+        "Thriller"
+      ],
+      "href": "The_Prestige_(film)",
+      "extract": "The Prestige is a 2006 psychological thriller film directed by Christopher Nolan, written by Nolan and his brother Jonathan and based on the 1995 novel by Christopher Priest. It follows Robert Angier and Alfred Borden, rival stage magicians in Victorian London who feud over a perfect teleportation trick.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+      "thumbnail_width": 258,
+      "thumbnail_height": 382
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c1ea"
+      },
+      "title": "Eternals",
+      "year": 2021,
+      "cast": [
+        "Gemma Chan",
+        "Richard Madden",
+        "Kumail Nanjiani",
+        "Lia McHugh",
+        "Brian Tyree Henry",
+        "Lauren Ridloff",
+        "Barry Keoghan",
+        "Don Lee",
+        "Harish Patel",
+        "Bill Skarsgård",
+        "Kit Harington",
+        "Salma Hayek",
+        "Angelina Jolie"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Eternals_(film)",
+      "extract": "Eternals is a 2021 American superhero film based on the Marvel Comics race of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 26th film in the Marvel Cinematic Universe (MCU). The film is directed by Chloé Zhao, who wrote the screenplay with Patrick Burleigh, Ryan Firpo, and Kaz Firpo. It stars an ensemble cast including Gemma Chan, Richard Madden, Kumail Nanjiani, Lia McHugh, Brian Tyree Henry, Lauren Ridloff, Barry Keoghan, Don Lee, Kit Harington, Salma Hayek, and Angelina Jolie. In the film, the Eternals, immortal alien beings, emerge from hiding after thousands of years to protect Earth from their ancient counterparts, the Deviants.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615199e5"
+      },
+      "title": "Blade Runner",
+      "year": 1982,
+      "cast": [
+        "Harrison Ford",
+        "Rutger Hauer",
+        "Edward James Olmos",
+        "Sean Young",
+        "Daryl Hannah",
+        "Brion James",
+        "James Hong",
+        "William Sanderson",
+        "Joanna Cassidy",
+        "Joe Turkel"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner",
+      "extract": "Blade Runner is a 1982 science fiction film directed by Ridley Scott, and written by Hampton Fancher and David Peoples. Starring Harrison Ford, Rutger Hauer, Sean Young, and Edward James Olmos, it is an adaptation of Philip K. Dick's 1968 novel Do Androids Dream of Electric Sheep? The film is set in a dystopian future Los Angeles of 2019, in which synthetic humans known as replicants are bio-engineered by the powerful Tyrell Corporation to work on space colonies. When a fugitive group of advanced replicants led by Roy Batty (Hauer) escapes back to Earth, burnt-out cop Rick Deckard (Ford) reluctantly agrees to hunt them down.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+      "thumbnail_width": 251,
+      "thumbnail_height": 380
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b78a"
+      },
+      "title": "X-Men: First Class",
+      "year": 2011,
+      "cast": [
+        "James McAvoy",
+        "Michael Fassbender",
+        "Rose Byrne",
+        "Jennifer Lawrence",
+        "January Jones",
+        "Nicholas Hoult",
+        "Oliver Platt",
+        "Jason Flemyng",
+        "Lucas Till",
+        "Edi Gathegi",
+        "Kevin Bacon",
+        "Caleb Landry Jones",
+        "Zoë Kravitz",
+        "Matt Craven",
+        "Álex González",
+        "Rade Šerbedžija",
+        "Glenn Morshower",
+        "Corey Johnson",
+        "Demetri Goritsas",
+        "Don Creech",
+        "James Remar",
+        "Ludger Pistor",
+        "Ray Wise",
+        "Olek Krupa",
+        "Gene Farber",
+        "James Faulkner",
+        "Annabelle Wallis",
+        "Sasha Pieterse",
+        "Brendan Fehr",
+        "Michael Ironside",
+        "Jason Beghe",
+        "Tony Curran",
+        "Randall Batinkoff",
+        "Laurence Belcher",
+        "Bill Milner",
+        "Morgan Lily",
+        "Hugh Jackman",
+        "Jim Meskimen",
+        "Rebecca Romijn"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "X-Men:_First_Class",
+      "extract": "X-Men: First Class is a 2011 superhero film based on the X-Men characters appearing in Marvel Comics. It is the fourth mainline installment in the X-Men film series and the fifth installment overall. It was directed by Matthew Vaughn and produced by Bryan Singer, and stars James McAvoy, Michael Fassbender, Rose Byrne, Jennifer Lawrence, January Jones, Oliver Platt, and Kevin Bacon. At the time of its release, it was intended to be a franchise reboot and contradicted the events of previous films; however, the follow-up film X-Men: Days of Future Past (2014) retconned First Class into a prequel to X-Men (2000). First Class is set primarily in 1962 during the Cuban Missile Crisis, and focuses on the relationship between Charles Xavier and Erik Lehnsherr / Magneto, and the origin of their groups—the X-Men and the Brotherhood of Mutants, respectively, as they deal with the Hellfire Club led by Sebastian Shaw, a mutant supremacist bent on enacting nuclear war.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/55/X-MenFirstClassMoviePoster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd12"
+      },
+      "title": "Wonder Woman",
+      "year": 2017,
+      "cast": [
+        "Gal Gadot",
+        "Chris Pine",
+        "Connie Nielsen",
+        "Robin Wright",
+        "Danny Huston",
+        "David Thewlis",
+        "Elena Anaya"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Wonder_Woman_(2017_film)",
+      "extract": "Wonder Woman is a 2017 superhero film based on the DC Comics character of the same name. Produced by Warner Bros. Pictures, DC Films, Atlas Entertainment and Cruel and Unusual Films, and distributed by Warner Bros. Pictures, it is the fourth installment of the DC Extended Universe (DCEU), and a prequel/spin-off to Batman v Superman: Dawn of Justice (2016). Directed by Patty Jenkins and written by Allan Heinberg from a story by Heinberg, Zack Snyder and Jason Fuchs, Wonder Woman stars Gal Gadot in the title role, alongside Chris Pine, Robin Wright, Danny Huston, David Thewlis, Connie Nielsen and Elena Anaya. It is the second live action theatrical film featuring Wonder Woman following her debut in Batman v Superman: Dawn of Justice. In Wonder Woman, the Amazon princess Diana sets out to stop World War I, believing the conflict was started by the longtime enemy of the Amazons, Ares, after American pilot and spy Steve Trevor crash-lands on their island Themyscira and informs her about it.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b0/Wonder_Woman_%282017_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba31"
+      },
+      "title": "The Hobbit: The Desolation of Smaug",
+      "year": 2013,
+      "cast": [
+        "Martin Freeman",
+        "Ian McKellen",
+        "Richard Armitage",
+        "Benedict Cumberbatch",
+        "Orlando Bloom",
+        "Evangeline Lilly",
+        "Lee Pace",
+        "Luke Evans",
+        "Ken Stott",
+        "James Nesbitt"
+      ],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "href": "The_Hobbit:_The_Desolation_of_Smaug",
+      "extract": "The Hobbit: The Desolation of Smaug is a 2013 epic high fantasy adventure film directed by Peter Jackson from a screenplay by Fran Walsh, Philippa Boyens, Jackson, and Guillermo del Toro, based on the 1937 novel The Hobbit by J. R. R. Tolkien. The sequel to 2012's The Hobbit: An Unexpected Journey, it is the second instalment in The Hobbit trilogy, acting as a prequel to Jackson's The Lord of the Rings trilogy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4f/The_Hobbit_-_The_Desolation_of_Smaug_theatrical_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    }
+  ],
+  "description": ""
+},
+{
+  "_id": {
+    "$oid": "657627dd6e724aecdc9aeef9"
+  },
+  "user": "656de5dfa4bf50289af226b9",
+  "name": "Films favoris",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151babf"
+      },
+      "title": "Lucy",
+      "year": 2014,
+      "cast": [
+        "Scarlett Johansson",
+        "Morgan Freeman",
+        "Choi Min-sik"
+      ],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "href": "Lucy_(2014_film)",
+      "extract": "Lucy is a 2014 English-language French science fiction action film written and directed by Luc Besson for his company EuropaCorp, and produced by his wife, Virginie Besson-Silla. It is an English-language film shot in Taipei, Paris, and New York City. It stars Scarlett Johansson, Morgan Freeman, Choi Min-sik, and Amr Waked. Johansson portrays the titular character, a woman who gains psychokinetic abilities when a nootropic, psychedelic drug is absorbed into her bloodstream.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/14/Lucy_%282014_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 293
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b251"
+      },
+      "title": "300",
+      "year": 2007,
+      "cast": [
+        "Gerard Butler",
+        "Lena Headey",
+        "David Wenham",
+        "Dominic West",
+        "Vincent Regan",
+        "Michael Fassbender",
+        "Tom Wisdom",
+        "Andrew Pleavin",
+        "Andrew Tiernan",
+        "Rodrigo Santoro",
+        "Stephen McHattie",
+        "Peter Mensah",
+        "Kelly Craig",
+        "Robert Maillet",
+        "Patrick Sabongui",
+        "Tyrone Benskin",
+        "Tyler Neitzel",
+        "Giovanni Cimmino",
+        "Leon Laderach"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300_(film)",
+      "extract": "300 is a 2006 American epic historical action film loosely based on the 1998 comic series of the same name by Frank Miller and Lynn Varley. Both are fictionalized retellings of the Battle of Thermopylae in the Greco-Persian Wars. The film was co-written and directed by Zack Snyder, while Miller served as executive producer and consultant. It was filmed mostly with a superimposition chroma key technique to replicate the imagery of the original comic book. The plot revolves around King Leonidas, who leads 300 Spartans into battle against the Persian \"God-King\" Xerxes and his invading army of more than 300,000 soldiers. As the battle rages, Queen Gorgo attempts to rally support in Sparta for her husband.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 384
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd61"
+      },
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "cast": [
+        "Harrison Ford",
+        "Ryan Gosling",
+        "Ana de Armas",
+        "Mackenzie Davis",
+        "Sylvia Hoeks",
+        "Lennie James",
+        "Carla Juri",
+        "Robin Wright",
+        "Dave Bautista",
+        "Jared Leto"
+      ],
+      "genres": [
+        "Noir",
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner_2049",
+      "extract": "Blade Runner 2049 is a 2017 American epic neo-noir science fiction film directed by Denis Villeneuve and written by Hampton Fancher and Michael Green. A sequel to the 1982 film Blade Runner, the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, and Jared Leto in supporting roles. Ford and Edward James Olmos reprise their roles from the original film. Gosling plays K, a Nexus-9 replicant \"blade runner\" who uncovers a secret that threatens to destabilize society and the course of civilization.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bc9b"
+      },
+      "title": "La La Land",
+      "year": 2016,
+      "cast": [
+        "writer)",
+        "Ryan Gosling",
+        "Emma Stone",
+        "John Legend",
+        "Rosemarie DeWitt"
+      ],
+      "genres": [
+        "Musical",
+        "Romance"
+      ],
+      "href": "La_La_Land",
+      "extract": "La La Land is a 2016 American romantic musical film written and directed by Damien Chazelle. The film stars Ryan Gosling and Emma Stone as a struggling jazz pianist and an aspiring actress, respectively, who meet and fall in love while pursuing their dreams in Los Angeles. John Legend, Rosemarie DeWitt, Finn Wittrock, and J. K. Simmons appear in supporting roles.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    }
+  ],
+  "description": ""
+},
+{
+  "_id": {
+    "$oid": "6577b23bd3ec855c325ed1af"
+  },
+  "user": "6577b233d3ec855c325ed1ae",
+  "name": "zegrt",
+  "genres": [
+    "Adventure",
+    "Found Footage",
+    "Political"
+  ],
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615192cf"
+      },
+      "title": "Dracula vs. Frankenstein",
+      "year": 1971,
+      "cast": [
+        "Lon Chaney, Jr.",
+        "J. Carrol Naish",
+        "Regina Carrol"
+      ],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "href": "Dracula_vs._Frankenstein",
+      "extract": "Dracula vs. Frankenstein is a 1971 American science fiction horror film directed and co-produced by Al Adamson. The film stars J. Carrol Naish as Dr. Durea, a descendant of Dr. Frankenstein who is working on a blood serum for his assistant Groton. The serum soon becomes sought after by Count Dracula, who hopes that it will grant him the ability to be exposed to sunlight without harm. Other members of the film's cast include Anthony Eisley, Regina Carrol, and Angelo Rossitto.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/50/Draculavsfrankposter.jpg",
+      "thumbnail_width": 256,
+      "thumbnail_height": 389
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c2fc"
+      },
+      "title": "On the Come Up",
+      "year": 2022,
+      "cast": [
+        "Jamila C. Gray",
+        "Da'Vine Joy Randolph",
+        "Lil Yachty",
+        "Mike Epps",
+        "Sanaa Lathan",
+        "Method Man"
+      ],
+      "genres": [
+        "Drama",
+        "Musical"
+      ],
+      "href": "On_the_Come_Up_(film)",
+      "extract": "On the Come Up is a 2022 American musical drama film directed by Sanaa Lathan in her feature directorial debut. Based on the 2019 novel of the same name by Angie Thomas, it stars Jamila C. Gray, Da'Vine Joy Randolph, Mike Epps, Lil Yachty, Lathan, and Method Man.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/92/On_the_Come_Up_movie_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384
+    }
+  ],
+  "description": "qrgterg"
+},
+{
+  "_id": {
+    "$oid": "6582ca3ca3282aefd0e47b50"
+  },
+  "user": "656de5dfa4bf50289af226b9",
+  "name": "2020",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c076"
+      },
+      "title": "After We Collided",
+      "year": 2020,
+      "cast": [
+        "Josephine Langford",
+        "Hero Fiennes Tiffin",
+        "Dylan Sprouse",
+        "Shane Paul McGhie",
+        "Candice King",
+        "Khadijha Red Thunder",
+        "Inanna Sarkis",
+        "Samuel Larsen",
+        "Selma Blair"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "href": "After_We_Collided",
+      "extract": "After We Collided is a 2020 American romantic drama film directed by Roger Kumble, and written by Anna Todd and Mario Celaya. Based on the 2014 novel of the same name by Todd, it is the sequel to After (2019) and the second overall installment in the After film series. The film stars Josephine Langford and Hero Fiennes Tiffin reprising their roles as Tessa Young and Hardin Scott, respectively, with Dylan Sprouse, Shane Paul McGhie, Candice King, Khadijha Red Thunder, Inanna Sarkis, Samuel Larsen, and Selma Blair in supporting roles.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/77/After_We_Collided_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326
+    }
+  ],
+  "description": "Des films de 2020"
+},
+{
+  "_id": {
+    "$oid": "6584ec497310e75587030ad2"
+  },
+  "user": "65841141447a3e96536a441d",
+  "name": "Film à voir",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb01"
+      },
+      "title": "Interstellar",
+      "year": 2014,
+      "cast": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain",
+        "Bill Irwin",
+        "Ellen Burstyn",
+        "Michael Caine"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Interstellar_(film)",
+      "extract": "Interstellar is a 2014 epic science fiction film co-written, directed, and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for mankind.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e56151abbb"
+      },
+      "title": "Fight Club",
+      "year": 1999,
+      "cast": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter"
+      ],
+      "genres": [
+        "Thriller"
+      ],
+      "href": "Fight_Club",
+      "extract": "Fight Club is a 1999 American film directed by David Fincher and starring Brad Pitt, Edward Norton, and Helena Bonham Carter. It is based on the 1996 novel of the same name by Chuck Palahniuk. Norton plays the unnamed narrator, who is discontented with his white-collar job. He forms a \"fight club\" with soap salesman Tyler Durden (Pitt), and becomes embroiled in a relationship with a mysterious woman, Marla Singer.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 327,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c7307307e561515e5c"
+      },
+      "title": "City Lights",
+      "year": 1931,
+      "cast": [
+        "Charles Chaplin",
+        "Virginia Cherrill"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Silent",
+        "Romance"
+      ],
+      "href": "City_Lights",
+      "extract": "City Lights is a 1931 American silent romantic comedy-drama film written, produced, directed by, and starring Charlie Chaplin. The story follows the misadventures of Chaplin's Tramp as he falls in love with a blind girl and develops a turbulent friendship with an alcoholic millionaire.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/City_Lights_%281931_theatrical_poster_-_retouched%29.jpg/320px-City_Lights_%281931_theatrical_poster_-_retouched%29.jpg",
+      "thumbnail_width": 320,
+      "thumbnail_height": 480,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd61"
+      },
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "cast": [
+        "Harrison Ford",
+        "Ryan Gosling",
+        "Ana de Armas",
+        "Mackenzie Davis",
+        "Sylvia Hoeks",
+        "Lennie James",
+        "Carla Juri",
+        "Robin Wright",
+        "Dave Bautista",
+        "Jared Leto"
+      ],
+      "genres": [
+        "Noir",
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner_2049",
+      "extract": "Blade Runner 2049 is a 2017 American epic neo-noir science fiction film directed by Denis Villeneuve and written by Hampton Fancher and Michael Green. A sequel to the 1982 film Blade Runner, the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, and Jared Leto in supporting roles. Ford and Edward James Olmos reprise their roles from the original film. Gosling plays K, a Nexus-9 replicant \"blade runner\" who uncovers a secret that threatens to destabilize society and the course of civilization.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": 5
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bdab"
+      },
+      "title": "Mary and the Witch's Flower",
+      "year": 2018,
+      "cast": [
+        "Ruby Barnhill",
+        "Louis Ashbourne Serkis",
+        "Kate Winslet",
+        "Jim Broadbent",
+        "Teresa Gallagher",
+        "Ewen Bremner",
+        "Rasmus Hardiker",
+        "Morwenna Banks",
+        "Lynda Baron"
+      ],
+      "genres": [
+        "Animated",
+        "Fantasy"
+      ],
+      "href": "Mary_and_the_Witch%27s_Flower",
+      "extract": "Mary and the Witch's Flower  is a 2017 Japanese animated fantasy film co-written and directed by Hiromasa Yonebayashi, produced by Studio Ponoc founder Yoshiaki Nishimura, animated by Studio Ponoc, and distributed by Toho in Japan. Based on the 1971 book The Little Broomstick by Mary Stewart, it was Studio Ponoc's first feature film. It stars the voices of Hana Sugisaki, Yūki Amami and Fumiyo Kohinata.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/65/Mary_and_the_Witch%27s_Flower_%28Japan%29.png",
+      "thumbnail_width": 266,
+      "thumbnail_height": 376,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd2f"
+      },
+      "title": "Dunkirk",
+      "year": 2017,
+      "cast": [
+        "Fionn Whitehead",
+        "Tom Glynn-Carney",
+        "Aneurin Barnard",
+        "Barry Keoghan",
+        "Tom Hardy",
+        "Cillian Murphy",
+        "Mark Rylance",
+        "Kenneth Branagh",
+        "Harry Styles",
+        "James D'Arcy",
+        "Jack Lowden",
+        "Kevin Guthrie"
+      ],
+      "genres": [
+        "Historical",
+        "War"
+      ],
+      "href": "Dunkirk_(2017_film)",
+      "extract": "Dunkirk is a 2017 historical war film written, directed and produced by Christopher Nolan that depicts the Dunkirk evacuation of World War II from the perspectives of the land, sea and air. It was produced by Nolan and Emma Thomas. Its ensemble cast includes Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles in his film debut, Aneurin Barnard, James D'Arcy, Barry Keoghan, Kenneth Branagh, Cillian Murphy, Mark Rylance and Tom Hardy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/15/Dunkirk_Film_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bfa0"
+      },
+      "title": "Star Wars: The Rise of Skywalker",
+      "year": 2019,
+      "cast": [
+        "Carrie Fisher",
+        "Mark Hamill",
+        "Adam Driver",
+        "Daisy Ridley",
+        "John Boyega",
+        "Oscar Isaac",
+        "Anthony Daniels",
+        "Naomi Ackie",
+        "Domhnall Gleeson",
+        "Richard E. Grant",
+        "Lupita Nyong'o",
+        "Keri Russell",
+        "Joonas Suotamo",
+        "Kelly Marie Tran",
+        "Ian McDiarmid",
+        "Billy Dee Williams"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Star_Wars:_The_Rise_of_Skywalker",
+      "extract": "Star Wars: The Rise of Skywalker is a 2019 American epic space opera film produced, co-written, and directed by J. J. Abrams. Produced by Lucasfilm and Abrams' production company Bad Robot Productions, and distributed by Walt Disney Studios Motion Pictures, it is the third installment of the Star Wars sequel trilogy, following The Force Awakens (2015) and The Last Jedi (2017), and the final episode of the nine-part \"Skywalker saga\". Its ensemble cast includes Carrie Fisher, Mark Hamill, Adam Driver, Daisy Ridley, John Boyega, Oscar Isaac, Anthony Daniels, Naomi Ackie, Domhnall Gleeson, Richard E. Grant, Lupita Nyong'o, Keri Russell, Joonas Suotamo, Kelly Marie Tran, Ian McDiarmid, and Billy Dee Williams. The Rise of Skywalker follows Rey, Finn, and Poe Dameron as they lead the Resistance's final stand against Supreme Leader Kylo Ren and the First Order, who are aided by the return of the Galactic Emperor, Palpatine.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/af/Star_Wars_The_Rise_of_Skywalker_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615190c1"
+      },
+      "title": "2001: A Space Odyssey",
+      "year": 1968,
+      "cast": [
+        "Keir Dullea",
+        "Gary Lockwood",
+        "William Sylvester"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "2001:_A_Space_Odyssey_(film)",
+      "extract": "2001: A Space Odyssey is a 1968 epic science fiction film produced and directed by Stanley Kubrick. The screenplay was written by Kubrick and science fiction author Arthur C. Clarke, and was inspired by Clarke's 1951 short story \"The Sentinel\" and other short stories by Clarke. Clarke also published a novelisation of the film, in part written concurrently with the screenplay, after the film's release. The film stars Keir Dullea, Gary Lockwood, William Sylvester, and Douglas Rain, and follows a voyage by astronauts, scientists and the sentient supercomputer HAL to Jupiter to investigate an alien monolith.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png",
+      "thumbnail_width": 261,
+      "thumbnail_height": 390,
+      "score": []
+    }
+  ],
+  "description": "Tous les films que je dois voir"
+},
+{
+  "_id": {
+    "$oid": "6584ecd27310e75587030ad3"
+  },
+  "user": "65841141447a3e96536a441d",
+  "name": "Films vus",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bef9"
+      },
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson",
+        "Jeremy Renner",
+        "Don Cheadle",
+        "Paul Rudd",
+        "Brie Larson",
+        "Karen Gillan",
+        "Danai Gurira",
+        "Benedict Wong",
+        "Jon Favreau",
+        "Bradley Cooper",
+        "Gwyneth Paltrow",
+        "Josh Brolin"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Avengers:_Endgame",
+      "extract": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b834"
+      },
+      "title": "John Carter",
+      "year": 2012,
+      "cast": [
+        "Taylor Kitsch",
+        "Lynn Collins",
+        "Samantha Morton",
+        "Mark Strong",
+        "Ciarán Hinds",
+        "Dominic West",
+        "James Purefoy",
+        "Willem Dafoe"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "href": "John_Carter_(film)",
+      "extract": "John Carter is a 2012 American science fiction action-adventure film directed by Andrew Stanton, written by Stanton, Mark Andrews, and Michael Chabon, and based on A Princess of Mars (1912), the first book in the Barsoom series of novels by Edgar Rice Burroughs. Produced by Jim Morris, Colin Wilson and Lindsey Collins, it stars Taylor Kitsch in the title role, Lynn Collins, Samantha Morton, Mark Strong, Ciarán Hinds, Dominic West, James Purefoy and Willem Dafoe. It chronicles the first interplanetary adventure of John Carter and his attempts to mediate civil unrest amongst the warring kingdoms of Barsoom.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/aa/John_carter_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 385,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b780"
+      },
+      "title": "Thor",
+      "year": 2011,
+      "cast": [
+        "Chris Hemsworth",
+        "Natalie Portman",
+        "Tom Hiddleston",
+        "Stellan Skarsgård",
+        "Colm Feore",
+        "Ray Stevenson",
+        "Idris Elba",
+        "Kat Dennings",
+        "Rene Russo",
+        "Anthony Hopkins",
+        "Tadanobu Asano",
+        "Josh Dallas",
+        "Jaimie Alexander",
+        "Adriana Barraza",
+        "Clark Gregg",
+        "Maximiliano Hernández",
+        "Joseph Gatt",
+        "Douglas Tait",
+        "Jamie McShane",
+        "Dale Godboldo",
+        "Patrick O'Brien Demsey",
+        "J. Michael Straczynski",
+        "Matt Battaglia",
+        "Stan Lee",
+        "Joel McCrary",
+        "Isaac Kappy",
+        "Samuel L. Jackson",
+        "Jeremy Renner",
+        "Walter Simonson"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Thor_(film)",
+      "extract": "Thor is a 2011 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the fourth film in the Marvel Cinematic Universe (MCU). It was directed by Kenneth Branagh, written by the writing team of Ashley Edward Miller and Zack Stentz along with Don Payne, and stars Chris Hemsworth as the title character alongside Natalie Portman, Tom Hiddleston, Stellan Skarsgård, Kat Dennings, Clark Gregg, Colm Feore, Ray Stevenson, Idris Elba, Jaimie Alexander, Rene Russo, and Anthony Hopkins. After reigniting a dormant war, Thor is banished from Asgard to Earth, stripped of his powers and his hammer Mjölnir. As his brother Loki (Hiddleston) plots to take the Asgardian throne, Thor must prove himself worthy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/95/Thor_%28film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c1ea"
+      },
+      "title": "Eternals",
+      "year": 2021,
+      "cast": [
+        "Gemma Chan",
+        "Richard Madden",
+        "Kumail Nanjiani",
+        "Lia McHugh",
+        "Brian Tyree Henry",
+        "Lauren Ridloff",
+        "Barry Keoghan",
+        "Don Lee",
+        "Harish Patel",
+        "Bill Skarsgård",
+        "Kit Harington",
+        "Salma Hayek",
+        "Angelina Jolie"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Eternals_(film)",
+      "extract": "Eternals is a 2021 American superhero film based on the Marvel Comics race of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 26th film in the Marvel Cinematic Universe (MCU). The film is directed by Chloé Zhao, who wrote the screenplay with Patrick Burleigh, Ryan Firpo, and Kaz Firpo. It stars an ensemble cast including Gemma Chan, Richard Madden, Kumail Nanjiani, Lia McHugh, Brian Tyree Henry, Lauren Ridloff, Barry Keoghan, Don Lee, Kit Harington, Salma Hayek, and Angelina Jolie. In the film, the Eternals, immortal alien beings, emerge from hiding after thousands of years to protect Earth from their ancient counterparts, the Deviants.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615199e5"
+      },
+      "title": "Blade Runner",
+      "year": 1982,
+      "cast": [
+        "Harrison Ford",
+        "Rutger Hauer",
+        "Edward James Olmos",
+        "Sean Young",
+        "Daryl Hannah",
+        "Brion James",
+        "James Hong",
+        "William Sanderson",
+        "Joanna Cassidy",
+        "Joe Turkel"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner",
+      "extract": "Blade Runner is a 1982 science fiction film directed by Ridley Scott, and written by Hampton Fancher and David Peoples. Starring Harrison Ford, Rutger Hauer, Sean Young, and Edward James Olmos, it is an adaptation of Philip K. Dick's 1968 novel Do Androids Dream of Electric Sheep? The film is set in a dystopian future Los Angeles of 2019, in which synthetic humans known as replicants are bio-engineered by the powerful Tyrell Corporation to work on space colonies. When a fugitive group of advanced replicants led by Roy Batty (Hauer) escapes back to Earth, burnt-out cop Rick Deckard (Ford) reluctantly agrees to hunt them down.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+      "thumbnail_width": 251,
+      "thumbnail_height": 380,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bccc"
+      },
+      "title": "Get Out",
+      "year": 2017,
+      "cast": [
+        "Daniel Kaluuya",
+        "Allison Williams",
+        "Catherine Keener",
+        "Bradley Whitford",
+        "Caleb Landry Jones",
+        "Stephen Root",
+        "Lakeith Stanfield"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "href": "Get_Out",
+      "extract": "Get Out is a 2017 American psychological horror film written, co-produced, and directed by Jordan Peele in his directorial debut. It stars Daniel Kaluuya, Allison Williams, Lil Rel Howery, LaKeith Stanfield, Bradley Whitford, Caleb Landry Jones, Stephen Root, and Catherine Keener. The plot follows a young black man (Kaluuya), who uncovers shocking secrets when he meets the family of his white girlfriend (Williams).",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 330,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c3ef"
+      },
+      "title": "Oppenheimer",
+      "year": 2023,
+      "cast": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon",
+        "Robert Downey Jr.",
+        "Rami Malek",
+        "Florence Pugh",
+        "Benny Safdie",
+        "Michael Angarano",
+        "Josh Hartnett",
+        "Kenneth Branagh",
+        "Dane DeHaan",
+        "Dylan Arnold",
+        "David Krumholtz",
+        "Alden Ehrenreich",
+        "Matthew Modine"
+      ],
+      "genres": [
+        "Biography"
+      ],
+      "href": "Oppenheimer_(film)",
+      "extract": "Oppenheimer is an upcoming biographical film written and directed by Christopher Nolan. It is based on American Prometheus, a biography written by Kai Bird and Martin J. Sherwin. The film stars Cillian Murphy as J. Robert Oppenheimer, an American theoretical physicist credited with being the \"father of the atomic bomb\" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons, with a supporting ensemble cast that includes Emily Blunt, Robert Downey Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett and Kenneth Branagh. It is a co-production between Universal Pictures, Syncopy Inc. and Atlas Entertainment, with Nolan producing the film alongside Emma Thomas and Charles Roven.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+      "thumbnail_width": 251,
+      "thumbnail_height": 397,
+      "score": [
+        [
+          9,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba0c"
+      },
+      "title": "12 Years a Slave",
+      "year": 2013,
+      "cast": [
+        "Chiwetel Ejiofor",
+        "Michael Fassbender",
+        "Benedict Cumberbatch",
+        "Paul Dano",
+        "Paul Giamatti",
+        "Lupita Nyong'o",
+        "Brad Pitt",
+        "Alfre Woodard",
+        "Sarah Paulson"
+      ],
+      "genres": [
+        "Drama",
+        "Biography"
+      ],
+      "href": "12_Years_a_Slave_(film)",
+      "extract": "12 Years a Slave is a 2013 biographical drama film directed by Steve McQueen from a screenplay by John Ridley, based on the 1853 slave memoir Twelve Years a Slave by Solomon Northup, an African American man who was kidnapped in Washington, D.C. by two conmen in 1841 and sold into slavery. He was put to work on plantations in the state of Louisiana for 12 years before being released. The first scholarly edition of David Wilson's version of Northup's story was co-edited in 1968 by Sue Eakin and Joseph Logsdon.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/12_Years_a_Slave_film_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    }
+  ],
+  "description": "Tous les films que j'ai déjà vu"
+},
+{
+  "_id": {
+    "$oid": "65855f17a39efc46a0a8787b"
+  },
+  "user": "65855eb4a39efc46a0a8787a",
+  "name": "Test 1",
+  "genres": [
+    "Action",
+    "Biography",
+    "Romance"
+  ],
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba6a"
+      },
+      "title": "300: Rise of an Empire",
+      "year": 2014,
+      "cast": [
+        "Sullivan Stapleton",
+        "Eva Green",
+        "Lena Headey",
+        "Hans Matheson",
+        "Rodrigo Santoro"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300:_Rise_of_an_Empire",
+      "extract": "300: Rise of an Empire is a 2014 American epic historical action film directed by Noam Murro from a screenplay by Zack Snyder and Kurt Johnstad, based on Frank Miller's graphic novel Xerxes. It is a follow-up to the 2006 film 300, taking place before, during, and after the main events of that film, and is loosely based on the Battle of Artemisium and the Battle of Salamis. The cast includes Lena Headey, Peter Mensah, David Wenham, Andrew Tiernan, Andrew Pleavin, and Rodrigo Santoro reprising their roles from the first film, alongside Sullivan Stapleton, Eva Green, Hans Matheson, and Callan Mulvey.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/91/300_Rise_of_an_Empire.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383,
+      "score": 10
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b5ca"
+      },
+      "title": "Avatar",
+      "year": 2009,
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldana",
+        "Sigourney Weaver",
+        "Giovanni Ribisi",
+        "Michelle Rodriguez",
+        "Stephen Lang",
+        "CCH Pounder",
+        "Joel David Moore",
+        "Dileep Rao",
+        "Wes Studi",
+        "Laz Alonso",
+        "Matt Gerald",
+        "Peter Mensah",
+        "Debra Wilson Skelton",
+        "James Gaylyn"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Avatar_(2009_film)",
+      "extract": "Avatar is a 2009 epic science fiction film directed, written, co-produced, and co-edited by James Cameron and starring Sam Worthington, Zoe Saldana, Stephen Lang, Michelle Rodriguez, and Sigourney Weaver. It is the first installment in the Avatar film series. It is set in the mid-22nd century, when humans are colonizing Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to mine the valuable mineral unobtanium. The expansion of the mining colony threatens the continued existence of a local tribe of Na'vi, a humanoid species indigenous to Pandora. The title of the film refers to a genetically engineered Na'vi body operated from the brain of a remotely located human that is used to interact with the natives of Pandora.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b6e7"
+      },
+      "title": "The Town",
+      "year": 2010,
+      "cast": [
+        "Ben Affleck",
+        "Jon Hamm",
+        "Rebecca Hall",
+        "Jeremy Renner",
+        "Pete Postlethwaite",
+        "Chris Cooper",
+        "Blake Lively",
+        "Slaine",
+        "Titus Welliver",
+        "Chris Collins",
+        "Victor Garber"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "href": "The_Town_(2010_film)",
+      "extract": "The Town is a 2010 American crime thriller film co-written, directed by, and starring Ben Affleck, adapted from Chuck Hogan's 2004 novel Prince of Thieves. It also stars Rebecca Hall, Jon Hamm, Jeremy Renner, Blake Lively, Titus Welliver, Pete Postlethwaite, Chris Cooper and Slaine, and follows a Boston bank robber who begins to develop romantic feelings for a victim of one of his previous robberies, while he and his crew set out to get one final score by robbing Fenway Park.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/da/The_Town_Poster.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 384,
+      "score": 0
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bcbd"
+      },
+      "title": "Rings",
+      "year": 2017,
+      "cast": [
+        "Matilda Lutz",
+        "Alex Roe",
+        "Johnny Galecki",
+        "Aimee Teegarden",
+        "Bonnie Morgan",
+        "Vincent D'Onofrio"
+      ],
+      "genres": [
+        "Horror",
+        "Supernatural"
+      ],
+      "href": "Rings_(2017_film)",
+      "extract": "Rings is a 2017 American supernatural horror film directed by F. Javier Gutiérrez, written by David Loucka, Jacob Aaron Estes and Akiva Goldsman and starring Matilda Lutz, Alex Roe, Johnny Galecki, Aimee Teegarden, Bonnie Morgan and Vincent D'Onofrio. It is the third and final installment in The Ring series, following The Ring (2002) and The Ring Two (2005); it is based on elements of Spiral by Kōji Suzuki.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/ec/Rings_-_Official_Theatrical_Poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 343,
+      "score": [
+        [
+          5,
+          "65855eb4a39efc46a0a8787a"
+        ]
+      ]
+    }
+  ],
+  "description": "  bisous tout plein "
+},
+{
+  "_id": {
+    "$oid": "6585ade415e78cfd37955738"
+  },
+  "user": "65841141447a3e96536a441d",
+  "name": "Films Favoris",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd61"
+      },
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "cast": [
+        "Harrison Ford",
+        "Ryan Gosling",
+        "Ana de Armas",
+        "Mackenzie Davis",
+        "Sylvia Hoeks",
+        "Lennie James",
+        "Carla Juri",
+        "Robin Wright",
+        "Dave Bautista",
+        "Jared Leto"
+      ],
+      "genres": [
+        "Noir",
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner_2049",
+      "extract": "Blade Runner 2049 is a 2017 American epic neo-noir science fiction film directed by Denis Villeneuve and written by Hampton Fancher and Michael Green. A sequel to the 1982 film Blade Runner, the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, and Jared Leto in supporting roles. Ford and Edward James Olmos reprise their roles from the original film. Gosling plays K, a Nexus-9 replicant \"blade runner\" who uncovers a secret that threatens to destabilize society and the course of civilization.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": [
+        [
+          10,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b834"
+      },
+      "title": "John Carter",
+      "year": 2012,
+      "cast": [
+        "Taylor Kitsch",
+        "Lynn Collins",
+        "Samantha Morton",
+        "Mark Strong",
+        "Ciarán Hinds",
+        "Dominic West",
+        "James Purefoy",
+        "Willem Dafoe"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "href": "John_Carter_(film)",
+      "extract": "John Carter is a 2012 American science fiction action-adventure film directed by Andrew Stanton, written by Stanton, Mark Andrews, and Michael Chabon, and based on A Princess of Mars (1912), the first book in the Barsoom series of novels by Edgar Rice Burroughs. Produced by Jim Morris, Colin Wilson and Lindsey Collins, it stars Taylor Kitsch in the title role, Lynn Collins, Samantha Morton, Mark Strong, Ciarán Hinds, Dominic West, James Purefoy and Willem Dafoe. It chronicles the first interplanetary adventure of John Carter and his attempts to mediate civil unrest amongst the warring kingdoms of Barsoom.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/aa/John_carter_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 385,
+      "score": [
+        [
+          10,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b251"
+      },
+      "title": "300",
+      "year": 2007,
+      "cast": [
+        "Gerard Butler",
+        "Lena Headey",
+        "David Wenham",
+        "Dominic West",
+        "Vincent Regan",
+        "Michael Fassbender",
+        "Tom Wisdom",
+        "Andrew Pleavin",
+        "Andrew Tiernan",
+        "Rodrigo Santoro",
+        "Stephen McHattie",
+        "Peter Mensah",
+        "Kelly Craig",
+        "Robert Maillet",
+        "Patrick Sabongui",
+        "Tyrone Benskin",
+        "Tyler Neitzel",
+        "Giovanni Cimmino",
+        "Leon Laderach"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300_(film)",
+      "extract": "300 is a 2006 American epic historical action film loosely based on the 1998 comic series of the same name by Frank Miller and Lynn Varley. Both are fictionalized retellings of the Battle of Thermopylae in the Greco-Persian Wars. The film was co-written and directed by Zack Snyder, while Miller served as executive producer and consultant. It was filmed mostly with a superimposition chroma key technique to replicate the imagery of the original comic book. The plot revolves around King Leonidas, who leads 300 Spartans into battle against the Persian \"God-King\" Xerxes and his invading army of more than 300,000 soldiers. As the battle rages, Queen Gorgo attempts to rally support in Sparta for her husband.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 384,
+      "score": [
+        [
+          9,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bef9"
+      },
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson",
+        "Jeremy Renner",
+        "Don Cheadle",
+        "Paul Rudd",
+        "Brie Larson",
+        "Karen Gillan",
+        "Danai Gurira",
+        "Benedict Wong",
+        "Jon Favreau",
+        "Bradley Cooper",
+        "Gwyneth Paltrow",
+        "Josh Brolin"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Avengers:_Endgame",
+      "extract": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": [
+        [
+          9,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c1ea"
+      },
+      "title": "Eternals",
+      "year": 2021,
+      "cast": [
+        "Gemma Chan",
+        "Richard Madden",
+        "Kumail Nanjiani",
+        "Lia McHugh",
+        "Brian Tyree Henry",
+        "Lauren Ridloff",
+        "Barry Keoghan",
+        "Don Lee",
+        "Harish Patel",
+        "Bill Skarsgård",
+        "Kit Harington",
+        "Salma Hayek",
+        "Angelina Jolie"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Eternals_(film)",
+      "extract": "Eternals is a 2021 American superhero film based on the Marvel Comics race of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 26th film in the Marvel Cinematic Universe (MCU). The film is directed by Chloé Zhao, who wrote the screenplay with Patrick Burleigh, Ryan Firpo, and Kaz Firpo. It stars an ensemble cast including Gemma Chan, Richard Madden, Kumail Nanjiani, Lia McHugh, Brian Tyree Henry, Lauren Ridloff, Barry Keoghan, Don Lee, Kit Harington, Salma Hayek, and Angelina Jolie. In the film, the Eternals, immortal alien beings, emerge from hiding after thousands of years to protect Earth from their ancient counterparts, the Deviants.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370,
+      "score": [
+        [
+          8,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd89"
+      },
+      "title": "Coco",
+      "year": 2017,
+      "cast": [
+        "Anthony Gonzalez",
+        "Gael García Bernal",
+        "Benjamin Bratt",
+        "Alanna Ubach",
+        "Renée Victor",
+        "Ana Ofelia Murguia",
+        "Edward James Olmos"
+      ],
+      "genres": [
+        "Animated",
+        "Fantasy"
+      ],
+      "href": "Coco_(2017_film)",
+      "extract": "Coco is a 2017 American computer-animated fantasy film produced by Pixar Animation Studios and released by Walt Disney Pictures. Based on an original idea by Lee Unkrich, it is directed by him and co-directed by Adrian Molina. The film's voice cast stars Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach, Renée Victor, Ana Ofelia Murguía and Edward James Olmos. The story follows a 12-year-old boy named Miguel (Gonzalez) who is accidentally transported to the Land of the Dead, where he seeks the help of his deceased musician great-great-grandfather to return him to his family among the living and to reverse his family's ban on music.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c3ef"
+      },
+      "title": "Oppenheimer",
+      "year": 2023,
+      "cast": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon",
+        "Robert Downey Jr.",
+        "Rami Malek",
+        "Florence Pugh",
+        "Benny Safdie",
+        "Michael Angarano",
+        "Josh Hartnett",
+        "Kenneth Branagh",
+        "Dane DeHaan",
+        "Dylan Arnold",
+        "David Krumholtz",
+        "Alden Ehrenreich",
+        "Matthew Modine"
+      ],
+      "genres": [
+        "Biography"
+      ],
+      "href": "Oppenheimer_(film)",
+      "extract": "Oppenheimer is an upcoming biographical film written and directed by Christopher Nolan. It is based on American Prometheus, a biography written by Kai Bird and Martin J. Sherwin. The film stars Cillian Murphy as J. Robert Oppenheimer, an American theoretical physicist credited with being the \"father of the atomic bomb\" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons, with a supporting ensemble cast that includes Emily Blunt, Robert Downey Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett and Kenneth Branagh. It is a co-production between Universal Pictures, Syncopy Inc. and Atlas Entertainment, with Nolan producing the film alongside Emma Thomas and Charles Roven.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+      "thumbnail_width": 251,
+      "thumbnail_height": 397,
+      "score": [
+        [
+          9,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    }
+  ],
+  "description": "Tous mes films préférés."
+},
+{
+  "_id": {
+    "$oid": "6585d019e7c0ea58f55ee8af"
+  },
+  "user": "65855eb4a39efc46a0a8787a",
+  "name": "Test 2",
+  "genres": [
+    "Action",
+    "Suspense"
+  ],
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b162"
+      },
+      "title": "Pride & Prejudice",
+      "year": 2005,
+      "cast": [
+        "Keira Knightley",
+        "Matthew Macfadyen",
+        "Brenda Blethyn",
+        "Donald Sutherland",
+        "Tom Hollander",
+        "Rosamund Pike",
+        "Jena Malone",
+        "Judi Dench",
+        "Carey Mulligan",
+        "Talulah Riley",
+        "Simon Woods",
+        "Tamzin Merchant",
+        "Claudie Blakley",
+        "Kelly Reilly",
+        "Rupert Friend",
+        "Cornelius Booth",
+        "Penelope Wilton",
+        "Peter Wight",
+        "Meg Wynn Owen",
+        "Sinead Matthews"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "href": "Pride_%26_Prejudice_(2005_film)",
+      "extract": "Pride & Prejudice is a 2005 romantic drama film directed by Joe Wright, in his feature directorial debut, and based on Jane Austen's 1813 novel of the same name. The film features five sisters from an English family of landed gentry as they deal with issues of marriage, morality and misconceptions. Keira Knightley stars in the lead role of Elizabeth Bennet, while Matthew Macfadyen plays her romantic interest Mr. Darcy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/03/Prideandprejudiceposter.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 187,
+      "score": []
+    }
+  ],
+  "description": "cdertgyh(dutrxgyjcctrbnhsyujsrz'd"
+},
+{
+  "_id": {
+    "$oid": "6585d298409685f0bf41ca1c"
+  },
+  "user": "6585d23564af33c77ec25030",
+  "name": "MDR",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Live Action",
+    "Science Fiction"
+  ],
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bcd4"
+      },
+      "title": "Before I Fall",
+      "year": 2017,
+      "cast": [
+        "Zoey Deutch",
+        "Halston Sage",
+        "Logan Miller",
+        "Kian Lawley",
+        "Elena Kampouris",
+        "Cynthy Wu",
+        "Medalion Rahimi",
+        "Diego Boneta",
+        "Jennifer Beals"
+      ],
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Teen"
+      ],
+      "href": "Before_I_Fall_(film)",
+      "extract": "Before I Fall is a 2017 American science fiction teen drama film directed by Ry Russo-Young and written by Maria Maggenti and Gina Prince-Bythewood, based on the 2010 novel of the same name by Lauren Oliver. The film stars Zoey Deutch, Halston Sage, Logan Miller, Kian Lawley, Elena Kampouris, Diego Boneta and Jennifer Beals.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fa/Before_I_Fall_%28film%29.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 312,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b94b"
+      },
+      "title": "Safe Haven",
+      "year": 2013,
+      "cast": [
+        "Josh Duhamel",
+        "Julianne Hough",
+        "David Lyons",
+        "Cobie Smulders",
+        "Mimi Kirkland",
+        "Noah Lomax",
+        "Mike Pniewski"
+      ],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Thriller",
+        "Romance"
+      ],
+      "href": "Safe_Haven_(film)",
+      "extract": "Safe Haven is a 2013 American romantic drama fantasy thriller film starring Julianne Hough, Josh Duhamel and Cobie Smulders. The film marks the final film role for actor Red West. It was released theatrically in North America on February 14, 2013. The film was directed by Lasse Hallström, and is an adaptation of Nicholas Sparks' 2010 novel of the same name. The film was originally set for a February 8 release.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3d/Safe_Haven_Poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b54e"
+      },
+      "title": "Another Cinderella Story",
+      "year": 2009,
+      "cast": [
+        "Selena Gomez",
+        "Drew Seeley",
+        "Jane Lynch",
+        "Emily Perkins",
+        "Katharine Isabelle",
+        "Jessica Parker Kennedy",
+        "Marcus T. Paulk",
+        "Nicole LaPlaca",
+        "Alex Zahara",
+        "Maija Tailfeathers",
+        "Lynda Boyd",
+        "Garwin Sanford",
+        "Lorena Gale",
+        "Camille Mitchell",
+        "Nicole Muñoz",
+        "Tiffany Burns",
+        "Colin Foo"
+      ],
+      "genres": [
+        "Comedy",
+        "Musical",
+        "Teen"
+      ],
+      "href": "Another_Cinderella_Story",
+      "extract": "Another Cinderella Story is a 2008 American teen musical comedy film directed by Damon Santostefano and written by Erik Patterson and Jessica Scott. The film stars Selena Gomez, Drew Seeley and Jane Lynch. It is a sequel to A Cinderella Story (2004) and the second installment in the A Cinderella Story series. Like the first film, it is a retelling of the Cinderella fairy tale in a modern setting. The film was released on DVD on September 16, 2008 and premiered on ABC Family on January 18, 2009.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0c/AAnotherCinderellaStory.jpg",
+      "thumbnail_width": 255,
+      "thumbnail_height": 350,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb52"
+      },
+      "title": "Cinderella",
+      "year": 2015,
+      "cast": [
+        "Cate Blanchett",
+        "Lily James",
+        "Richard Madden",
+        "Stellan Skarsgård",
+        "Holliday Grainger",
+        "Derek Jacobi",
+        "Helena Bonham Carter"
+      ],
+      "genres": [
+        "Fantasy",
+        "Romance"
+      ],
+      "href": "Cinderella_(2015_American_film)",
+      "extract": "Cinderella is a 2015 romantic fantasy film directed by Kenneth Branagh, from a screenplay by Chris Weitz, and co-produced by Walt Disney Pictures, Kinberg Genre, Allison Shearmur Productions, and Beagle Pug Films. The film is based on the folk tale and is a live-action adaptation of Walt Disney's 1950 animated film of the same name. It stars Lily James as the title character, alongside Cate Blanchett, Richard Madden, Holliday Grainger, and Helena Bonham Carter.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c2/Cinderella_2015_official_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bef9"
+      },
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson",
+        "Jeremy Renner",
+        "Don Cheadle",
+        "Paul Rudd",
+        "Brie Larson",
+        "Karen Gillan",
+        "Danai Gurira",
+        "Benedict Wong",
+        "Jon Favreau",
+        "Bradley Cooper",
+        "Gwyneth Paltrow",
+        "Josh Brolin"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Avengers:_Endgame",
+      "extract": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": [
+        [
+          9,
+          "65841141447a3e96536a441d"
+        ],
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bbaf"
+      },
+      "title": "Before We Go",
+      "year": 2015,
+      "cast": [
+        "Chris Evans",
+        "Alice Eve"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "href": "Before_We_Go",
+      "extract": "Before We Go is a 2014 American romantic drama film directed by Chris Evans in his directorial debut. It stars Evans and Alice Eve as two strangers stuck in Manhattan, New York City, for the night.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/e7/Before_We_Go_Poster.jpg",
+      "thumbnail_width": 256,
+      "thumbnail_height": 380,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    }
+  ],
+  "description": "qwsdmkfjqdehvgkljbdqsv"
+},
+{
+  "_id": {
+    "$oid": "6585f3f45aa9ba7c20d1bdbf"
+  },
+  "user": "65841141447a3e96536a441d",
+  "name": "test",
+  "genres": null,
+  "movies": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c082"
+      },
+      "title": "The Informer",
+      "year": 2020,
+      "cast": [
+        "Joel Kinnaman",
+        "Rosamund Pike",
+        "Common",
+        "Ana de Armas",
+        "Clive Owen"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "href": "The_Informer_(2019_film)",
+      "extract": "The Informer is a 2019 British crime thriller film directed by Andrea Di Stefano and written by Matt Cook, based on the novel Three Seconds by Roslund & Hellström. The film stars Joel Kinnaman, Rosamund Pike, Common, Ana de Armas, and Clive Owen.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4d/The_Informer_poster_2020.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b7b0"
+      },
+      "title": "The Idiotmaker's Gravity Tour",
+      "year": 2011,
+      "cast": [
+        "Daniel Kremer",
+        "William Cully Allen (writer)",
+        "William Cully Allen",
+        "Glenn Walsh",
+        "K.J. Linhein",
+        "Pappu Rai",
+        "Peter Brunette",
+        "William McKeever",
+        "Julie Edelstein"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Independent"
+      ],
+      "href": "The_Idiotmaker%27s_Gravity_Tour",
+      "extract": "The Idiotmaker's Gravity Tour is a 2011 American independent comedy-drama film starring William Cully Allen, Glenn Walsh, K.J. Linhein, Pappu Rai, Peter Brunette, Erin Lovett Sherman, Alanna Blair, William McKeever and written and directed by Daniel Kremer.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3b/The_Idiotmaker%27s_Gravity_Tour_poster.jpg",
+      "thumbnail_width": 264,
+      "thumbnail_height": 376,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b67a"
+      },
+      "title": "Dinosaur Train",
+      "year": 2010,
+      "cast": [
+        "Phillip Corlett",
+        "Claire Corlett",
+        "Erika-Shaye Gair",
+        "Alexander Matthew Marr",
+        "Ian James Corlett",
+        "Natasha Calis",
+        "Colin Murdock",
+        "Ellen Kennedy",
+        "Sean Thomas",
+        "Laura Marr"
+      ],
+      "genres": [
+        "Animated",
+        "Musical"
+      ],
+      "href": "Dinosaur_Train",
+      "extract": "Dinosaur Train is a CGI-animated preschool musical television series aimed for preschoolers ages 3 to 6. Created by Craig Bartlett, who created Nickelodeon's Hey Arnold!, the series features a curious young Tyrannosaurus rex named Buddy who, together with his adopted Pteranodon family, takes the Dinosaur Train to explore his time period, and have adventures with a variety of dinosaurs. It is co-produced by The Jim Henson Company in association with the Infocomm Media Development Authority, Sparky Animation, FableVision, Snee-Oosh, Inc., Reel FX, and Sea to Sky Entertainment. As of September 2018, PBS Kids had ordered 11 more episodes, taking the total number of episodes to 100. A film based on the series from Universal Pictures and Universal 1440 Entertainment titled, Dinosaur Train: Adventure Island premiered on April 12, 2021.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/f2/DinosaurTrain.jpg",
+      "thumbnail_width": 116,
+      "thumbnail_height": 106,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c3ef"
+      },
+      "title": "Oppenheimer",
+      "year": 2023,
+      "cast": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon",
+        "Robert Downey Jr.",
+        "Rami Malek",
+        "Florence Pugh",
+        "Benny Safdie",
+        "Michael Angarano",
+        "Josh Hartnett",
+        "Kenneth Branagh",
+        "Dane DeHaan",
+        "Dylan Arnold",
+        "David Krumholtz",
+        "Alden Ehrenreich",
+        "Matthew Modine"
+      ],
+      "genres": [
+        "Biography"
+      ],
+      "href": "Oppenheimer_(film)",
+      "extract": "Oppenheimer is an upcoming biographical film written and directed by Christopher Nolan. It is based on American Prometheus, a biography written by Kai Bird and Martin J. Sherwin. The film stars Cillian Murphy as J. Robert Oppenheimer, an American theoretical physicist credited with being the \"father of the atomic bomb\" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons, with a supporting ensemble cast that includes Emily Blunt, Robert Downey Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett and Kenneth Branagh. It is a co-production between Universal Pictures, Syncopy Inc. and Atlas Entertainment, with Nolan producing the film alongside Emma Thomas and Charles Roven.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+      "thumbnail_width": 251,
+      "thumbnail_height": 397,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c09b"
+      },
+      "title": "Black Beauty",
+      "year": 2020,
+      "cast": [
+        "Mackenzie Foy",
+        "Kate Winslet",
+        "Claire Forlani",
+        "Fern Deacon",
+        "Iain Glen"
+      ],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Family"
+      ],
+      "href": "Black_Beauty_(2020_film)",
+      "extract": "Black Beauty is a 2020 adventure drama family film written, edited and directed by Ashley Avis and based on the 1877 novel of the same name by Anna Sewell. A co-production between the United States, the United Kingdom, South Africa, France and Germany, it stars Kate Winslet, Mackenzie Foy, Claire Forlani, Iain Glen and Fern Deacon and is the sixth cinematic adaptation. In the film, Black Beauty is portrayed as a mare instead of a stallion and is brought to Birtwick Park where she forges a bond with a spirited teenager that carries through different chapters, challenges and adventures. Originally scheduled for a theatrical release, it was unable to be released in cinemas due to the negative effects of the COVID-19 pandemic. The film's distribution rights were acquired by Walt Disney Studios and was released on the company's streaming service Disney+ on November 27, 2020. It received mixed reviews from critics.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/cc/Black_Beauty_Disney%2B_Poster.jpeg",
+      "thumbnail_width": 282,
+      "thumbnail_height": 353,
+      "score": []
+    }
+  ],
+  "description": ""
+}]

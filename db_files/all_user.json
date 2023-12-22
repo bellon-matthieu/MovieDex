@@ -1,0 +1,1179 @@
+[{
+  "_id": {
+    "$oid": "65841141447a3e96536a441d"
+  },
+  "username": "Matthieu",
+  "email": "matthieu@gmail.com",
+  "password": 3556498,
+  "seen": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba6a"
+      },
+      "title": "300: Rise of an Empire",
+      "year": 2014,
+      "cast": [
+        "Sullivan Stapleton",
+        "Eva Green",
+        "Lena Headey",
+        "Hans Matheson",
+        "Rodrigo Santoro"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300:_Rise_of_an_Empire",
+      "extract": "300: Rise of an Empire is a 2014 American epic historical action film directed by Noam Murro from a screenplay by Zack Snyder and Kurt Johnstad, based on Frank Miller's graphic novel Xerxes. It is a follow-up to the 2006 film 300, taking place before, during, and after the main events of that film, and is loosely based on the Battle of Artemisium and the Battle of Salamis. The cast includes Lena Headey, Peter Mensah, David Wenham, Andrew Tiernan, Andrew Pleavin, and Rodrigo Santoro reprising their roles from the first film, alongside Sullivan Stapleton, Eva Green, Hans Matheson, and Callan Mulvey.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/91/300_Rise_of_an_Empire.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383,
+      "score": 10
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bef9"
+      },
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson",
+        "Jeremy Renner",
+        "Don Cheadle",
+        "Paul Rudd",
+        "Brie Larson",
+        "Karen Gillan",
+        "Danai Gurira",
+        "Benedict Wong",
+        "Jon Favreau",
+        "Bradley Cooper",
+        "Gwyneth Paltrow",
+        "Josh Brolin"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Avengers:_Endgame",
+      "extract": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b251"
+      },
+      "title": "300",
+      "year": 2007,
+      "cast": [
+        "Gerard Butler",
+        "Lena Headey",
+        "David Wenham",
+        "Dominic West",
+        "Vincent Regan",
+        "Michael Fassbender",
+        "Tom Wisdom",
+        "Andrew Pleavin",
+        "Andrew Tiernan",
+        "Rodrigo Santoro",
+        "Stephen McHattie",
+        "Peter Mensah",
+        "Kelly Craig",
+        "Robert Maillet",
+        "Patrick Sabongui",
+        "Tyrone Benskin",
+        "Tyler Neitzel",
+        "Giovanni Cimmino",
+        "Leon Laderach"
+      ],
+      "genres": [
+        "Action",
+        "Historical"
+      ],
+      "href": "300_(film)",
+      "extract": "300 is a 2006 American epic historical action film loosely based on the 1998 comic series of the same name by Frank Miller and Lynn Varley. Both are fictionalized retellings of the Battle of Thermopylae in the Greco-Persian Wars. The film was co-written and directed by Zack Snyder, while Miller served as executive producer and consultant. It was filmed mostly with a superimposition chroma key technique to replicate the imagery of the original comic book. The plot revolves around King Leonidas, who leads 300 Spartans into battle against the Persian \"God-King\" Xerxes and his invading army of more than 300,000 soldiers. As the battle rages, Queen Gorgo attempts to rally support in Sparta for her husband.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
+      "thumbnail_width": 260,
+      "thumbnail_height": 384,
+      "score": 4
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b834"
+      },
+      "title": "John Carter",
+      "year": 2012,
+      "cast": [
+        "Taylor Kitsch",
+        "Lynn Collins",
+        "Samantha Morton",
+        "Mark Strong",
+        "Ciarán Hinds",
+        "Dominic West",
+        "James Purefoy",
+        "Willem Dafoe"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "href": "John_Carter_(film)",
+      "extract": "John Carter is a 2012 American science fiction action-adventure film directed by Andrew Stanton, written by Stanton, Mark Andrews, and Michael Chabon, and based on A Princess of Mars (1912), the first book in the Barsoom series of novels by Edgar Rice Burroughs. Produced by Jim Morris, Colin Wilson and Lindsey Collins, it stars Taylor Kitsch in the title role, Lynn Collins, Samantha Morton, Mark Strong, Ciarán Hinds, Dominic West, James Purefoy and Willem Dafoe. It chronicles the first interplanetary adventure of John Carter and his attempts to mediate civil unrest amongst the warring kingdoms of Barsoom.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/aa/John_carter_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 385,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b6ef"
+      },
+      "title": "Wall Street: Money Never Sleeps",
+      "year": 2010,
+      "cast": [
+        "Michael Douglas",
+        "Shia LaBeouf",
+        "Carey Mulligan",
+        "Josh Brolin",
+        "Frank Langella",
+        "Susan Sarandon",
+        "John Buffalo Mailer",
+        "Vanessa Ferlito",
+        "Eli Wallach",
+        "Maria Bartiromo",
+        "Austin Pendleton",
+        "Waltrudis Buck",
+        "John Bedford Lloyd",
+        "Jason Clarke",
+        "Oliver Stone",
+        "Anthony Scaramucci",
+        "Sean Stone",
+        "James Chanos",
+        "Jim Cramer",
+        "Noelle Beck",
+        "Graydon Carter",
+        "Natalie Morales",
+        "Michael Cumpsty",
+        "Nouriel Roubini",
+        "Warren Buffett",
+        "Sylvia Miles",
+        "Edmund Lyndeck",
+        "Tom Mardirosian",
+        "Julianne Michelle",
+        "Annie McEnroe",
+        "Carl Quintanilla",
+        "Joan Rivers",
+        "Charlie Sheen",
+        "Donald Trump",
+        "Neil Cavuto"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "href": "Wall_Street:_Money_Never_Sleeps",
+      "extract": "Wall Street: Money Never Sleeps is a 2010 American drama film directed by Oliver Stone, a sequel to Wall Street (1987). It stars Michael Douglas, Shia LaBeouf, Josh Brolin, Carey Mulligan, Frank Langella, Susan Sarandon and Eli Wallach in his final film role.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c8/Wall_Street-_Money_Never_Sleeps_film.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e56151aa3e"
+      },
+      "title": "Titanic",
+      "year": 1997,
+      "cast": [
+        "Leonardo DiCaprio",
+        "Kate Winslet",
+        "Billy Zane",
+        "Frances Fisher",
+        "Victor Garber",
+        "Kathy Bates",
+        "Bill Paxton",
+        "Gloria Stuart",
+        "David Warner",
+        "Suzy Amis"
+      ],
+      "genres": [
+        "Historical",
+        "Disaster",
+        "Romance"
+      ],
+      "href": "Titanic_(1997_film)",
+      "extract": "Titanic is a 1997 American epic romance and disaster film directed, written, produced, and co-edited by James Cameron. Incorporating both historical and fictionalized aspects, it is based on accounts of the sinking of the RMS Titanic and stars Kate Winslet and Leonardo DiCaprio as members of different social classes who fall in love aboard the ship during its ill-fated maiden voyage. The film also features Billy Zane, Kathy Bates, Frances Fisher, Gloria Stuart, Bernard Hill, Jonathan Hyde, Victor Garber, and Bill Paxton.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": [
+        [
+          7,
+          "65841141447a3e96536a441d"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bc36"
+      },
+      "title": "Captain America: Civil War",
+      "year": 2016,
+      "cast": [
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Scarlett Johansson",
+        "Sebastian Stan",
+        "Anthony Mackie",
+        "Don Cheadle",
+        "Jeremy Renner",
+        "Chadwick Boseman",
+        "Paul Bettany",
+        "Elizabeth Olsen",
+        "Paul Rudd",
+        "Emily VanCamp",
+        "Marisa Tomei",
+        "Tom Holland",
+        "Frank Grillo",
+        "Martin Freeman",
+        "William Hurt",
+        "Daniel Brühl"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Captain_America:_Civil_War",
+      "extract": "Captain America: Civil War is a 2016 American superhero film based on the Marvel Comics character Captain America, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Captain America: The First Avenger (2011) and Captain America: The Winter Soldier (2014), and the 13th film in the Marvel Cinematic Universe (MCU). The film was directed by Anthony and Joe Russo from a screenplay by the writing team of Christopher Markus and Stephen McFeely, and stars Chris Evans as Steve Rogers / Captain America alongside an ensemble cast including Robert Downey Jr., Scarlett Johansson, Sebastian Stan, Anthony Mackie, Don Cheadle, Jeremy Renner, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Paul Rudd, Emily VanCamp, Marisa Tomei, Tom Holland, Frank Grillo, Martin Freeman, William Hurt, and Daniel Brühl. In Captain America: Civil War, disagreement over international oversight of the Avengers fractures the team into two opposing factions—one led by Steve Rogers and the other by Tony Stark (Downey).",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b780"
+      },
+      "title": "Thor",
+      "year": 2011,
+      "cast": [
+        "Chris Hemsworth",
+        "Natalie Portman",
+        "Tom Hiddleston",
+        "Stellan Skarsgård",
+        "Colm Feore",
+        "Ray Stevenson",
+        "Idris Elba",
+        "Kat Dennings",
+        "Rene Russo",
+        "Anthony Hopkins",
+        "Tadanobu Asano",
+        "Josh Dallas",
+        "Jaimie Alexander",
+        "Adriana Barraza",
+        "Clark Gregg",
+        "Maximiliano Hernández",
+        "Joseph Gatt",
+        "Douglas Tait",
+        "Jamie McShane",
+        "Dale Godboldo",
+        "Patrick O'Brien Demsey",
+        "J. Michael Straczynski",
+        "Matt Battaglia",
+        "Stan Lee",
+        "Joel McCrary",
+        "Isaac Kappy",
+        "Samuel L. Jackson",
+        "Jeremy Renner",
+        "Walter Simonson"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Thor_(film)",
+      "extract": "Thor is a 2011 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the fourth film in the Marvel Cinematic Universe (MCU). It was directed by Kenneth Branagh, written by the writing team of Ashley Edward Miller and Zack Stentz along with Don Payne, and stars Chris Hemsworth as the title character alongside Natalie Portman, Tom Hiddleston, Stellan Skarsgård, Kat Dennings, Clark Gregg, Colm Feore, Ray Stevenson, Idris Elba, Jaimie Alexander, Rene Russo, and Anthony Hopkins. After reigniting a dormant war, Thor is banished from Asgard to Earth, stripped of his powers and his hammer Mjölnir. As his brother Loki (Hiddleston) plots to take the Asgardian throne, Thor must prove himself worthy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/95/Thor_%28film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c0b5"
+      },
+      "title": "Soul",
+      "year": 2020,
+      "cast": [
+        "Jamie Foxx",
+        "Tina Fey",
+        "Graham Norton",
+        "Rachel House",
+        "Alice Braga",
+        "Richard Ayoade",
+        "Phylicia Rashad",
+        "Donnell Rawlings",
+        "Questlove",
+        "Angela Bassett",
+        "Daveed Diggs",
+        "Wes Studi",
+        "Fortune Feimster",
+        "Zenobia Shroff"
+      ],
+      "genres": [
+        "Animated",
+        "Comedy",
+        "Drama"
+      ],
+      "href": "Soul_(2020_film)",
+      "extract": "Soul is a 2020 American computer-animated comedy-drama film produced by Pixar Animation Studios for Walt Disney Pictures. It was directed by Pete Docter, co-directed by Kemp Powers, and produced by Dana Murray, from a screenplay by Docter, Powers, and Mike Jones. The film stars the voices of Jamie Foxx, Tina Fey, Graham Norton, Rachel House, Alice Braga, Richard Ayoade, Phylicia Rashad, Donnell Rawlings, Questlove, and Angela Bassett. It follows a pianist, Joe Gardner (Foxx), who is killed in an accident before his big break as a jazz musician and seeks to reunite his separated soul and body.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/39/Soul_%282020_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd12"
+      },
+      "title": "Wonder Woman",
+      "year": 2017,
+      "cast": [
+        "Gal Gadot",
+        "Chris Pine",
+        "Connie Nielsen",
+        "Robin Wright",
+        "Danny Huston",
+        "David Thewlis",
+        "Elena Anaya"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Wonder_Woman_(2017_film)",
+      "extract": "Wonder Woman is a 2017 superhero film based on the DC Comics character of the same name. Produced by Warner Bros. Pictures, DC Films, Atlas Entertainment and Cruel and Unusual Films, and distributed by Warner Bros. Pictures, it is the fourth installment of the DC Extended Universe (DCEU), and a prequel/spin-off to Batman v Superman: Dawn of Justice (2016). Directed by Patty Jenkins and written by Allan Heinberg from a story by Heinberg, Zack Snyder and Jason Fuchs, Wonder Woman stars Gal Gadot in the title role, alongside Chris Pine, Robin Wright, Danny Huston, David Thewlis, Connie Nielsen and Elena Anaya. It is the second live action theatrical film featuring Wonder Woman following her debut in Batman v Superman: Dawn of Justice. In Wonder Woman, the Amazon princess Diana sets out to stop World War I, believing the conflict was started by the longtime enemy of the Amazons, Ares, after American pilot and spy Steve Trevor crash-lands on their island Themyscira and informs her about it.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b0/Wonder_Woman_%282017_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c1ea"
+      },
+      "title": "Eternals",
+      "year": 2021,
+      "cast": [
+        "Gemma Chan",
+        "Richard Madden",
+        "Kumail Nanjiani",
+        "Lia McHugh",
+        "Brian Tyree Henry",
+        "Lauren Ridloff",
+        "Barry Keoghan",
+        "Don Lee",
+        "Harish Patel",
+        "Bill Skarsgård",
+        "Kit Harington",
+        "Salma Hayek",
+        "Angelina Jolie"
+      ],
+      "genres": [
+        "Superhero"
+      ],
+      "href": "Eternals_(film)",
+      "extract": "Eternals is a 2021 American superhero film based on the Marvel Comics race of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 26th film in the Marvel Cinematic Universe (MCU). The film is directed by Chloé Zhao, who wrote the screenplay with Patrick Burleigh, Ryan Firpo, and Kaz Firpo. It stars an ensemble cast including Gemma Chan, Richard Madden, Kumail Nanjiani, Lia McHugh, Brian Tyree Henry, Lauren Ridloff, Barry Keoghan, Don Lee, Kit Harington, Salma Hayek, and Angelina Jolie. In the film, the Eternals, immortal alien beings, emerge from hiding after thousands of years to protect Earth from their ancient counterparts, the Deviants.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Eternals_%28film%29_poster.jpeg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 370,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c8307307e5615199e5"
+      },
+      "title": "Blade Runner",
+      "year": 1982,
+      "cast": [
+        "Harrison Ford",
+        "Rutger Hauer",
+        "Edward James Olmos",
+        "Sean Young",
+        "Daryl Hannah",
+        "Brion James",
+        "James Hong",
+        "William Sanderson",
+        "Joanna Cassidy",
+        "Joe Turkel"
+      ],
+      "genres": [
+        "Science Fiction"
+      ],
+      "href": "Blade_Runner",
+      "extract": "Blade Runner is a 1982 science fiction film directed by Ridley Scott, and written by Hampton Fancher and David Peoples. Starring Harrison Ford, Rutger Hauer, Sean Young, and Edward James Olmos, it is an adaptation of Philip K. Dick's 1968 novel Do Androids Dream of Electric Sheep? The film is set in a dystopian future Los Angeles of 2019, in which synthetic humans known as replicants are bio-engineered by the powerful Tyrell Corporation to work on space colonies. When a fugitive group of advanced replicants led by Roy Batty (Hauer) escapes back to Earth, burnt-out cop Rick Deckard (Ford) reluctantly agrees to hunt them down.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png",
+      "thumbnail_width": 251,
+      "thumbnail_height": 380,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bd89"
+      },
+      "title": "Coco",
+      "year": 2017,
+      "cast": [
+        "Anthony Gonzalez",
+        "Gael García Bernal",
+        "Benjamin Bratt",
+        "Alanna Ubach",
+        "Renée Victor",
+        "Ana Ofelia Murguia",
+        "Edward James Olmos"
+      ],
+      "genres": [
+        "Animated",
+        "Fantasy"
+      ],
+      "href": "Coco_(2017_film)",
+      "extract": "Coco is a 2017 American computer-animated fantasy film produced by Pixar Animation Studios and released by Walt Disney Pictures. Based on an original idea by Lee Unkrich, it is directed by him and co-directed by Adrian Molina. The film's voice cast stars Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach, Renée Victor, Ana Ofelia Murguía and Edward James Olmos. The story follows a 12-year-old boy named Miguel (Gonzalez) who is accidentally transported to the Land of the Dead, where he seeks the help of his deceased musician great-great-grandfather to return him to his family among the living and to reverse his family's ban on music.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bccc"
+      },
+      "title": "Get Out",
+      "year": 2017,
+      "cast": [
+        "Daniel Kaluuya",
+        "Allison Williams",
+        "Catherine Keener",
+        "Bradley Whitford",
+        "Caleb Landry Jones",
+        "Stephen Root",
+        "Lakeith Stanfield"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "href": "Get_Out",
+      "extract": "Get Out is a 2017 American psychological horror film written, co-produced, and directed by Jordan Peele in his directorial debut. It stars Daniel Kaluuya, Allison Williams, Lil Rel Howery, LaKeith Stanfield, Bradley Whitford, Caleb Landry Jones, Stephen Root, and Catherine Keener. The plot follows a young black man (Kaluuya), who uncovers shocking secrets when he meets the family of his white girlfriend (Williams).",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 330,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151c3ef"
+      },
+      "title": "Oppenheimer",
+      "year": 2023,
+      "cast": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon",
+        "Robert Downey Jr.",
+        "Rami Malek",
+        "Florence Pugh",
+        "Benny Safdie",
+        "Michael Angarano",
+        "Josh Hartnett",
+        "Kenneth Branagh",
+        "Dane DeHaan",
+        "Dylan Arnold",
+        "David Krumholtz",
+        "Alden Ehrenreich",
+        "Matthew Modine"
+      ],
+      "genres": [
+        "Biography"
+      ],
+      "href": "Oppenheimer_(film)",
+      "extract": "Oppenheimer is an upcoming biographical film written and directed by Christopher Nolan. It is based on American Prometheus, a biography written by Kai Bird and Martin J. Sherwin. The film stars Cillian Murphy as J. Robert Oppenheimer, an American theoretical physicist credited with being the \"father of the atomic bomb\" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons, with a supporting ensemble cast that includes Emily Blunt, Robert Downey Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett and Kenneth Branagh. It is a co-production between Universal Pictures, Syncopy Inc. and Atlas Entertainment, with Nolan producing the film alongside Emma Thomas and Charles Roven.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+      "thumbnail_width": 251,
+      "thumbnail_height": 397,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151ba0c"
+      },
+      "title": "12 Years a Slave",
+      "year": 2013,
+      "cast": [
+        "Chiwetel Ejiofor",
+        "Michael Fassbender",
+        "Benedict Cumberbatch",
+        "Paul Dano",
+        "Paul Giamatti",
+        "Lupita Nyong'o",
+        "Brad Pitt",
+        "Alfre Woodard",
+        "Sarah Paulson"
+      ],
+      "genres": [
+        "Drama",
+        "Biography"
+      ],
+      "href": "12_Years_a_Slave_(film)",
+      "extract": "12 Years a Slave is a 2013 biographical drama film directed by Steve McQueen from a screenplay by John Ridley, based on the 1853 slave memoir Twelve Years a Slave by Solomon Northup, an African American man who was kidnapped in Washington, D.C. by two conmen in 1841 and sold into slavery. He was put to work on plantations in the state of Louisiana for 12 years before being released. The first scholarly edition of David Wilson's version of Northup's story was co-edited in 1968 by Sue Eakin and Joseph Logsdon.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/12_Years_a_Slave_film_poster.jpg",
+      "thumbnail_width": 220,
+      "thumbnail_height": 326,
+      "score": []
+    }
+  ],
+  "rated": [
+    [
+      10,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151bd61"
+        },
+        "title": "Blade Runner 2049",
+        "year": 2017,
+        "cast": [
+          "Harrison Ford",
+          "Ryan Gosling",
+          "Ana de Armas",
+          "Mackenzie Davis",
+          "Sylvia Hoeks",
+          "Lennie James",
+          "Carla Juri",
+          "Robin Wright",
+          "Dave Bautista",
+          "Jared Leto"
+        ],
+        "genres": [
+          "Noir",
+          "Science Fiction"
+        ],
+        "href": "Blade_Runner_2049",
+        "extract": "Blade Runner 2049 is a 2017 American epic neo-noir science fiction film directed by Denis Villeneuve and written by Hampton Fancher and Michael Green. A sequel to the 1982 film Blade Runner, the film stars Ryan Gosling and Harrison Ford, with Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, and Jared Leto in supporting roles. Ford and Edward James Olmos reprise their roles from the original film. Gosling plays K, a Nexus-9 replicant \"blade runner\" who uncovers a secret that threatens to destabilize society and the course of civilization.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+        "thumbnail_width": 220,
+        "thumbnail_height": 326,
+        "score": [
+          [
+            10,
+            "65855eb4a39efc46a0a8787a"
+          ]
+        ]
+      }
+    ],
+    [
+      9,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151bef9"
+        },
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "cast": [
+          "Robert Downey Jr.",
+          "Chris Evans",
+          "Mark Ruffalo",
+          "Chris Hemsworth",
+          "Scarlett Johansson",
+          "Jeremy Renner",
+          "Don Cheadle",
+          "Paul Rudd",
+          "Brie Larson",
+          "Karen Gillan",
+          "Danai Gurira",
+          "Benedict Wong",
+          "Jon Favreau",
+          "Bradley Cooper",
+          "Gwyneth Paltrow",
+          "Josh Brolin"
+        ],
+        "genres": [
+          "Superhero"
+        ],
+        "href": "Avengers:_Endgame",
+        "extract": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+        "thumbnail_width": 220,
+        "thumbnail_height": 326,
+        "score": [
+          [
+            "65841141447a3e96536a441d"
+          ],
+          [
+            10,
+            "6585d23564af33c77ec25030"
+          ]
+        ]
+      }
+    ],
+    [
+      10,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151b834"
+        },
+        "title": "John Carter",
+        "year": 2012,
+        "cast": [
+          "Taylor Kitsch",
+          "Lynn Collins",
+          "Samantha Morton",
+          "Mark Strong",
+          "Ciarán Hinds",
+          "Dominic West",
+          "James Purefoy",
+          "Willem Dafoe"
+        ],
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science Fiction"
+        ],
+        "href": "John_Carter_(film)",
+        "extract": "John Carter is a 2012 American science fiction action-adventure film directed by Andrew Stanton, written by Stanton, Mark Andrews, and Michael Chabon, and based on A Princess of Mars (1912), the first book in the Barsoom series of novels by Edgar Rice Burroughs. Produced by Jim Morris, Colin Wilson and Lindsey Collins, it stars Taylor Kitsch in the title role, Lynn Collins, Samantha Morton, Mark Strong, Ciarán Hinds, Dominic West, James Purefoy and Willem Dafoe. It chronicles the first interplanetary adventure of John Carter and his attempts to mediate civil unrest amongst the warring kingdoms of Barsoom.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/aa/John_carter_poster.jpg",
+        "thumbnail_width": 259,
+        "thumbnail_height": 385,
+        "score": []
+      }
+    ],
+    [
+      10,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151b251"
+        },
+        "title": "300",
+        "year": 2007,
+        "cast": [
+          "Gerard Butler",
+          "Lena Headey",
+          "David Wenham",
+          "Dominic West",
+          "Vincent Regan",
+          "Michael Fassbender",
+          "Tom Wisdom",
+          "Andrew Pleavin",
+          "Andrew Tiernan",
+          "Rodrigo Santoro",
+          "Stephen McHattie",
+          "Peter Mensah",
+          "Kelly Craig",
+          "Robert Maillet",
+          "Patrick Sabongui",
+          "Tyrone Benskin",
+          "Tyler Neitzel",
+          "Giovanni Cimmino",
+          "Leon Laderach"
+        ],
+        "genres": [
+          "Action",
+          "Historical"
+        ],
+        "href": "300_(film)",
+        "extract": "300 is a 2006 American epic historical action film loosely based on the 1998 comic series of the same name by Frank Miller and Lynn Varley. Both are fictionalized retellings of the Battle of Thermopylae in the Greco-Persian Wars. The film was co-written and directed by Zack Snyder, while Miller served as executive producer and consultant. It was filmed mostly with a superimposition chroma key technique to replicate the imagery of the original comic book. The plot revolves around King Leonidas, who leads 300 Spartans into battle against the Persian \"God-King\" Xerxes and his invading army of more than 300,000 soldiers. As the battle rages, Queen Gorgo attempts to rally support in Sparta for her husband.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/300poster.jpg",
+        "thumbnail_width": 260,
+        "thumbnail_height": 384,
+        "score": []
+      }
+    ],
+    [
+      3,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151bbaf"
+        },
+        "title": "Before We Go",
+        "year": 2015,
+        "cast": [
+          "Chris Evans",
+          "Alice Eve"
+        ],
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "href": "Before_We_Go",
+        "extract": "Before We Go is a 2014 American romantic drama film directed by Chris Evans in his directorial debut. It stars Evans and Alice Eve as two strangers stuck in Manhattan, New York City, for the night.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/e7/Before_We_Go_Poster.jpg",
+        "thumbnail_width": 256,
+        "thumbnail_height": 380,
+        "score": [
+          [
+            10,
+            "6585d23564af33c77ec25030"
+          ]
+        ]
+      }
+    ],
+    [
+      5,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151bb52"
+        },
+        "title": "Cinderella",
+        "year": 2015,
+        "cast": [
+          "Cate Blanchett",
+          "Lily James",
+          "Richard Madden",
+          "Stellan Skarsgård",
+          "Holliday Grainger",
+          "Derek Jacobi",
+          "Helena Bonham Carter"
+        ],
+        "genres": [
+          "Fantasy",
+          "Romance"
+        ],
+        "href": "Cinderella_(2015_American_film)",
+        "extract": "Cinderella is a 2015 romantic fantasy film directed by Kenneth Branagh, from a screenplay by Chris Weitz, and co-produced by Walt Disney Pictures, Kinberg Genre, Allison Shearmur Productions, and Beagle Pug Films. The film is based on the folk tale and is a live-action adaptation of Walt Disney's 1950 animated film of the same name. It stars Lily James as the title character, alongside Cate Blanchett, Richard Madden, Holliday Grainger, and Helena Bonham Carter.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c2/Cinderella_2015_official_poster.jpg",
+        "thumbnail_width": 259,
+        "thumbnail_height": 383,
+        "score": [
+          [
+            9,
+            "6585d23564af33c77ec25030"
+          ]
+        ]
+      }
+    ],
+    [
+      8,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151babf"
+        },
+        "title": "Lucy",
+        "year": 2014,
+        "cast": [
+          "Scarlett Johansson",
+          "Morgan Freeman",
+          "Choi Min-sik"
+        ],
+        "genres": [
+          "Action",
+          "Science Fiction"
+        ],
+        "href": "Lucy_(2014_film)",
+        "extract": "Lucy is a 2014 English-language French science fiction action film written and directed by Luc Besson for his company EuropaCorp, and produced by his wife, Virginie Besson-Silla. It is an English-language film shot in Taipei, Paris, and New York City. It stars Scarlett Johansson, Morgan Freeman, Choi Min-sik, and Amr Waked. Johansson portrays the titular character, a woman who gains psychokinetic abilities when a nootropic, psychedelic drug is absorbed into her bloodstream.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/14/Lucy_%282014_film%29_poster.jpg",
+        "thumbnail_width": 220,
+        "thumbnail_height": 293,
+        "score": []
+      }
+    ],
+    [
+      9,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151bccc"
+        },
+        "title": "Get Out",
+        "year": 2017,
+        "cast": [
+          "Daniel Kaluuya",
+          "Allison Williams",
+          "Catherine Keener",
+          "Bradley Whitford",
+          "Caleb Landry Jones",
+          "Stephen Root",
+          "Lakeith Stanfield"
+        ],
+        "genres": [
+          "Horror"
+        ],
+        "href": "Get_Out",
+        "extract": "Get Out is a 2017 American psychological horror film written, co-produced, and directed by Jordan Peele in his directorial debut. It stars Daniel Kaluuya, Allison Williams, Lil Rel Howery, LaKeith Stanfield, Bradley Whitford, Caleb Landry Jones, Stephen Root, and Catherine Keener. The plot follows a young black man (Kaluuya), who uncovers shocking secrets when he meets the family of his white girlfriend (Williams).",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+        "thumbnail_width": 220,
+        "thumbnail_height": 330,
+        "score": []
+      }
+    ],
+    [
+      10,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151b913"
+        },
+        "title": "Monsters, Inc. 3D",
+        "year": 2012,
+        "cast": [
+          "John Goodman",
+          "Billy Crystal",
+          "Mary Gibbs",
+          "Steve Buscemi",
+          "James Coburn",
+          "Jennifer Tilly",
+          "Frank Oz"
+        ],
+        "genres": [
+          "Animated",
+          "Comedy"
+        ],
+        "href": "Monsters,_Inc.",
+        "extract": "Monsters, Inc. is a 2001 American computer-animated comedy film produced by Pixar Animation Studios for Walt Disney Pictures. Featuring the voices of John Goodman, Billy Crystal, Steve Buscemi, James Coburn, Mary Gibbs and Jennifer Tilly, the film was directed by Pete Docter from a screenplay by Andrew Stanton and Daniel Gerson. The film centers on two monsters, the hairy James P. \"Sulley\" Sullivan (Goodman) and his one-eyed partner and best friend Mike Wazowski (Crystal), who are employed at the titular energy-producing factory Monsters, Inc., which generates power by scaring human children. However, the monster world believes that the children are toxic, and when a little human girl Boo (Gibbs) sneaks into the factory, she must be returned home before it is too late.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/63/Monsters_Inc.JPG",
+        "thumbnail_width": 220,
+        "thumbnail_height": 322,
+        "score": []
+      }
+    ],
+    [
+      9,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151c3ef"
+        },
+        "title": "Oppenheimer",
+        "year": 2023,
+        "cast": [
+          "Cillian Murphy",
+          "Emily Blunt",
+          "Matt Damon",
+          "Robert Downey Jr.",
+          "Rami Malek",
+          "Florence Pugh",
+          "Benny Safdie",
+          "Michael Angarano",
+          "Josh Hartnett",
+          "Kenneth Branagh",
+          "Dane DeHaan",
+          "Dylan Arnold",
+          "David Krumholtz",
+          "Alden Ehrenreich",
+          "Matthew Modine"
+        ],
+        "genres": [
+          "Biography"
+        ],
+        "href": "Oppenheimer_(film)",
+        "extract": "Oppenheimer is an upcoming biographical film written and directed by Christopher Nolan. It is based on American Prometheus, a biography written by Kai Bird and Martin J. Sherwin. The film stars Cillian Murphy as J. Robert Oppenheimer, an American theoretical physicist credited with being the \"father of the atomic bomb\" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons, with a supporting ensemble cast that includes Emily Blunt, Robert Downey Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett and Kenneth Branagh. It is a co-production between Universal Pictures, Syncopy Inc. and Atlas Entertainment, with Nolan producing the film alongside Emma Thomas and Charles Roven.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+        "thumbnail_width": 251,
+        "thumbnail_height": 397,
+        "score": []
+      }
+    ],
+    [
+      8,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151ba0c"
+        },
+        "title": "12 Years a Slave",
+        "year": 2013,
+        "cast": [
+          "Chiwetel Ejiofor",
+          "Michael Fassbender",
+          "Benedict Cumberbatch",
+          "Paul Dano",
+          "Paul Giamatti",
+          "Lupita Nyong'o",
+          "Brad Pitt",
+          "Alfre Woodard",
+          "Sarah Paulson"
+        ],
+        "genres": [
+          "Drama",
+          "Biography"
+        ],
+        "href": "12_Years_a_Slave_(film)",
+        "extract": "12 Years a Slave is a 2013 biographical drama film directed by Steve McQueen from a screenplay by John Ridley, based on the 1853 slave memoir Twelve Years a Slave by Solomon Northup, an African American man who was kidnapped in Washington, D.C. by two conmen in 1841 and sold into slavery. He was put to work on plantations in the state of Louisiana for 12 years before being released. The first scholarly edition of David Wilson's version of Northup's story was co-edited in 1968 by Sue Eakin and Joseph Logsdon.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/12_Years_a_Slave_film_poster.jpg",
+        "thumbnail_width": 220,
+        "thumbnail_height": 326,
+        "score": []
+      }
+    ],
+    [
+      10,
+      {
+        "_id": {
+          "$oid": "657084c9307307e56151bd89"
+        },
+        "title": "Coco",
+        "year": 2017,
+        "cast": [
+          "Anthony Gonzalez",
+          "Gael García Bernal",
+          "Benjamin Bratt",
+          "Alanna Ubach",
+          "Renée Victor",
+          "Ana Ofelia Murguia",
+          "Edward James Olmos"
+        ],
+        "genres": [
+          "Animated",
+          "Fantasy"
+        ],
+        "href": "Coco_(2017_film)",
+        "extract": "Coco is a 2017 American computer-animated fantasy film produced by Pixar Animation Studios and released by Walt Disney Pictures. Based on an original idea by Lee Unkrich, it is directed by him and co-directed by Adrian Molina. The film's voice cast stars Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach, Renée Victor, Ana Ofelia Murguía and Edward James Olmos. The story follows a 12-year-old boy named Miguel (Gonzalez) who is accidentally transported to the Land of the Dead, where he seeks the help of his deceased musician great-great-grandfather to return him to his family among the living and to reverse his family's ban on music.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg",
+        "thumbnail_width": 220,
+        "thumbnail_height": 326,
+        "score": []
+      }
+    ]
+  ]
+},
+{
+  "_id": {
+    "$oid": "65855eb4a39efc46a0a8787a"
+  },
+  "username": "Nathalie",
+  "email": "nath@gmail.com",
+  "password": 70373448,
+  "seen": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bcbd"
+      },
+      "title": "Rings",
+      "year": 2017,
+      "cast": [
+        "Matilda Lutz",
+        "Alex Roe",
+        "Johnny Galecki",
+        "Aimee Teegarden",
+        "Bonnie Morgan",
+        "Vincent D'Onofrio"
+      ],
+      "genres": [
+        "Horror",
+        "Supernatural"
+      ],
+      "href": "Rings_(2017_film)",
+      "extract": "Rings is a 2017 American supernatural horror film directed by F. Javier Gutiérrez, written by David Loucka, Jacob Aaron Estes and Akiva Goldsman and starring Matilda Lutz, Alex Roe, Johnny Galecki, Aimee Teegarden, Bonnie Morgan and Vincent D'Onofrio. It is the third and final installment in The Ring series, following The Ring (2002) and The Ring Two (2005); it is based on elements of Spiral by Kōji Suzuki.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/ec/Rings_-_Official_Theatrical_Poster.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 343,
+      "score": [
+        [
+          5,
+          "65855eb4a39efc46a0a8787a"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b162"
+      },
+      "title": "Pride & Prejudice",
+      "year": 2005,
+      "cast": [
+        "Keira Knightley",
+        "Matthew Macfadyen",
+        "Brenda Blethyn",
+        "Donald Sutherland",
+        "Tom Hollander",
+        "Rosamund Pike",
+        "Jena Malone",
+        "Judi Dench",
+        "Carey Mulligan",
+        "Talulah Riley",
+        "Simon Woods",
+        "Tamzin Merchant",
+        "Claudie Blakley",
+        "Kelly Reilly",
+        "Rupert Friend",
+        "Cornelius Booth",
+        "Penelope Wilton",
+        "Peter Wight",
+        "Meg Wynn Owen",
+        "Sinead Matthews"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "href": "Pride_%26_Prejudice_(2005_film)",
+      "extract": "Pride & Prejudice is a 2005 romantic drama film directed by Joe Wright, in his feature directorial debut, and based on Jane Austen's 1813 novel of the same name. The film features five sisters from an English family of landed gentry as they deal with issues of marriage, morality and misconceptions. Keira Knightley stars in the lead role of Elizabeth Bennet, while Matthew Macfadyen plays her romantic interest Mr. Darcy.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/03/Prideandprejudiceposter.jpg",
+      "thumbnail_width": 250,
+      "thumbnail_height": 187,
+      "score": []
+    }
+  ],
+  "rated": []
+},
+{
+  "_id": {
+    "$oid": "6585d23564af33c77ec25030"
+  },
+  "username": "Valentine",
+  "email": "valentine@gmail.com",
+  "password": -81309752,
+  "seen": [
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bcd4"
+      },
+      "title": "Before I Fall",
+      "year": 2017,
+      "cast": [
+        "Zoey Deutch",
+        "Halston Sage",
+        "Logan Miller",
+        "Kian Lawley",
+        "Elena Kampouris",
+        "Cynthy Wu",
+        "Medalion Rahimi",
+        "Diego Boneta",
+        "Jennifer Beals"
+      ],
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Teen"
+      ],
+      "href": "Before_I_Fall_(film)",
+      "extract": "Before I Fall is a 2017 American science fiction teen drama film directed by Ry Russo-Young and written by Maria Maggenti and Gina Prince-Bythewood, based on the 2010 novel of the same name by Lauren Oliver. The film stars Zoey Deutch, Halston Sage, Logan Miller, Kian Lawley, Elena Kampouris, Diego Boneta and Jennifer Beals.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/fa/Before_I_Fall_%28film%29.png",
+      "thumbnail_width": 220,
+      "thumbnail_height": 312,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b94b"
+      },
+      "title": "Safe Haven",
+      "year": 2013,
+      "cast": [
+        "Josh Duhamel",
+        "Julianne Hough",
+        "David Lyons",
+        "Cobie Smulders",
+        "Mimi Kirkland",
+        "Noah Lomax",
+        "Mike Pniewski"
+      ],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Thriller",
+        "Romance"
+      ],
+      "href": "Safe_Haven_(film)",
+      "extract": "Safe Haven is a 2013 American romantic drama fantasy thriller film starring Julianne Hough, Josh Duhamel and Cobie Smulders. The film marks the final film role for actor Red West. It was released theatrically in North America on February 14, 2013. The film was directed by Lasse Hallström, and is an adaptation of Nicholas Sparks' 2010 novel of the same name. The film was originally set for a February 8 release.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3d/Safe_Haven_Poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 384,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151b54e"
+      },
+      "title": "Another Cinderella Story",
+      "year": 2009,
+      "cast": [
+        "Selena Gomez",
+        "Drew Seeley",
+        "Jane Lynch",
+        "Emily Perkins",
+        "Katharine Isabelle",
+        "Jessica Parker Kennedy",
+        "Marcus T. Paulk",
+        "Nicole LaPlaca",
+        "Alex Zahara",
+        "Maija Tailfeathers",
+        "Lynda Boyd",
+        "Garwin Sanford",
+        "Lorena Gale",
+        "Camille Mitchell",
+        "Nicole Muñoz",
+        "Tiffany Burns",
+        "Colin Foo"
+      ],
+      "genres": [
+        "Comedy",
+        "Musical",
+        "Teen"
+      ],
+      "href": "Another_Cinderella_Story",
+      "extract": "Another Cinderella Story is a 2008 American teen musical comedy film directed by Damon Santostefano and written by Erik Patterson and Jessica Scott. The film stars Selena Gomez, Drew Seeley and Jane Lynch. It is a sequel to A Cinderella Story (2004) and the second installment in the A Cinderella Story series. Like the first film, it is a retelling of the Cinderella fairy tale in a modern setting. The film was released on DVD on September 16, 2008 and premiered on ABC Family on January 18, 2009.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0c/AAnotherCinderellaStory.jpg",
+      "thumbnail_width": 255,
+      "thumbnail_height": 350,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bb52"
+      },
+      "title": "Cinderella",
+      "year": 2015,
+      "cast": [
+        "Cate Blanchett",
+        "Lily James",
+        "Richard Madden",
+        "Stellan Skarsgård",
+        "Holliday Grainger",
+        "Derek Jacobi",
+        "Helena Bonham Carter"
+      ],
+      "genres": [
+        "Fantasy",
+        "Romance"
+      ],
+      "href": "Cinderella_(2015_American_film)",
+      "extract": "Cinderella is a 2015 romantic fantasy film directed by Kenneth Branagh, from a screenplay by Chris Weitz, and co-produced by Walt Disney Pictures, Kinberg Genre, Allison Shearmur Productions, and Beagle Pug Films. The film is based on the folk tale and is a live-action adaptation of Walt Disney's 1950 animated film of the same name. It stars Lily James as the title character, alongside Cate Blanchett, Richard Madden, Holliday Grainger, and Helena Bonham Carter.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c2/Cinderella_2015_official_poster.jpg",
+      "thumbnail_width": 259,
+      "thumbnail_height": 383,
+      "score": []
+    },
+    {
+      "_id": {
+        "$oid": "657084c9307307e56151bbaf"
+      },
+      "title": "Before We Go",
+      "year": 2015,
+      "cast": [
+        "Chris Evans",
+        "Alice Eve"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "href": "Before_We_Go",
+      "extract": "Before We Go is a 2014 American romantic drama film directed by Chris Evans in his directorial debut. It stars Evans and Alice Eve as two strangers stuck in Manhattan, New York City, for the night.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/e7/Before_We_Go_Poster.jpg",
+      "thumbnail_width": 256,
+      "thumbnail_height": 380,
+      "score": [
+        [
+          10,
+          "6585d23564af33c77ec25030"
+        ]
+      ]
+    }
+  ],
+  "rated": []
+}]
