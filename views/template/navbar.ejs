@@ -1,14 +1,14 @@
 <header class="masthead mb-auto">
   <div class="inner">
-    <a href="home"><h3 class="masthead-brand"><strong>MovieDex</strong></h3></a>
-    <a href="random-movie"><h3 class="masthead-brand second">RM</h3></a>
-    <a href="daily-movie"><h3 class="masthead-brand second">DM</h3></a>
+    <a href="home" class="masthead-brand second"><img class="logoMovieDex" src="/img/MovieDexLogoWhiteComplete.png" alt="logoMovieDex"></a>
+
     <nav class="nav nav-masthead justify-content-center">
-      <form class="nav-link" action="search" method="post">
-        <input class="search-field" type="text" name="search" placeholder="Recherche">
-        <a href="search">+</a>
-        <input class="submit-button" type="submit">
+      <form class="search-field" action="search" method="post">
+        <input type="search" name="query" placeholder="Rechercher">
+        <input type="submit" value="Rechercher">
       </form>
+      <a class="nav-link" href="random-movie">Film Aléatoire</a>
+      <a class="nav-link" href="daily-movie">Film du jour</a>
       <a class="nav-link" href="my-dexes">Mes dexs</a>
       <a class="nav-link" href="profile">Profil</a>
     </nav>

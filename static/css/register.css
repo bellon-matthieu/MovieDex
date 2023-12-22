@@ -7,7 +7,7 @@
 .register-photo .image-holder {
   display:table-cell;
   width:auto;
-  background:url(../img/MovieDex_logo_v.0.1.png);
+  background:url(../img/MovieDexLogoBlack.png);
   background-size:cover;
 }
 
@@ -83,3 +83,4 @@
   opacity:0.9;
   text-decoration:none;
 }
+

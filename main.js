@@ -186,7 +186,7 @@ app.get("/dex", async function (req, res, next) {
   const idUser = req.session.idUser;
 
   res.render("./template/template.ejs", {
-    path: "dex/old-dex.ejs",
+    path: "dex/dex.ejs",
     dataDex:dataDex,
     idUser:idUser,
   });
@@ -283,14 +283,43 @@ app.get("/dexdle", async function (req, res, next) {
 // ###############
 
 app.get("/search", async function (req, res, next) {
-  let query = req.query.query;
-  query = query.toString();
+  let startTime = performance.now();
+  let query = req.query.query.toString();
+  let startDate = parseInt(req.query.startDate);
+  let endDate = parseInt(req.query.endDate);
+  const queryGenres = req.query.genres;
+  let genresInput = [];
+  if (queryGenres) {
+    if (Array.isArray(queryGenres)) {
+      genresInput = queryGenres;
+    } else {
+      genresInput = [queryGenres]
+    }
+  }
 
+  let resultMovies = null;
   
-  const resultsMovies = await dbMovie.aggregate([
-      {$match: {$text: {$search:query}}},
+  if (genresInput.length==0) {
+    resultsMovies = await dbMovie.aggregate([
+      {$match: {
+        $text: {$search:query},
+        year: {$gte : startDate, $lte : endDate},
+        }},
+        // Faut-il les trier par score ou par précision de la recherche ???
+      {$sort: {score:-1, extract: {$meta: "textScore"}}},
+      ]).toArray();
+  } else {
+    resultsMovies = await dbMovie.aggregate([
+      {$match: {
+        $text: {$search:query},
+        year: {$gte : startDate, $lte : endDate},
+        genres: {$all : genresInput},
+        }},
       {$sort: {extract: {$meta: "textScore"}}},
       ]).toArray();
+  }
+  
+  
 
   const resultDexes = await dbDex.aggregate([
       {$match: {$text: {$search:query}}},
@@ -298,18 +327,33 @@ app.get("/search", async function (req, res, next) {
       {$limit:30},
       ]).toArray();
 
+  let endTime = performance.now();
+  const time = Math.round((endTime-startTime)*100) / 100;
 
   res.render("./template/template.ejs", {
     path: "search/search.ejs",
     query:query,
+    genres:genres,
     resultsMovies:resultsMovies,
     resultsDexes:resultDexes,
+    time:time,
   });
 });
 
 app.post("/search", function (req, res, next) {
-  const date = req.body.date;
-  res.redirect("search?query="+req.body.search+"&year="+date);
+  let url = "search?query="+req.body.query;
+  if (req.body.startDate) {url += "&startDate="+req.body.startDate} else {url += "&startDate="+1917}
+  if (req.body.endDate) {url += "&endDate="+req.body.endDate} else {url += "&endDate="+2023}
+  if (req.body.genres) {
+    if (Array.isArray(req.body.genres)) {
+      for (let i = 0; i < req.body.genres.length; i++) {
+        url += "&genres="+req.body.genres[i];
+      }
+    } else {
+      url += "&genres="+req.body.genres;
+    }
+  }
+  res.redirect(url);
 });
 
 // ###############
@@ -484,7 +528,9 @@ app.get("/log-out", function (req,res,next) {
   res.redirect("log-in");
 });
 
-
+// ###############
+// other
+// ###############
 
 app.get("*", (req, res) => {
   res.render("./template/template.ejs", {

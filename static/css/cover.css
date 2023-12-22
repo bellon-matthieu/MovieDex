@@ -56,21 +56,27 @@ body {
 
 .second {
   margin-left: 1em;
+  margin-top: 10;
+  position: relative;
 }
 
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
+  font-size: 1.1em;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255);
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
+
+  align-self: center ;
+  vertical-align: center;
   
   user-select: none;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: rgba(255, 255, 255);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -117,4 +123,16 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.logoMovieDex {
+  height: 70px;
+  
+  vertical-align:middle;
+}
+
+.search-field {
+  margin: 10px;
+  padding: 10px;
+  margin-right: 50px;
 }

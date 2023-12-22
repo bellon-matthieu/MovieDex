@@ -3,63 +3,70 @@
 </head>
 
 <body>
-  <div class="advanced-search">
-    <form action="search" post>
-      <input type="text" placeholder="Recherche" name="query">
-      <select name="date" id="name">
-        <option value="1900">1900</option>
-        <option value="2023">2023</option>
-      </select>
-      <input type="submit" value="Rechercher">
-    </form>
-  </div>
 
-  <h1>Resultats pour la recherche : <%= query %></h1>(<%= resultsMovies.length %> résulats)
-  <div class="movies-container">
-
-    <section id="section1" class="movies-grid">
-
-      <% if (resultsMovies.length > 20) {%>
-        <a href="#section3" class="previous-section"><</a >
-      <% } else if (resultsMovies.length > 10) {%>
-        <a href="#section2" class="previous-section"><</a >
+  <div class="research-field">
+    <div class="research-info">
+      <div class="query">
+        <h1><% if (query) {%>
+          Résultats pour la recherche : "<%= query %>"
+        <% } else { %>
+          Recherche
+        <% } %></h1>
+        </div>
+      <div class="search-data">
+        <h3>Nombre de résultats affichés:
+      <% if (resultsMovies.length > 30) {%>
+        30
+      <% } else { %>
+        <%= resultsMovies.length %>
       <% } %>
+      (total: <%= resultsMovies.length %>)
+      </h3>
+      <div class="time">Résultats fournis en <%= time %> milisecondes.</div>
+      </div>
+    </div>
+    
+    <div class="movies-container">
+      <section id="section1" class="movies-grid">
+
+        <% if (resultsMovies.length > 20) {%>
+          <a href="#section3" class="previous-section"><</a >
+        <% } else if (resultsMovies.length > 10) {%>
+          <a href="#section2" class="previous-section"><</a >
+        <% } %>
 
 
-      <% for (let i = 0; i < resultsMovies.length && i < 10;i++) {%>
-        <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
-          <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
-          <p><%= resultsMovies[i]['title'] %></p>
-        </a>
-      <% } %>
-
-      <% if (resultsMovies.length > 10) {%>
-        <a href="#section2" class="next-section">></a>
-      <% } %>
-
-
-    </section>
-
-    <% if (resultsMovies.length > 10) {%>
-
-      <section id="section2" class="movies-grid">
-        <a href="#section1" class="previous-section"><</a >
-        <% for (let i = 10; i < resultsMovies.length && i < 20;i++) {%>
+        <% for (let i = 0; i < resultsMovies.length && i < 10;i++) {%>
           <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
-            <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
-            <p><%= resultsMovies[i]['title'] %></p>
+            <img class="movie-thumbnail" src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+            <p class="movie-title"><%= resultsMovies[i]['title'] %></p>
           </a>
         <% } %>
 
-        <% if (resultsMovies.length > 20) {%>
-          <a href="#section3" class="next-section">></a >
-        <% } else {%>
-          <a href="#section1" class="next-section">></a >
+        <% if (resultsMovies.length > 10) {%>
+          <a href="#section2" class="next-section">></a>
         <% } %>
+
       </section>
 
+      <% if (resultsMovies.length > 10) {%>
+        <section id="section2" class="movies-grid">
 
+          <a href="#section1" class="previous-section"><</a >
+          <% for (let i = 10; i < resultsMovies.length && i < 20;i++) {%>
+            <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
+              <img class="movie-thumbnail" src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+              <p class="movie-title"><%= resultsMovies[i]['title'] %></p>
+            </a>
+          <% } %>
 
+          <% if (resultsMovies.length > 20) {%>
+            <a href="#section3" class="next-section">></a >
+          <% } else {%>
+            <a href="#section1" class="next-section">></a >
+          <% } %>
+
+        </section>
       <% } %>
 
 
@@ -68,12 +75,32 @@
           <a href="#section2" class="previous-section"><</a >
           <% for (let i = 20; i < resultsMovies.length && i < 30;i++) {%>
             <a class="movie" href="movie?id=<%= resultsMovies[i]['_id'] %>">
-              <img src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
-              <p><%= resultsMovies[i]['title'] %></p>
+              <img class="movie-thumbnail" src="<%= resultsMovies[i]["thumbnail"] %>" alt="">
+              <p class="movie-title"><%= resultsMovies[i]['title'] %></p>
             </a>
           <% } %>
           <a href="#section1" class="next-section">></a>
         </section>
       <% } %>
+    </div>
   </div>
+
+  <div class="research-advanced">
+      <h1>Recherche avancée</h1>
+      <form class="research-advanced-form" action="search" method="post">
+        <input type="text" placeholder="Recherche" name="query">
+        <div class="dates-input">
+          <input class="date-select" type="number" name="startDate" value="1917" aria-valuemin="1917" aria-valuemax="2023">
+          <input class="date-select" type="number" name="endDate" value="2023" aria-valuemin="1917" aria-valuemax="2023">
+        </div>
+        <div class="genre-select">
+          <% for (let i = 0; i < genres.length; i++) { %>
+            <input type="checkbox" name="genres" value="<%= genres[i] %>">
+            <label for="genres"><%= genres[i] %></label>
+          <% } %>
+        </div>
+        <input type="submit" value="Rechercher">
+      </form>
+    </div>
+
 </body>
