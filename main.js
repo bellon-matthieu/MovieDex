@@ -508,6 +508,7 @@ app.post("/add-rate", async function (req,res,next) {
   let isAlreadyRate = false;
 
   const rating = [parseInt(req.body.rate),idUser];
+  const usr_rated = [idMovie,parseInt(req.body.rate)];
 
   for (let i = 0; i < rates.length; i++) {
     if (idUser == (rates[i][1])) {
@@ -524,6 +525,11 @@ app.post("/add-rate", async function (req,res,next) {
 
   res.redirect("movie?id="+idMovie);
 
+  if (! isAlreadyRate) {
+    dbUser.updateOne(
+      { _id : new ObjectId(idUser) },
+      { $push : {rated : usr_rated} });
+  }
 })
 
 // ###############

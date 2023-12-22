@@ -1,6 +1,31 @@
-<section>
-    Mes informations
+<head>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+
+<section class="main-container">
+    <h1>Mes informations</h1>
+    <div class="info-container">
+        <div class="username"><h1>Nom d'utilisateur : <%= user['username'] %></h1></div>
+        <div class="email"><h1>email : <%= user['email'] %></h1></div>
+        <div class="nbr-movie-watched"><h1>Films vus : <%= user['seen'].length %></h1></div>
+        <div class="nbr-movie-watched"><h1>Films notés : <%= user['rated'].length %></h1></div>
+        <div class="favourite-movie">
+            <br>
+            <h1>Films favoris</h1>
+
+            <div class="fav-movies">
+                <% for (let index = 0; index < user['rated'].length; index++) {%>
+                    <a class="movie-cont" href="movie?id=<%= user['rated'][index][1]['_id'] %>">
+                        <img class="movie-thumbnail" src="<%= user['rated'][index][1]["thumbnail"] %>" alt="thumbnail">
+                    </a>
+                <% } %>
+                </div> 
+        </div>
+
+    </div>
+   
 </section>
-<section>Mes films preférés</section>
-<section>Mes dex</section>
-<section>Dex suivies</section>
+
+<section class="disconnect">
+    <a href="log-out" >Se déconnecter</a>
+</section>

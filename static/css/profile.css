@@ -1,0 +1,36 @@
+.main-container {
+    border:1px solid black;
+    background-color: rgb(28, 28, 28);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.disconnect {
+    border:1px solid black;
+    background-color: rgb(28, 28, 28);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+.info-container{
+    border:1px solid black;
+    background-color: rgb(47, 47, 47);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: medium;
+    
+}
+
+.fav-movies {
+    grid-column: 1/3;
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(10,100px);
+		grid-template-rows: repeat(2,150px);
+		gap: 1em;
+		justify-content: center;
+
+}
