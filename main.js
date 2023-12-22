@@ -508,7 +508,7 @@ app.post("/add-rate", async function (req,res,next) {
   let isAlreadyRate = false;
 
   const rating = [parseInt(req.body.rate),idUser];
-  const usr_rated = [idMovie,parseInt(req.body.rate)];
+  const usr_rated = [parseInt(req.body.rate),dataMovie];
 
   for (let i = 0; i < rates.length; i++) {
     if (idUser == (rates[i][1])) {
