@@ -53,7 +53,7 @@
     <div class="user-options">
       <section class="delete-dex">
             <% if (dataDex['user'] == idUser) { %>
-                <form action="delete-dex-form" method="post">
+                <form action="delete-dex" method="post">
                     <input type="text" hidden name="idDex" value="<%= dataDex["_id"] %>">
                     <input type="submit" value="Supprimer la Dex" class="delete-dex-button">
                 </form>
