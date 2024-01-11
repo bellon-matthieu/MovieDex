@@ -466,7 +466,7 @@ app.get("/daily-movie", async function (req, res, next) {
   
 
 
-  const idDailyMovie = allMovies[index]['_id'];
+  const idDailyMovie = allMovies[index+1]['_id'];
 
   res.redirect("movie?id="+idDailyMovie);
 })

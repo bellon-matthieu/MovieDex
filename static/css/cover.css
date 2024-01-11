@@ -29,6 +29,7 @@ body {
   background: linear-gradient(rgb(91, 91, 91),rgb(37, 37, 37));
   background-repeat: no-repeat;
   background-attachment: fixed;
+  user-select: none;
 }
 
 body {
