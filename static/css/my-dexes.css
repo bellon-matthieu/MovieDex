@@ -1,27 +1,4 @@
-.dex {
-	display: grid;
-	flex-direction: row;
-
-	justify-content: space-between;
-}
-
-.dex-container {
-	display: grid;
-	flex-direction: row;
-	
-	justify-content: space-between;
-}
-
-.create-dex-button {
-	border: 1px white solid;
-	border-radius: 16px;
-}
-
-.create-dex-button:hover {
-    background-color: #1f1f1f;
-}
-
-.my-dexes-container {
+.my_dexes_body {
 	display: flex;
 	flex-direction: column;
 
@@ -30,12 +7,36 @@
     border: 1px black solid;
     border-radius: 16px;
 	padding: 6px 15px;
+
+	.title {
+		margin: 8px 0 8px;
+		padding: 8px;
+		border: 1px black solid;
+		background-color: rgb(22, 22, 22);
+		border-radius: 16px; 
+	}
+
+	.create_dex_button {
+		border: 1px white solid;
+		border-radius: 16px;
+		margin: 8px 0;
+		text-decoration: none;
+	}
+
+	.create_dex_button:hover {
+		background-color: #1f1f1f;
+	}
+
+	.dexes_container {
+		display: grid;
+		grid-template-columns: repeat(3,auto);
+		grid-template-rows: auto;
+		grid-auto-rows: auto;
+		gap: 1em;
+	}
 }
 
-.title {
-    margin: 8px;
-	padding: 8px;
-    border: 1px black solid;
-    background-color: rgb(22, 22, 22);
-    border-radius: 16px; 
-}
+
+
+
+

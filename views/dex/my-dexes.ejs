@@ -4,34 +4,31 @@
 </head>
 
 <body>
-  <div class="my-dexes-container">
-    <h1 class="title">Mes dex</h1>
-      <a class="create-dex-button" href="create-dex"><h3>Créer une nouvelle dex</h3></a>
-      <div class="dex-container">
-        <% for (let i = 0; i < dexes.length; i++) {%>
-          <div class="dex-display">
-              <a class="dex-display-name" href="dex?id=<%= dexes[i]['_id'] %>">
-                <h2><%= dexes[i]["name"] %></h2>
-              </a>
-              <div class="movies-diplay">
-                  <% if (dexes[i]["movies"][0]) {%>
-                    <a class="single-movie-container" href="dex?id=<%= dexes[i]['_id'] %>">
-                      <img class="movie" src="<%= dexes[i]["movies"][0]["thumbnail"]%>" alt="">
-                    </a>
-                  <% } %>
-                  <% if (dexes[i]["movies"][1]) {%>
-                    <a class="single-movie-container" href="dex?id=<%= dexes[i]['_id'] %>">
-                      <img class="movie" src="<%= dexes[i]["movies"][1]["thumbnail"]%>" alt="">
-                    </a>
-                  <% } %>
-                  <% if (dexes[i]["movies"][2]) {%>
-                    <a class="single-movie-container" href="dex?id=<%= dexes[i]['_id'] %>">
-                      <img class="movie" src="<%= dexes[i]["movies"][2]["thumbnail"]%>" alt="">
-                    </a>
-                  <% } %>
-            </div>
+  <div class="my_dexes_body">
+    <h1 class="title">Mes Dexs</h1>
+    <a class="create_dex_button" href="create-dex">
+      <h3>Créer une nouvelle Dex</h3>
+    </a>
+    <div class="dexes_container">
+      <% for (let i = 0; i < dexes.length; i++) {%>
+        <a class="dex_display" href="dex?id=<%= dexes[i]['_id'] %>">
+
+            <h2 class="dex_display_name"><%= dexes[i]["name"] %></h2>
+
+            <div class="movies_display">
+                <% if (dexes[i]["movies"][0]) {%>
+                    <img class="movie_thumbnail" src="<%= dexes[i]["movies"][0]["thumbnail"]%>" alt="">
+                <% } %>
+                <% if (dexes[i]["movies"][1]) {%>
+                    <img class="movie_thumbnail" src="<%= dexes[i]["movies"][1]["thumbnail"]%>" alt="">
+                <% } %>
+                <% if (dexes[i]["movies"][2]) {%>
+                    <img class="movie_thumbnail" src="<%= dexes[i]["movies"][2]["thumbnail"]%>" alt="">
+                <% } %>
           </div>
-        <% } %>
-      </div>
+
+        </a>
+      <% } %>
+    </div>
   </div>
 </body>

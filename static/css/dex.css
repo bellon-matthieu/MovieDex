@@ -1,11 +1,8 @@
 .all-data-dex-container {
-	display: grid;
-	grid-template-columns: 40% auto;
-	grid-template-rows: 30% auto 5%;
-	height: 85%;
-	gap: 1em;
-
+	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1%;
 
 	
 	background-color: rgb(47, 47, 47);
@@ -14,33 +11,45 @@
 	padding: 16px;
 	align-self: center;
 	
-	.dex-display {
-		grid-column: 1/2;
+	.dex_display {
+		width:	33%;
+		height: 250px;
 	}
 
 	.dex-info{
-		grid-column: 2/3;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 1em;
+		width: 66%;
 
 		.title,
 		.genres,
-		.description{
+		.creator {
 			padding: 3px;
 			border: 1px black solid;
 			background-color: rgb(28, 28, 28);
-			border-radius: 16px; 
+			border-radius: 16px;
+			overflow: hidden;
+		}
+
+		.creator a {
+			text-decoration: none;
+		}
+
+		.title{
+			overflow:inherit;
 		}
 	}
 
 	.dex-movies{
-		grid-column: 1/3;
+		margin: 32px 0 ;
+		width: 100%;
 		position: relative;
 		display: grid;
 		grid-template-columns: repeat(10,100px);
-		grid-template-rows: repeat(2,150px);
+		grid-template-rows: 150px;
+		grid-auto-rows: 150px;
 		gap: 1em;
 		justify-content: center;
 
@@ -89,6 +98,13 @@
 			}
 		}
 	}
+
+	.dex_description {
+		padding: 3px;
+		border: 1px black solid;
+		background-color: rgb(28, 28, 28);
+		border-radius: 16px;
+	}
 }
 
 .user-options{
@@ -96,11 +112,10 @@
 	justify-content: center;
 	background-color: rgb(28, 28, 28);
     border: 1px black solid;
-    border-radius: 0 0 16px 16px;
+    border-radius: 16px;
 	padding: 6px;
-	grid-column-start: 1;
-	grid-column-end: 3;
-	align-items: center;}
+	align-items: center;
+}
 
 .delete-dex-button:hover{
 	background-color: red;

@@ -48,6 +48,7 @@
 
             	<input type="text" hidden name="idMovie" value="<%= dataMovie["_id"] %>">
             	<select name="selectedDex">
+					<option value="">Choisir une Dex</option>
                 	<% for (let i = 0;i < dexesUser.length; i++) {%>
                     	<option value="<%= dexesUser[i]["_id"]%>"> <%= dexesUser[i]["name"] %> </option>
                 	<% } %>

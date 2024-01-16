@@ -2,64 +2,92 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/dex-display.css">
   </head>
 
   <body>
     <div class="trendsMovies">
-    <h1>Films en tendance</h1>
-      <div class="wrapper-movies">
-
-      <section id="section1" class="carousel_line">
-        
-        <a href="#section3" class="display_button">‹</a>
-
-        <% for (let index = 0; index < 5; index++) { %>
-              <form action="movie" method="post">
-                <input type="text" hidden name="idMovie" value="<%= trendsMovies[index]['_id'] %>">
-                <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
-              </form>
+      <h1>Films en tendance</h1>
+      <div class="all_lines_trends">
+        <section id="section1" class="single_line_section">
+          
+          <a href="#section3" class="display_button">‹</a>
+          <div class="single_line_trends_movies">
+            <% for (let index = 0; index < 5; index++) { %>
+              <a class="single_trend_movie" href="movie?id=<%= trendsMovies[index]['_id'] %>">
+                <img class="single_trend_movie_thumbnail" src="<%= trendsMovies[index]['thumbnail'] %>" alt="trend_film_thumbnail">
+              </a>
             <% } %>
+          </div>
 
-        <a href="#section2" class="display_button">›</a>
+          <a href="#section2" class="display_button">›</a>
 
-      </section>
-
-
-      <section id="section2" class="carousel_line">
-
-        <a href="#section1" class="display_button">‹</a>
-
-        <% for (let index = 5; index < 10; index++) { %>
-          <form action="movie" method="post">
-            <input type="text" hidden name="idMovie" value="<%= trendsMovies[index]['_id'] %>">
-            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
-          </form>
-        <%}%>
-
-        <a href="#section3" class="display_button">›</a>
-
-      </section>
+        </section>
 
 
-      <section id="section3" class="carousel_line">
+        <section id="section2" class="single_line_section">
 
-        <a href="#section2" class="display_button">‹</a>
+          <a href="#section1" class="display_button">‹</a>
 
-        <% for (let index = 10; index < 15; index++) { %>
-          <form action="movie" method="post">
-            <input type="text" hidden name="idMovie" value="<%= trendsMovies[index]['_id'] %>">
-            <input class="thumbnail" type="image" src="<%= trendsMovies[index]['thumbnail'] %>" alt="film">
-          </form>
-        <%}%>
- 
-        <a href="#section1" class="display_button">›</a>
+          <div class="single_line_trends_movies">
+            <% for (let index = 5; index < 10; index++) { %>
+              <a class="single_trend_movie" href="movie?id=<%= trendsMovies[index]['_id'] %>">
+                <img class="single_trend_movie_thumbnail" src="<%= trendsMovies[index]['thumbnail'] %>" alt="trend_film_thumbnail">
+              </a>
+            <% } %>
+          </div>
 
-      </section>
+          <a href="#section3" class="display_button">›</a>
+
+        </section>
 
 
-      
+        <section id="section3" class="single_line_section">
+
+          <a href="#section2" class="display_button">‹</a>
+
+          <div class="single_line_trends_movies">
+            <% for (let index = 10; index < 15; index++) { %>
+              <a class="single_trend_movie" href="movie?id=<%= trendsMovies[index]['_id'] %>">
+                <img class="single_trend_movie_thumbnail" src="<%= trendsMovies[index]['thumbnail'] %>" alt="trend_film_thumbnail">
+              </a>
+            <% } %>
+          </div>
+
+          <a href="#section1" class="display_button">›</a>
+
+        </section>  
+      </div>
     </div>
-    </div>  
+    
+    <div class="trendsDexes">
+      <h1>Découvrir des Dexs</h1>
+      <div class="all_lines_trends">
+        <section class="line_trends_dexes">
+          <div class="single_line_trends_dexes">
+            <% for (let i = 0; i < 6; i++) { %>
+              <a class="dex_display" href="dex?id=<%= trendsDexes[i]['_id'] %>">
+
+                  <h2 class="dex_display_name"><%= trendsDexes[i]["name"] %></h2>
+
+                  <div class="movies_display">
+                    <% if (trendsDexes[i]["movies"][0]) {%>
+                        <img class="movie_thumbnail" src="<%= trendsDexes[i]["movies"][0]["thumbnail"]%>" alt="">
+                    <% } %>
+                    <% if (trendsDexes[i]["movies"][1]) {%>
+                        <img class="movie_thumbnail" src="<%= trendsDexes[i]["movies"][1]["thumbnail"]%>" alt="">
+                    <% } %>
+                    <% if (trendsDexes[i]["movies"][2]) {%>
+                        <img class="movie_thumbnail" src="<%= trendsDexes[i]["movies"][2]["thumbnail"]%>" alt="">
+                    <% } %>
+                  </div>
+
+                </a>
+            <% } %>
+          </div>
+        </section>  
+      </div>
+    </div>
+    
   </body>
 </html>

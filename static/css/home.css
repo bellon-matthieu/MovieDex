@@ -1,39 +1,78 @@
-.trends {
-    user-select: none;
-    display: flex;
-    align-self: center;
-    flex-wrap: wrap;
-
-    top: 35em;
-}
-
-.move {
-    position:relative;
-}
-
-
-.thumbnail {
-    /* ratio-initial = 104:69 */
-    height: 261px;
-    width: 173px;
-
-    margin: 3px;
-}
-
-.thumbnail:hover{
-    transform: scale(1.15);
-    overflow: inherit;
-}
-
-.trendsMovies {
+.trendsMovies,
+.trendsDexes {
     background-color: rgb(47, 47, 47);
     border: 1px black solid;
     border-radius: 16px;
+
+    
+    h1 {
+        margin: 8px;
+        border: 2px black solid;
+        background-color: rgb(22, 22, 22);
+        border-radius: 16px;
+    }
+
+    .all_lines_trends {
+        
+        display: grid;
+        grid-template-columns: repeat(3,100%);
+        overflow:hidden;
+        scroll-behavior: smooth;
+
+        padding: 32px 0;
+
+        .single_line_section{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+
+            .display_button {
+                text-decoration: none;
+                font-size: 12em;
+                align-content: flex-end;
+            }
+
+            .single_line_trends_movies{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+
+                .single_trend_movie {
+
+
+                    .single_trend_movie_thumbnail {
+                        /* ratio-initial = 104:69 */
+                        height: 286px;
+                        width: 190px;
+                    }
+                    .single_trend_movie_thumbnail:hover{
+                        transform: scale(1.15);
+                        transition-duration: 0.3s;
+                    }
+                }
+            }
+        }
+    }
 }
 
-h1 {
-    margin: 8px;
-    border: 1px black solid;
-    background-color: rgb(22, 22, 22);
-    border-radius: 16px;    
+.trendsDexes{
+    margin: 32px 0 0 0;
+
+    .single_line_trends_dexes {
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: repeat(2,auto);
+        justify-content: center;
+
+        gap: 1em;
+    }
 }
+
+
+
+
+
+
+
