@@ -1,4 +1,4 @@
-.all-data-dex-container {
+.all_data_dex_container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -16,7 +16,7 @@
 		height: 250px;
 	}
 
-	.dex-info{
+	.dex_info{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -42,7 +42,7 @@
 		}
 	}
 
-	.dex-movies{
+	.dex_movies{
 		margin: 32px 0 ;
 		width: 100%;
 		position: relative;
@@ -55,7 +55,7 @@
 
 		
 
-		.movie-dex {
+		.movie_dex {
 			text-decoration: none;
 			font-size: 1.03em;
 			background-color: rgb(22, 22, 22);
@@ -66,7 +66,9 @@
 			justify-content: center;
 			align-items: center;
 
-			.movie-thumbnail {
+			cursor: pointer;
+
+			.movie_thumbnail {
 				height: 120px;
 				width: 75px;
 				position: absolute;
@@ -74,40 +76,43 @@
 				top: 50%;
 				transform: translate(-50%,-50%);
 			}
-
-			.remove-movie-button{
-				visibility: hidden;
-			}
-
-			.remove-movie-button:hover{
-				background-color: red;
-			}
-			
-
 		}
 
-		.movie-dex:hover {
+		.movie_dex:hover {
 			transform: scale(1.1);
-
-			.remove-movie-button{
-				visibility: visible;
-			}
-
-			.movie-thumbnail{
-				visibility: hidden;
-			}
+			transition-duration: 0.3s;
 		}
 	}
 
-	.dex_description {
-		padding: 3px;
-		border: 1px black solid;
-		background-color: rgb(28, 28, 28);
+	.section_dex_description {
+
+		.dex_description {
+			padding: 3px;
+			border: 1px black solid;
+			background-color: rgb(28, 28, 28);
+			border-radius: 16px;
+		}
+	}
+
+	#section_movie_info {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		border: 1px solid black;
 		border-radius: 16px;
+		text-decoration: none;
+		background-color: #1f1f1f;
+		z-index: 999;
+	}
+
+	.hidden {
+		visibility: hidden;
 	}
 }
 
-.user-options{
+.user_options{
 	display: flex;
 	justify-content: center;
 	background-color: rgb(28, 28, 28);
@@ -117,6 +122,6 @@
 	align-items: center;
 }
 
-.delete-dex-button:hover{
+.delete_dex_button:hover{
 	background-color: red;
 }

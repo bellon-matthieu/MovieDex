@@ -4,9 +4,9 @@
 </head>
 
 <body>
-    <div class="all-data-dex-container">
+    <div class="all_data_dex_container">
       <!-- Dex display -->
-        <a class="dex_display" href="dex?id=<%= dataDex['_id'] %>">
+        <a class="dex_display" href="dex?id=<%= dataDex["_id"] %>">
               <h2 class="dex_display_name"><%= dataDex["name"] %></h2>
               <div class="movies_display">
                   <% if (dataDex["movies"][0]) {%>
@@ -21,45 +21,76 @@
             </div>
           </a>
 
-        <section class="dex-info">
-                <div class="title"><h1><%= dataDex['name'] %></h1></div>
+        <section class="dex_info">
+                <div class="title"><h1><%= dataDex["name"] %></h1></div>
                 <div class="creator">
                   <a href="profile?id=<%= dataDex["user"] %>"><h3>Créateur: <%= creatorUsername %></h3></a>
                 </div>
-                <div class="genres"><h3>Genres :</h3><%= dataDex['genres'] %></div>
+                <div class="genres"><h3>Genres :</h3><%= dataDex["genres"] %></div>
         </section>
 
-        <section class="dex-movies">
-            <% for (let indexMovie = 0; indexMovie < dataDex['movies'].length; indexMovie++) {%>
-                <a class="movie-dex" href="movie?id=<%= dataDex['movies'][indexMovie]['_id'] %>">
-                    <img class="movie-thumbnail" src="<%= dataDex['movies'][indexMovie]["thumbnail"] %>" alt="thumbnail">
-                    <% if (dataDex['user'] == idUser) { %>
-                    <form action="remove-movie-from-dex" method="post">
-                        <input type="text" name="idMovieRemoved" hidden value="<%= dataDex['movies'][indexMovie]['_id'] %>">
-                        <input type="text" name="idDex" hidden value="<%= dataDex['_id'] %>">
-                        <input class="remove-movie-button"  type="submit" value="Supprimer">
-                    </form>
-                <% } %>
-                </a>
-                
+        <section class="dex_movies">
+            <% for (let indexMovie = 0; indexMovie < dataDex["movies"].length; indexMovie++) {%>
+              <div class="movie_dex" onclick="showMovieInfo(<%= indexMovie %>)">
+                <img class="movie_thumbnail" src="<%= dataDex["movies"][indexMovie]["thumbnail"] %>" alt="<%= dataDex["movies"][indexMovie]["title"] %>">
+              </div>
             <% } %>
-        </section> 
+        </section>
 
-        <section>
-          <div class="dex_description"><h3>Description :</h3><%= dataDex['description'] %></div>
+        <section class="section_dex_description">
+          <div class="dex_description"><h3>Description :</h3><%= dataDex["description"] %></div>
+        </section>
+
+        <section id="section_movie_info" class="hidden">
+          <div id="movie_info">
+            <h2>Titre du Film</h2>
+            <p>Description du film et autres détails.</p>
+          </div>
+            <button onclick="hideMovieInfo()">Fermer</button>
         </section>
     </div>
 
     <!-- User Options -->
-    <% if (dataDex['user'] == idUser) { %>
-      <div class="user-options">
-        <section class="delete-dex">
+    <% if (dataDex["user"] == idUser) { %>
+      <div class="user_options">
+        <section class="delete_dex">
             <form action="delete-dex" method="post">
                 <input type="text" hidden name="idDex" value="<%= dataDex["_id"] %>">
-                <input type="submit" value="Supprimer la Dex" class="delete-dex-button">
+                <input type="submit" value="Supprimer la Dex" class="delete_dex_button">
             </form>
         </section>
       </div>
     <% } %>
+
+
+    <script>
+      function showMovieInfo(indexMovie) {
+        var allMoviesDex = <%= JSON.stringify(dataDex['movies']) %>;
+        var movieInfo = getMovieInfoById(indexMovie, allMoviesDex);
+
+        var movieInfoDiv = document.getElementById("movie_info");
+        movieInfoDiv.innerHTML = `
+            <h2>${movieInfo.title}</h2>
+            <p>${movieInfo.description}</p>
+        `;
+
+        var movieInfoSection = document.getElementById("section_movie_info");
+        movieInfoSection.classList.remove("hidden");
+      }
+
+
+      function hideMovieInfo() {
+        var movieInfoSection = document.getElementById("section_movie_info");
+        movieInfoSection.classList.add("hidden");
+      }
+
+      function getMovieInfoById(indexMovie, allMoviesDex) {
+        var movieInfo = allMoviesDex[indexMovie];
+        return {
+          title:movieInfo['title'],
+          description:movieInfo['description']
+        }
+      }
+    </script>
 </body>
 </html>
