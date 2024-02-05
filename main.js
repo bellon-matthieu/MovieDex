@@ -84,7 +84,11 @@ app.use(
 // ###############
 
 app.get("/", function (req, res, next) {
-  res.redirect("home");
+  try {
+    res.redirect("home");
+  } catch {
+    res.redirect("error")
+  }
 });
 
 // ###############
@@ -111,6 +115,8 @@ app.get("/home", async function (req, res, next) {
     { $limit: 15},
                                       ]).toArray();
 
+  const trendsDexes = await dbDex.aggregate([{$sample:{size:6}}]).toArray();
+
   // Ajout d'une image rouge pour les films qui n'ont pas de thumbnail
   for (let i=0; i<trendsMovies.length; i++) {
     if (trendsMovies[i]["thumbnail"] == null) {
@@ -118,22 +124,21 @@ app.get("/home", async function (req, res, next) {
     }
   }
 
+  let likeUser = null;
+
   if (req.session.idUser) {
     const user = await dbUser.findOne({_id:new ObjectId(req.session.idUser)});
     likeUser = user['like'];
+  } else {
+    likeUser = [];
+  }
 
-    res.render("./template/template.ejs", {
+  res.render("./template/template.ejs", {
         path: "home/home.ejs",
         trendsMovies:trendsMovies,
+        trendsDexes:trendsDexes,
         likeUser:likeUser,
     });
-  } else {
-    res.render("./template/template.ejs", {
-      path: "home/home.ejs",
-      trendsMovies:trendsMovies,
-      likeUser:[],
-    });
-  }
 
   
 });
@@ -174,13 +179,15 @@ app.get("/profile", async function (req, res, next) {
 
 app.get("/dex", async function (req, res, next) {
 
-  const dataDex = await dbDex.findOne({ _id: new ObjectId(req.query.id)});
+  const dataDex = await dbDex.aggregate([{$match:{ _id: new ObjectId(req.query.id)}}]).toArray();
   const idUser = req.session.idUser;
+  const creator = await dbUser.aggregate([{$match:{ _id: new ObjectId(dataDex[0]['user'])}}]).toArray();
 
   res.render("./template/template.ejs", {
     path: "dex/dex.ejs",
-    dataDex:dataDex,
+    dataDex:dataDex[0],
     idUser:idUser,
+    creatorUsername: creator[0]['username'],
   });
 });
 
@@ -443,7 +450,7 @@ app.post("/add-movie", async function (req,res,next) {
 })
 
 app.get("/random-movie", async function (req, res, next) {
-  const randomMovie = await dbMovie.aggregate([{ $match: {year:{$gte:2010}} },  { $sample: { size: 1 }}]).toArray();
+  const randomMovie = await dbMovie.aggregate([{ $match: {year:{$gte:2000}} },  { $sample: { size: 1 }}]).toArray();
 
   const idRandomMovie = randomMovie[0]['_id'];
 
@@ -626,9 +633,15 @@ app.get("/log-out", function (req,res,next) {
 // other
 // ###############
 
-app.get("*", (req, res) => {
+app.get("error", (req, res) => {
   res.render("./template/template.ejs", {
     path: "error/error.ejs",
+  });
+});
+
+app.get("*", (req, res) => {
+  res.render("./template/template.ejs", {
+    path: "error/not-found.ejs",
   });
 });
 

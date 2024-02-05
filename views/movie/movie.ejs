@@ -3,51 +3,61 @@
 </head>
 
 <body>
-    <div class="movie-container">
-        <img class="thumbnail" src="<%= dataMovie['thumbnail'] %>" alt="thumbnail">
+	<div class="full_movie_container">
+    	<section class="movie_container">
+        	<img class="thumbnail" src="<%= dataMovie['thumbnail'] %>" alt="thumbnail">
 
-        <div class="info-container">
-            <h1 class="title"><%= dataMovie['title'] %></h1>
-			<div class="info-container-without-title">
-				<div class="year"><%= dataMovie['year'] %></div>
-				<div class="year"><%= dataMovie['cast'] %></div>
-				<div class="year"><%= dataMovie['genres'] %></div>
-				<div class="star-ratings">
-					<div class="fill-ratings" id="rating-stars">
-						<span>★★★★★</span>
-					</div>
-					<div class="empty-ratings">
-						<span>★★★★★</span>
+        	<div class="info_container">
+
+            	<h1 class="title"><%= dataMovie['title'] %></h1>
+
+				<div class="other_info">
+
+					<div class="year"><%= dataMovie['year'] %></div>
+					<div class="cast"><%= dataMovie['cast'] %></div>
+					<div class="genres"><%= dataMovie['genres'] %></div>
+
+					<div class="rating">
+						<div class="star_score">
+							<div class="fill_ratings" id="rating_stars">
+								<span>★★★★★</span>
+							</div>
+							<div class="empty_ratings">
+								<span>★★★★★</span>
+							</div>
+						</div>
+
+						<div class="score">
+							<% if (nbrRate == 0) {%>
+								Pas encore de vote
+							<% } else { %>
+								<%= rate %>/10
+								<% if (nbrRate <=1) {%>
+									(<%= nbrRate %> vote)
+								<% } else { %>
+									(<%= nbrRate %> votes)
+								<% } %>
+							<% } %>
+						</div>
 					</div>
 				</div>
-				<div>
-					<% if (nbrRate == 0) {%>
-						Pas encore de vote
-					<% } else { %>
-						<%= rate %>/10 
-					<% } %>
-					<% if (nbrRate <=1) {%>
-						(<%= nbrRate %> vote)
-					<% } else { %>
-						(<%= nbrRate %> votes)
-					<% } %>
-				</div>
+        	</div>
+
+			<div class="description_container">
+				<%= dataMovie['extract'] %>
 			</div>
-        </div>
-
-		<div class="extract-container">
-			<%= dataMovie['extract'] %>
-		</div>
     
         
-    </div>
+		</section>
+
         <% if (idUser) {%>
-        <div class="user-options">
+        <div class="user_options">
 
         	<form action="add-movie" method="post">
 
             	<input type="text" hidden name="idMovie" value="<%= dataMovie["_id"] %>">
-            	<select name="selectedDex">
+            	<select name="selectedDex" required>
+					<option value="" disabled selected hidden>Ajouter le film à une Dex</option>
                 	<% for (let i = 0;i < dexesUser.length; i++) {%>
                     	<option value="<%= dexesUser[i]["_id"]%>"> <%= dexesUser[i]["name"] %> </option>
                 	<% } %>
@@ -89,8 +99,9 @@
 
         </div>
     	<% } %>
+	</div>
 <script>
-    var score = <%=rate%> * 10 + "%";
+    var score = <%= rate %> * 10 + "%";
     document.getElementById("rating-stars").style.width=score;
 </script>
 </body>
