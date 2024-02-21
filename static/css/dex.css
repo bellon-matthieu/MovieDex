@@ -1,8 +1,7 @@
 .all-data-dex-container {
 	display: grid;
 	grid-template-columns: 40% auto;
-	grid-template-rows: 30% auto 5%;
-	height: 85%;
+	grid-template-rows: 35% auto 5%;
 	gap: 1em;
 
 	justify-content: center;
@@ -40,7 +39,9 @@
 		position: relative;
 		display: grid;
 		grid-template-columns: repeat(10,100px);
-		grid-template-rows: repeat(2,150px);
+		grid-template-rows: 150px;
+		grid-auto-rows: 150px;
+
 		gap: 1em;
 		justify-content: center;
 
